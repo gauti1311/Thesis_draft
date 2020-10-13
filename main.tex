@@ -1,71 +1,183 @@
-eras. Monocular \acrshort{vo} suffers from scale ambiguity because of unknown depth information of images. Stereo \acrshort{vo} solves this scaling problem by retrieving depth information using two cameras at little on distance known as baseline. Stereo case can be degraded to monocular if the baseline is much smaller than distances to the scene from camera. The Analysis of these approaches is discussed further.
 
-\subsection{Indirect Approach}
+%This is a proposed template for a master thesis report for the FH Wiener Neustadt. The present document is free.
 
-This is a classical approach for \acrshort{vo} and \acrshort{sfm}. The Indirect or Feature-based method involves extraction of some features such as corners, edges etc. from the images frames. See Figure\ref{fig:feature} These features are then matched and tracked among two consecutive image frames. Based on the feature tracking motion of camera is estimated.  This approach can typically divided into two steps: 1) Feature detection and matching, 2) geometric optimization on the computed point correspondences. In first step an image is matched with a previous one by comparing each feature in both images and calculating the Euclidean distance of feature vectors to find the candidate matching features.\cite{Aqel-et-al-2016} In second step using these match correspondences the camera motion and surrounding 3D geometry can be estimated. In case of stereo \acrshort{vo} the features are first compared with each image pair and thus depth information of feature can be estimated. In this approach the reprojection error is minimized using Bundle Adjustment because keypoints positions(geometric quantities) are used to compute camera pose. The Bundle adjustment problem is described as below. 
+%You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
-\begin{equation*}
-	T_{k,k-1} = arg min_{T} \sum_{i} \| u^{'}_{i}- u_{i}\|^{2}_{\Sigma}
-\end{equation*}
-   where   $u^{'}_{i} = \pi (P_{i},T_{k,k-1})$ , $ u_{i} $ is $ i^{th} $  pixel 2D positions and $ u^{'}_{i} $ is reprojected 2D pixel position using 3D projection $(\pi)$.  
+% Author: Joan Miralles
+% Datum: 05/04/2015
+% Latest update: 11/07/2016
+%version: 2.2
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{indirect}
-	\caption{Indirect method Optimizes Reprojection Error}
-	\label{fig:feature}
-\end{figure}
+%   Study Thesis:   Write here your title
+%   Institution:    Fachhochschule Wiener Neustadt
+%   Topic:          Whatever you want to write about
+%   Author:         Name Name Name
+%   Date:           01/04/2015
+%   Version:        1.0    
 
-The disadvantage of feature-based approaches is their low speed due to feature extraction and matching at every frame, the necessity for robust estimation techniques that deal with erroneous correspondences (e.g., RANSAC ), and the fact that most feature detectors are optimized for speed rather than precision.\cite{7782863}
+        %----------------------------------------------------%
+\documentclass[oneside,12pt,bibtotoc,]{report}
 
-\subsection{Direct Approach}
-
-Direct method uses directly the pixel intensity as an information instead of extracting features and tracking them for motion estimation. Direct methods are based on assumption that Brightness remains constant in all image frames.\cite{Irani-et-al-1999} Direct methods are also known as Appearance based approach as it monitors the appearance of image in consecutive frames. The camera motion then can be estimated by Optical-flow algorithms which determines the displacement of brightness patterns of a group of pixels using intensity values from one image to another.\cite{Aqel-et-al-2016} There are two types of such algorithms based on selection of number of image pixels for calculation called as Dense and Sparse Optical-flow methods. Dense algorithms are less robust to noise as compared to Sparse based. Sparse algorithms select only those features which have more variance than others in particular image region. One of the most used sparse based algorithms for tracking is Lucas-Kanade method.\cite{Lucas81aniterative} As There is no feature extraction step is involved direct approach minimizes directly the photometric error formulated as below. 
-
-\begin{equation*}
-	T_{k,k-1} = arg min_{T} \sum_{i} \| I_{k}(u^{'}_{i})- I_{k-1}(u_{i})\|^{2}_{\sigma}
-\end{equation*}
- 
- where   $u^{'}_{i} = \pi (P_{i},T_{k,k-1})$ and $I_{k} $ is  $k_{th}$ image. see Figure \ref{fig:Direct}
- 
- \begin{figure}[h]
- 	\centering
- 	\includegraphics[width=0.5\textwidth]{direct}
- 	\caption{Direct Method Optimizes Photometric Error}
- 	\label{fig:Direct}
- \end{figure}
-
-Depending upon the number of feature selection for calculating 3D geometry Direct methods can be divided into three types such as Dense, Semi-dense and Sparse methods.A graphical Overview of these methods can be seen in Figure \ref{fig:dense_sparse}. Dense approaches use every pixel in the image, where as semi-dense use just the pixels with high intensity gradient, and the proposed and sparse approach uses selected pixels at corners or along intensity gradient edges.\cite{engel14eccv}
-
- \begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.5]{dense_sparse}
-	\caption{Image-to-model alignment (marked in green for corners and magenta for
-		edgelets) for sparse, semi-dense, and dense methods. \cite{7782863} }
-	\label{fig:dense_sparse}
-\end{figure}
-
-As Direct methods minimize the photometric error (intensity difference) for tracking between two images they required a well calibrated camera as compared to Indirect methods because they minimized the image pixel positions on images. A simple process comparison is described in the Figure.\ref{fig:directIndirect}. Indirect methods have been very popular for a long time but recent advances in direct methods have shown better accuracy and robustness, especially when the images do not contain enough explicit corner features.\cite{Engel-et-al-pami2018} The robustness in the direct approach comes from the joint estimation of motion and correspondences as well as the ability to also use non-corner pixels, corresponding to edges, or even smooth image regions.\cite{gao2018ldso}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{direct_indirect}
-	\caption{Process comparison between Direct and Indirect methods {source:\cite{engel14eccv}}}
-	\label{fig:directIndirect}
-\end{figure}
+%'oneside' specifies that the pages will be printed on one sides of a every page. If you want to print on both sides of your pages use the pareameter 'twoside'. Remember to order the printing job on one side of every page!!!
 
 
-\subsection{Hybrid Approach}
-The indirect approach fails to deal with texture-less or low-textured environments of a single pattern such as sandy soil, asphalt, and concrete etc.. The less feature detection in these type of environments make this approach inefficient. While the direct approach is more robust and better than indirect approach in low-textured or single pattern environment but they are not much robust to image occlusions or inconsistencies in system (e.g rolling shutter). To have a advantages of both approaches the best solution is to use the combination of both approaches which combines tracking of salient features over over frames and use the pixel intensity as an information\cite{Aqel-et-al-2016}. Forster et al.\cite{7782863} proposed a hybrid approach in which they use a 4x4 patch around features and estimate the camera pose by minimizing the photometric error of these patches. For pose and structure refinement, the reprojection error of every feature is calculated with respect to the nearest keyframe that has observed the feature at nearly the same angle. \\
+    %%%%------------------PREAMBLE----------------%%%%
+    %%----------------------------------------------%%
 
-\subsection{Monocular vs Stereo \acrshort{vo} }
-In Monocular \acrshort{vo} a single camera is used for the whole pipeline. In this case features need to be observed in subsequent frames in order to track motion properly. In the first frame to observe features and to triangulate into 3D points in the second frame, and to calculate the transformation in the third frame\cite{KhalidYousif-et-al-2015}. While in stereo case, 3D points can be reconstructed (by triangulation) only by observing the features in the left and right images of a single pair simultaneously. Motion is estimated by observing features in two successive frames (both in left and right). 
+    %%%%%-------------------PACKAGES-----------------%%%%% 
+    
+%\usepackage[utf8]{inputenc}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}   %allows to change margins and distances within the page's frame. Be careful with this tool. Remember to delete the frame!!!!
+
+%\usepackage{showframe}
+%\usepackage[english]{babel}    %the package babel is not necessary as long as you write your thesis in English.
+%\usepackage{csquotes}
+\usepackage{graphicx}   %loads the graphics package, necessary for pictures
+%\usepackage{url}
+%\usepackage{wallpaper}
+\usepackage{framed}     %to make frames, such as in the title page and abstract
+\usepackage{hyperref}   %Automatically turn all your internal references into hyperlinks.
+\usepackage[toc,page]{appendix}
+\usepackage[final]{pdfpages}
+\usepackage{soul}       %provides hyphenatable letterspacing, underlining and some derivatives such as everstriking and highlighting.
+%\usepackage{nomencl}   %helps to format a nomenclature.
+%\usepackage{setspace}  %Allows you to specify the line spacing for all sections and paragraphs
+
+\usepackage[UKenglish]{isodate} %Provides the format for the date on the title page. Read the package documentation for all the possible date formats.
+
+\usepackage{array}
+
+%\usepackage{lipsum}
+\usepackage{caption}
+%\usepackage{abstract}   %This package allows to modify the Abstract style, position and font. Defines the abstract automatically.
+\usepackage{supertabular}
+\usepackage[acronym, toc]{glossaries}
+
+\usepackage{fancyhdr}   %Uncomment it if you want to include headers
+%\pagestyle{fancy}      %Changes page style to fancy
+\fancyhf{}              %Clear header/footer
+%\fancyhead[C]{Header}
+\fancyfoot[C]{\thepage} % \fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.0pt}    % Default \headrulewidth is 0.4pt
+\renewcommand{\footrulewidth}{0.4pt}    % Default \footrulewidth is 0pt
+
+%\usepackage{footnote}      %Just in case you want to include footnotes
+\usepackage{indentfirst}    %Indent in every first paragraph after \chapter and \section.
+%\usepackage{setspace}      %Change spacing easily with simple commands
+
+%\usepackage{amsmath}       %This package introduces several new commands that are more powerful and flexible than the ones provided by LaTeX. Uncomment them if you are using complex mathematical notation.
+%\usepackage{mathtools}     %The mathtools package fixes some amsmath quirks and adds some useful settings, symbols, and environments to amsmath.
+
+\graphicspath{{images/}}    %Direction where LaTeX will look for the images.
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps}
+
+\usepackage[backend=bibtex,style=numeric,citestyle=numeric-comp]{biblatex}
+\addbibresource{references.bib}     %Imports bibliography file
+
+\usepackage[acronym, toc]{glossaries}
+
+\makeglossaries
+
+\input{frontmatter/glossary.tex}
+
+    %%%------------- Page Layout Settings ----------------------%
+%%---Just in case you want to customize the page layout-----
+%\setlength{\topmargin}{0mm} 
+%\setlength{\textheight}{225mm} 
+%\setlength{\oddsidemargin}{4,6mm} 
+%\setlength{\evensidemargin}{4,6mm}
+%\setlength{\textwidth}{150mm} 
+%\setlength{\headheight}{15pt}
+
+    %%%%----------------Paragraphs formatting---------------------%%%%%
+%\linespread{1.0}    %Line spacing, only accepts values 1.0, 1.3 and 1.6. If set here, it will apply to the whole document, including ToC, Lists...
+%\setlength{\baselineskip}{5mm} %%minimum space between the bottom of two successive lines in a paragraph
+%\setlength{\parindent}{1.25cm}  %Determining paragraph indentation
+%\setlength{\parskip}{2mm}   %Determining space between paragraph and preceeding text. This can be set in the preable or later in the document part, but be careful. If set here, it will apply to the whole document, including ToC, Lists...
+
+    %------------------------- Caption Setup -----------------------%
+%\captionsetup{margin=10pt, font=small, labelfont=bf, labelsep=period}
+
+    %-------------------Footnote Setup---------------------%
+%\makesavenoteenv{tabular}
+
+    %%%------------------END OF THE PREAMBLE-----------------%%%
+    %%--------------------------------------------------------%%
+
+    %------------------------DOCUMENT-----------------------------%
+
+\begin{document}
+
+    %----------------------------FRONT MATTER---------------------%
+
+\input{frontmatter/titlepage}
+
+\input{frontmatter/declaration}
+
+\pagenumbering{Roman}
+
+\chapter*{Abstract}
+    %\addcontentsline{toc}{chapter}{Abstract}
+    \input{frontmatter/abstract}
+    \setcounter{page}{1}
+
+\normalsize
+
+%%--------------It's your choice to include a dedication and/or acknowledgement---------------%%
+
+%\chapter*{Dedication}
+%\input{frontmatter/dedication}
+
+%\chapter*{Acknowledgement}
+%\input{frontmatter/acknowledgement}
+
+        %%------------------------TABLE OF CONTENTS AND LISTS-------------------%%
+        %%----------------------------------------------------------------------%%
+        
+\tableofcontents    %\thispagestyle{fancy}
 
 
- \begin{figure}[h]
- 	\centering
- 	\includegraphics[width=0.5\textwidth]{stereo_vo}
- 	\caption{Illustration fo a case of Stereo Vision. O_{l} and O_{r} are the two camera centers with known baseline distance and $R|T$ is the transformations between two cameras.}
- 	\label{fig:stereo_vo}
- \end{figure}
+%\chapter*{Nomenclature}
 
+
+\printglossary[type=\acronymtype]
+
+
+
+\listoffigures  %\thispagestyle{fancy}
+\addcontentsline{toc}{chapter}{List of Figures}
+
+\listoftables   %\thispagestyle{fancy}
+\addcontentsline{toc}{chapter}{List of Tables}
+
+        %--------------------BODY OF THE THESIS--------------------------%
+        %%--------------------------------------------------------------%%
+%\cleardoublepage
+\chapter{Introduction}
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    \input{chapters/chapter01}
+
+\chapter{Visual Odometry (VO)}
+    \input{chapters/chapter02}
+
+\chapter{Experimental Setup}
+    \input{chapters/chapter03}
+
+\chapter{Conclusion}
+    \input{chapters/conclusion}
+    
+        %%------------------------END MATTER----------------------------%%
+        %%--------------------------------------------------------------%%
+        
+\printbibliography[title={References}]
+\addcontentsline{toc}{chapter}{References}
+
+\appendix
+\chapter{Title of appendix A}
+\input{endmatter/appendix}
+
+\chapter{List of installed software at FH Wiener Neustadt}
+\includepdf[pages={1,2}]{externaldocs/itsoftware}
+
+\end{document}

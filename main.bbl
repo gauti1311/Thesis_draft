@@ -1,0 +1,113 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{KhalidYousif-et-al-2015}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=KYRHABH}{%
+         family={Khalid\bibnamedelima Yousif},
+         familyi={K\bibinitperiod\bibinitdelim Y\bibinitperiod},
+         suffix={Alireza Bab-Hadiashar},
+         suffixi={A\bibinitperiod\bibinitdelim
+  B\bibinitperiod-H\bibinitperiod},
+         given={Reza\bibnamedelima Hoseinnezhad},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KYABHRH1}
+    \strng{fullhash}{KYABHRH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1007/s40903-015-0032-7
+    \endverb
+    \field{number}{4}
+    \field{pages}{289\bibrangedash 311}
+    \field{title}{An Overview to Visual Odometry and Visual SLAM: Applications
+  to Mobile Robotics}
+    \field{volume}{1}
+    \field{journaltitle}{Intelligent Industrial Systems}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Aqel-et-al-2016}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=MOMSMH}{%
+         family={Mohammad\bibnamedelima O.A.Aqel},
+         familyi={M\bibinitperiod\bibinitdelim O\bibinitperiod},
+         suffix={Mohammad\bibnamedelima H.Marhaban},
+         suffixi={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+         given={M.Iqbal\bibnamedelima Saripan},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Bt.Ismail},
+         familyi={B\bibinitperiod},
+         given={Napsiah},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MOMHMSBN1}
+    \strng{fullhash}{MOMHMSBN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1186/s40064-016-3573-7
+    \endverb
+    \field{pages}{1897}
+    \field{title}{Review of visual odometry: types, approaches, challenges, and
+  applications}
+    \field{volume}{5}
+    \field{journaltitle}{SpringerPlus}
+    \field{year}{2016}
+  \endentry
+
+  \entry{ScaramuzzaVO}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SD}{%
+         family={{Scaramuzza}},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={{Fraundorfer}},
+         familyi={F\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SDFF1}
+    \strng{fullhash}{SDFF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{4}
+    \field{pages}{80\bibrangedash 92}
+    \field{title}{Visual Odometry [Tutorial]}
+    \field{volume}{18}
+    \field{journaltitle}{IEEE Robotics Automation Magazine}
+    \field{year}{2011}
+  \endentry
+\enddatalist
+\endinput

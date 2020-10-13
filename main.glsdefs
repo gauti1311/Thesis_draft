@@ -1,0 +1,60 @@
+\ifglsentryexists{vo}{}%
+{%
+\gls@defglossaryentry{vo}%
+{%
+name={VO},%
+sort={VO},%
+type={acronym},%
+first={Visual Odometry\glsspace (VO)},%
+firstplural={Visual Odometrys\glsspace (VOs)},%
+text={VO},%
+plural={VOs},%
+description={Visual Odometry},%
+descriptionplural={Visual Odometry\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Visual Odometry},%
+longplural={Visual Odometrys},%
+short={VO},%
+shortplural={VOs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{v-slam}{}%
+{%
+\gls@defglossaryentry{v-slam}%
+{%
+name={V-SLAM},%
+sort={V-SLAM},%
+type={acronym},%
+first={Visual Simultaneous Localization and Mapping\glsspace (V-SLAM)},%
+firstplural={Visual Simultaneous Localization and Mappings\glsspace (V-SLAMs)},%
+text={V-SLAM},%
+plural={V-SLAMs},%
+description={Visual Simultaneous Localization and Mapping},%
+descriptionplural={Visual Simultaneous Localization and Mapping\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Visual Simultaneous Localization and Mapping},%
+longplural={Visual Simultaneous Localization and Mappings},%
+short={V-SLAM},%
+shortplural={V-SLAMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
