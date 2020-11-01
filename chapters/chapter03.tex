@@ -1,8 +1,73 @@
-\section{Introduction}
-Some meaningless text to show how citation works \cite{}.
+This chapter covers details of camera, the main hardware used in \acrshort{vo}. Different types of camera and important properties for \acrshort{vo} implementation, selection of camera and calibration are explained. 
+
+\section{Classification of Camera}
+Camera can be classified mainly into two types
+
+a. Passive Camera \\
+  i. Monocular \\
+  ii. Stereo \\
+  iii. Omnidirectional \\
+  
+b. Active Camera \\
+  i.  Time-of-flight (TOF) \\
+  ii. RGB-Depth \\
+
+Passive camera are mostly used in \acrshort{vo} implementation. Some types are shown in below figure. 
+
+\section{Important Properties for Selection}
+There are some criteria to select the proper camera model in order to get satisfactory
+results. First important property is shutter technology. The rolling shutter cameras have
+geometric distortions in the image for high frame rate. As direct approaches of VO are not
+meant to optimize geometric noise. Another important factor is Field of view (FOV) of
+Camera. By having a large FOV there would be enough information (features) to estimate
+trajectory and the algorithm will not be crashed or struggle to relocalize. Higher camera
+resolution will increase the accuracy of 3D pose of the features but at the same time it will
+increase the computation cost as the image size will be bigger. Direct approaches are also
+not robust to automatic exposure changes. Therefore, for the direct approach
+implementation manual focus with fixed exposure time will provide better result. Lastly the
+suitable lens object with manual focus can reduce the effect of Vignetting which occurs due
+to blockage of light due to some camera elements or hoods attached to lens.
+
+\section{Selection of Camera}
+Based on discussion of camera properties above and availability, two different type of
+cameras with different properties were selected so that results can be compared and the
+better performed camera will be selected for the adaptation and further research. In table \ref{table:camera_prop} the properties of these cameras are compared with each other and with Ids UI-3241LE which is used in TUM- benchmark dataset.
 
 
-\subsection{Random text}
-. 
+\begin{center}
+	\begin{tabular}{ | l | l | l | p{5cm} |}
+		\hline
+		Model & SICK Picocam I2D304C-RCA11 & Genius Widecam F100 & Ids UI-3241LE (TUM-benchmark) \\ \hline
+		Shutter technology & global & rolling shutter &  both (rolling and global) \\ \hline
+		Lens type & C-mount & attached & S-mount \\ \hline
+		Max. fps & 19 & 30 & 60\\ \hline
+		Max. Resolution & 2048*2048 (4.19 MP) &  1280 * 720 & 1280 *1024 (1.31 MP) \\ \hline
+		Exposure time (ms) & 0.0009 - 2000 & auto &    \\ \hline
+		Sensor size (mm) & 11.26 x 11.26 & 6.784 x 5.427 \\ \hline
+		FOV (degree) & ~ 90 Diagonal &  120 & 98 x 79  \\ \hline
+		Lens &  Kowa, LM8HC  &   & Lensagon BM4018S118  \\
+		
+		\caption{Comparison of properties of cameras used in this thesis with Ids UI-324LE used in TUM-benchmark data-set}
+		\label{table:camera_prop}
+	\end{tabular}
+\end{center}
 
-\subsubsection{Random squared text}
+
+\section{Camera Calibration}
+
+For any \acrshort{vo} method the camera calibration is an important part of preparation. Though some cameras are manufactured very well, they still have some distortions. Using cameras directly without doing calibration can lead to wrong trajectory and \acrshort{vo} will not perform well. camera calibration can be classified into two types 1. Geometric and 2. Photometric. Photometric calibration covers the effect of shutter speed, motion blur and vignette. It is mostly recommended for cameras which have rolling shutter and auto-exposure technology and for direct approach which uses directly image pixel intensity values for tracking \cite{yang2018challenges}. This section will discuss only geometric calibration as photometric calibration is not done in the experiment due to its complexity and non-necessity.  
+
+\subsection{Pinhole Camera Model}
+
+
+\subsection{Intrinsic Parameters}
+
+\subsection{Extrinsic}
+
+\subsection{recommendations for good calibration}
+
+\subsection{calibration experiments and result}
+result is shown in appendix ...
+
+
+

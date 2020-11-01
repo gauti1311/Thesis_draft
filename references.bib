@@ -56,15 +56,6 @@
 	pages={225-234}
 }
 
-@INPROCEEDINGS{,
-	author={Oliver Wasenmüller, Mohammad Dawud Ansari, StrickerDidier Stricker},
-	booktitle={Asian Conference on Computer Vision Workshop (ACCV)}, 
-	title={DNA-SLAM: Dense Noise Aware SLAM for ToF RGB-D Cameras}, 
-	year={2016},
-	doi= {10.1007/978-3-319-54407-6_42}
-}
-
-
 @string{iccv="IEEE International Conference on Computer Vision (ICCV)"}
 @inproceedings{engel2013iccv,
 	author={J. Engel and J. Sturm and D. Cremers},
@@ -106,7 +97,6 @@
 	arXiv = "arXiv:1808.01111",
 	year = "2018",
 	month = "October",
-	note = {{<a href="https://arxiv.org/abs/1808.01111" target="_blank">[arxiv]</a>}{<a href="https://youtu.be/LEvOSzyZUvc" target="_blank">[video]</a>}{<a href="https://github.com/tum-vision/LDSO" target="_blank">[code]</a>}{<a href="https://vision.in.tum.de/research/vslam/ldso" target="_blank">[project]</a>}},
 	keywords = {dso, ldso}
 }
 
@@ -117,18 +107,6 @@
 	year = {2014}
 }
 
-
-@article{murTRO2015,
-	title={{ORB-SLAM}: a Versatile and Accurate Monocular {SLAM} System},
-	author={Mur-Artal, Ra\'ul, Montiel, J. M. M. and Tard\'os, Juan D.},
-	journal={IEEE Transactions on Robotics},
-	volume={31},
-	number={5},
-	pages={1147--1163},
-	doi = {10.1109/TRO.2015.2463671},
-	year={2015}
-}
-
 @thesis{chris,
 	author = {Chris Kahlefendt},
 	title = {Implementation and Evaluation of Monocular SLAM for an Underwater Robot},
@@ -136,13 +114,107 @@
 	institution = {Hamburg University of Technology},
 	OPTlanguage = {english},
 	OPTlocation = {Hamburg},
-	OPTpages = {pages},
-	OPTpagetotal = {pagetotal},
-	OPTdoi = {doi},
-	OPTeprint = {eprint},
-	OPTeprintclass = {eprintclass},
-	OPTeprinttype = {eprinttype},
-	OPTurl = {url},
-	OPTurldate = {urldate},
 }
 
+@article{Mur-Artal,
+	author    = {Raul Mur{-}Artal and
+	Juan D. Tard{\'{o}}s},
+	title     = {{ORB-SLAM2:} an Open-Source {SLAM} System for Monocular, Stereo and
+	{RGB-D} Cameras},
+	journal   = {CoRR},
+	volume    = {abs/1610.06475},
+	year      = {2016},
+	url       = {http://arxiv.org/abs/1610.06475},
+	archivePrefix = {arXiv},
+	eprint    = {1610.06475},
+	timestamp = {Mon, 13 Aug 2018 16:49:16 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/Mur-ArtalT16a.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@INPROCEEDINGS{Lucas81,
+	author = {Bruce D. Lucas and Takeo Kanade},
+	title = {An iterative image registration technique with an application to stereo vision},
+	booktitle = {In IJCAI81},
+	year = {1981},
+	pages = {674--679}
+}
+
+@inproceedings{engel14eccv,
+	author={J. Engel and T. Sch\"ops and D. Cremers},
+	title={{LSD-SLAM}: Large-Scale Direct Monocular {SLAM}},
+	year= {2014},
+	booktitle = {European Conference on Computer Vision (ECCV)}
+}
+
+@ARTICLE{7782863,
+	author={C. {Forster} and Z. {Zhang} and M. {Gassner} and M. {Werlberger} and D. {Scaramuzza}},
+	journal={IEEE Transactions on Robotics}, 
+	title={SVO: Semidirect Visual Odometry for Monocular and Multicamera Systems}, 
+	year={2017},
+	volume={33},
+	number={2},
+	pages={249-265}}
+
+@INPROCEEDINGS{6126544,
+	author={E. {Rublee} and V. {Rabaud} and K. {Konolige} and G. {Bradski}},
+	booktitle={2011 International Conference on Computer Vision}, 
+	title={ORB: An efficient alternative to SIFT or SURF}, 
+	year={2011},
+	volume={},
+	number={},
+	pages={2564-2571},}
+
+@INPROCEEDINGS{4538852,
+	author={G. {Klein} and D. {Murray}},
+	booktitle={2007 6th IEEE and ACM International Symposium on Mixed and Augmented Reality}, 
+	title={Parallel Tracking and Mapping for Small AR Workspaces}, 
+	year={2007},
+	volume={},
+	number={},
+	pages={225-234},}
+
+@string{cvpr="IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"}
+@inproceedings{yang20d3vo,
+	author = {N. Yang and L. von Stumberg and R. Wang and D. Cremers},
+	title = {D3VO: Deep Depth, Deep Pose and Deep Uncertainty for Monocular Visual Odometry},
+	booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+	year = {2020},
+	eprint = {2003.01060},
+	eprinttype = {arXiv},
+	eprintclass = {cs.CV},
+	award = {Oral Presentation},
+	keywords = {dso,dvso, deep learning, deeplearning, monocular depth estimation, semi-supervised learning, slam, visual odometry,d3vo, vslam},
+}
+
+@INPROCEEDINGS{7989236,
+	author={S. {Wang} and R. {Clark} and H. {Wen} and N. {Trigoni}},
+	booktitle={2017 IEEE International Conference on Robotics and Automation (ICRA)}, 
+	title={DeepVO: Towards end-to-end visual odometry with deep Recurrent Convolutional Neural Networks}, 
+	year={2017},
+	volume={},
+	number={},
+	pages={2043-2050},}
+
+@misc{Kahlefendt2017,
+	author = {Kahlefendt, C.},
+	title = {List of SLAM and Visual Odometry Algorithms},
+	year = {2017},
+	publisher = {GitHub},
+	journal = {GitHub repository},
+	howpublished = {\url{https://github.com/kafendt/List-of-SLAM-VO-algorithms/}}
+}
+
+@misc{Online,
+	author = {author},
+	title = {Title of Citation}, 
+	howpublished = "\url{source:www.jpl.nasa.gov}"}
+
+@misc{yang2018challenges,
+	title={Challenges in Monocular Visual Odometry: Photometric Calibration, Motion Bias and Rolling Shutter Effect}, 
+	author={Nan Yang and Rui Wang and Xiang Gao and Daniel Cremers},
+	year={2018},
+	eprint={1705.04300},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV}
+}

@@ -1,22 +1,12 @@
 
-%This is a proposed template for a master thesis report for the FH Wiener Neustadt. The present document is free.
+%This is a proposed template for a master thesis.
 
 %You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
-% Author: Joan Miralles
-% Datum: 05/04/2015
-% Latest update: 11/07/2016
-%version: 2.2
 
-%   Study Thesis:   Write here your title
-%   Institution:    Fachhochschule Wiener Neustadt
-%   Topic:          Whatever you want to write about
-%   Author:         Name Name Name
-%   Date:           01/04/2015
-%   Version:        1.0    
 
         %----------------------------------------------------%
-\documentclass[oneside,12pt,bibtotoc,]{report}
+\documentclass[oneside,12pt,bibtotoc]{report}
 
 %'oneside' specifies that the pages will be printed on one sides of a every page. If you want to print on both sides of your pages use the pareameter 'twoside'. Remember to order the printing job on one side of every page!!!
 
@@ -33,14 +23,15 @@
 %\usepackage[english]{babel}    %the package babel is not necessary as long as you write your thesis in English.
 %\usepackage{csquotes}
 \usepackage{graphicx}   %loads the graphics package, necessary for pictures
-%\usepackage{url}
+\usepackage{url}
 %\usepackage{wallpaper}
+\usepackage{amssymb,amsmath}
 \usepackage{framed}     %to make frames, such as in the title page and abstract
 \usepackage{hyperref}   %Automatically turn all your internal references into hyperlinks.
 \usepackage[toc,page]{appendix}
 \usepackage[final]{pdfpages}
 \usepackage{soul}       %provides hyphenatable letterspacing, underlining and some derivatives such as everstriking and highlighting.
-%\usepackage{nomencl}   %helps to format a nomenclature.
+\usepackage{nomencl}   %helps to format a nomenclature.
 %\usepackage{setspace}  %Allows you to specify the line spacing for all sections and paragraphs
 
 \usepackage[UKenglish]{isodate} %Provides the format for the date on the title page. Read the package documentation for all the possible date formats.
@@ -51,7 +42,6 @@
 \usepackage{caption}
 %\usepackage{abstract}   %This package allows to modify the Abstract style, position and font. Defines the abstract automatically.
 \usepackage{supertabular}
-\usepackage[acronym, toc]{glossaries}
 
 \usepackage{fancyhdr}   %Uncomment it if you want to include headers
 %\pagestyle{fancy}      %Changes page style to fancy
@@ -71,7 +61,7 @@
 \graphicspath{{images/}}    %Direction where LaTeX will look for the images.
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps}
 
-\usepackage[backend=bibtex,style=numeric,citestyle=numeric-comp]{biblatex}
+\usepackage[backend=biber,style=numeric,citestyle=numeric-comp]{biblatex}
 \addbibresource{references.bib}     %Imports bibliography file
 
 \usepackage[acronym, toc]{glossaries}
@@ -161,8 +151,14 @@
 \chapter{Visual Odometry (VO)}
     \input{chapters/chapter02}
 
-\chapter{Experimental Setup}
+\chapter{Camera}
     \input{chapters/chapter03}
+
+\chapter{Experimental Setup}
+     \input{chapters/chapter04}
+        
+\chapter{Evaluation}    
+      \input{chapters/chapter05}
 
 \chapter{Conclusion}
     \input{chapters/conclusion}
@@ -177,7 +173,5 @@
 \chapter{Title of appendix A}
 \input{endmatter/appendix}
 
-\chapter{List of installed software at FH Wiener Neustadt}
-\includepdf[pages={1,2}]{externaldocs/itsoftware}
 
 \end{document}

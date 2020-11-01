@@ -1,69 +1,22 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: main.aux
-The style file: biblatex.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: main-blx.bib
-Database file #2: references.bib
-Warning--entry type for "KhalidYousif-et-al-2015" isn't style-file defined
---line 1 of file references.bib
-Warning--entry type for "Aqel-et-al-2016" isn't style-file defined
---line 13 of file references.bib
-Biblatex version: 3.8
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 4 entries,
-            6268 wiz_defined-function locations,
-            1210 strings with 9407 characters,
-and the built_in function-call counts, 19350 in all, are:
-= -- 1355
-> -- 348
-< -- 82
-+ -- 362
-- -- 136
-* -- 1557
-:= -- 2052
-add.period$ -- 0
-call.type$ -- 4
-change.case$ -- 30
-chr.to.int$ -- 30
-cite$ -- 6
-duplicate$ -- 1620
-empty$ -- 1910
-format.name$ -- 183
-if$ -- 4087
-int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 0
-newline$ -- 110
-num.names$ -- 123
-pop$ -- 1030
-preamble$ -- 1
-purify$ -- 42
-quote$ -- 0
-skip$ -- 557
-stack$ -- 0
-substring$ -- 2725
-swap$ -- 444
-text.length$ -- 97
-text.prefix$ -- 3
-top$ -- 1
-type$ -- 122
-warning$ -- 0
-while$ -- 220
-width$ -- 0
-write$ -- 107
-(There were 2 warnings)
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'main.blg'
+[27] biber:313> INFO - === So Nov  1, 2020, 19:59:12
+[47] Biber.pm:371> INFO - Reading 'main.bcf'
+[99] Biber.pm:857> INFO - Found 17 citekeys in bib section 0
+[110] Biber.pm:3981> INFO - Processing section 0
+[121] Biber.pm:4154> INFO - Looking for bibtex format file 'references.bib' for section 0
+[122] bibtex.pm:1468> INFO - LaTeX decoding ...
+[146] bibtex.pm:1294> INFO - Found BibTeX data source 'references.bib'
+[147] Utils.pm:169> WARN - Duplicate entry key: 'engel14eccv' in file 'references.bib', skipping ...
+[147] Utils.pm:169> WARN - Duplicate entry key: '4538852' in file 'references.bib', skipping ...
+[185] Utils.pm:169> WARN - month field 'September' in entry 'engel14eccv' is not an integer - this will probably not sort properly.
+[197] Utils.pm:169> WARN - month field 'October' in entry 'gao2018ldso' is not an integer - this will probably not sort properly.
+[257] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[257] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[257] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[257] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[277] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'ascii'
+[280] Utils.pm:169> WARN - The entry 'engel14eccv' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[284] Utils.pm:169> WARN - The entry 'Mur-Artal' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[286] bbl.pm:720> INFO - Output to main.bbl
+[286] Biber.pm:110> INFO - WARNINGS: 6

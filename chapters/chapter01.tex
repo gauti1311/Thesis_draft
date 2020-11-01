@@ -1,21 +1,17 @@
 \section{Motivation}
-In industrial automation, the market needs reliable and scalable solutions for autonomous transportation in production and logistic processes. To address this need, SICK AG e.g. offers reliable LiDaR localization solutions and a big portfolio of LiDaR sensors. However, the
-increased usage of small mobile platforms in swarm applications introduces additional requirements compared to historically bigger autonomous vehicles: The cost factor regarding number and type of used sensor systems increases, the performance of the hardware is limited
-and the environment changes.The main target of this work is the investigation, adaption and evaluation of visual Odometry
-algorithms for application in mobile swarm robotics.
+In industrial automation, the market needs reliable and scalable solutions for autonomous transportation in production and logistic processes. To address this need, SICK AG e.g. offers reliable LiDaR localization solutions and a big portfolio of LiDaR sensors. However, the increased usage of small autonomous guided carts (AGC) introduces additional requirements compared to historically bigger autonomous vehicles: The cost factor regarding number and type of used sensor systems increases, the performance of the hardware is limited
+and the environment changes. The main target of this work is the investigation, adaption and evaluation of camera based visual Odometry algorithms for warehouse application in autonomous guided carts (AGC).
 
 \section{Thesis Structure}
 
 The thesis is structured into seven chapters. The Chapter 1 which serves as an introduction.
 
-Chapter 2 covers the basics of Visual Odometry. It explains the different methods of VO and a general process of VO. Furthermore it describes current state-of-the-Art VO algorithms and selection criteria for chosen ones for further work.
+Chapter 2 covers the basics of Visual Odometry (VO). It explains the different methods of VO. Furthermore it describes state-of-the-Art and explains in depth the selected  algorithms namely ORB-SLAM, Direct Sparse Odometry(DSO), Semi-direct Visual Odometry (SVO).  
 
-Chapter 3 explains in depth the 3 chosen algorithms LDSO, SVO, ORB-SLAM2. Code flowcharts are explained.
+Chapter 3 provides some information about types of camera used in Visual Odometry, Important characteristics and the selection of cameras used in the implementation. It also includes an important task of calibration which affects the result of Visual Odometry.
 
-Chapter 4 provides information regarding the Mobile robot and cameras used for the implementation and required parameters like Intrinsic and Photometric Camera Calibration.
+Chapter 4 describes the experimental setup, data collection and proposed implementation. All algorithms are then implemented. Some improvements are explained and The results are then discussed.
 
-Chapter 5 describes the procedure of experiments and data collection. All algorithms are then evaluated. The results are then discussed.
+Chapter 5 evaluates the algorithms based on evaluation criteria. They are compared with LiDaR odometry and the best performed algorithm is selected for future implementation.
 
-Chapter 6 gives suggestions how to choose the best algorithm and to improve results furthermore.
-
-Chapter 7, concludes the thesis by summarizing the results and suggestions for future works.
+Chapter 6 concludes the thesis by summarizing the results and suggestions for future works.

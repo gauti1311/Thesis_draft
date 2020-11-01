@@ -1,9 +1,31 @@
 \glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
 \begin{theglossary}\glossaryheader
+\glsgroupheading{B}\relax \glsresetentrylist %
+\glossentry{ba}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{3}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
+\glsgroupheading{O}\relax \glsresetentrylist %
+\glossentry{orb}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{V}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{ptam}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossentry{ransac}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{4}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossentry{sfm}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{2}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{2\delimN 3}}}%
+\glossentry{slam}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{V}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{2}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{7}}}\glsgroupskip
 \glsgroupheading{V}\relax \glsresetentrylist %
+\glossentry{v-slam}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{7}}}%
 \glossentry{vo}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{2}}}%
+		\setentrycounter[]{page}\glsnumberformat{2\delimR 4}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{6\delimN 7}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{9\delimR 12}}}%
 \end{theglossary}\glossarypostamble
