@@ -1,3 +1,182 @@
-\section{Section title}
+\section{List of \acrshort{vo}/\acrshort{v-slam} Algorithms}
 \label{section:A.1}
+	{\footnotesize
+		\begin{longtable}{l|l|l|l|l}
+			\caption{List of SLAM / VO algorithms source :\cite{chris}}\\[2mm]
+			\label{tab:list_found_slam_algorithms}
+			\textbf{Name}            & \textbf{Reference}                     & \textbf{Code}                                                      & \textbf{Camera type}  & \textbf{Notes}\\
+			\hline
+			&                                   &                                                                    &                       &\\
+			\textbf{AprilSLAM}     & \cite{Wang2016} (2016)            & \href{https://github.com/ProjectArtemis/aprilslam}{Link}           & Monocular             & Uses 2D planar markers\\
+			& \cite{Olson2011} (2011)           &                                                                    &                       &\\
+			\textbf{ARM SLAM}      & \cite{Klingensmith2016} (2016)    & -                                                                  & RGB-D                 & Estimation of robot joint angles\\
+			&                                   &                                                                    &                       &\\
+			\textbf{CD SLAM}       & \cite{Pirker2011} (2011)          & -                                                                  & Monocular             & Focus on dynamic environments\\
+			& \cite{Pirker2010} (2010)          &                                                                    &                       & Custom descriptor\\
+			&                                   &                                                                    &                       &\\
+			\textbf{C-KLAM}        & \cite{Nerurkar2014} (2014)        & -                                                                  & Monocular,            & Usage of inter-keyframe information\\
+			&                                   &                                                                    & IMU                   &\\
+			&                                   &                                                                    &                       &\\
+			\textbf{CNN SLAM}      & \cite{Tateno2017} (2017)          & -                                                                  & Monocular             & Deepl learning approach for Depth prediction\\
+			&                                   &                                                                    &                       &\\
+			\textbf{DPPTAM}        & \cite{Concha2015b} (2015)         & {\href{https://github.com/alejocb/dpptam}{Link}}                   & Monocular             & Dense, estimates planar areas\\
+			&                                   &                                                                    &                       &\\
+			\textbf{DSO}           & \cite{Engel-et-al-pami2018} (2016)           & {\href{https://github.com/JakobEngel/dso}{Link}}                   & Monocular             & Semi-dense odometry\\
+			&                                   &                                                                    &                       & Estimates camera parameters\\
+			&                                   &                                                                    &                       &\\
+			\textbf{DT SLAM}       & \cite{Daniel2014} (2014)          & {\href{https://github.com/plumonito/dtslam}{Link}}                 & Monocular             & Tracks 2D and 3D features (indirect)\\
+			&                                   &                                                                    &                       & Creates combinable submaps\\
+			&                                   &                                                                    &                       & Can track pure rotation\\
+			&                                   &                                                                    &                       &\\
+			\textbf{DTAM}          & \cite{Newcombe2011} (2011)        & {\href{https://github.com/anuranbaka/OpenDTAM}{Link}}              & Monocular             & Dense, GPU reliant\\
+			&                                   &                                                                    &                       & Robust to rapid motion\\
+			&                                   &                                                                    &                       &\\
+			\textbf{DVO}           & \cite{Kerl2013} (2013)            & {\href{https://github.com/tum-vision/dvo_slam}{Link}}              & RGB-D                 & Entropy based method for loops\\
+			&                                   &                                                                    &                       &\\
+			&                                   &                                                                    &                       &\\
+			\textbf{FrameSLAM}     & \cite{Konolige2008} (2008)        & -                                                                  & Stereo                & CenSure features\\
+			&                                   &                                                                    &                       &\\
+			\textbf{GDVO}          & \cite{Zhu2017} (2017)             & {\href{https://github.com/syywh/gdvo}{Link}}                       & Stereo                & Dense\\
+			&                                   &                                                                    &                       & Dual Jacobian scheme\\
+			&                                   &                                                                    &                       &\\
+			\textbf{GPSLAM}        & \cite{Pirker2011a} (2011)         & -                                                                  & RGB-D                 & Sparse map, dense occupancy grid\\
+			&                                   &                                                                    &                       &\\
+			\textbf{KinectFusion}  & \cite{Pirovano2012} (2012)        & {\href{https://github.com/PointCloudLibrary/pcl}{Link}}            & RGB-D                 & Object segmentation\\
+			& \cite{Izadi2011} (2011)           &                                                                    &                       & Uses only depth sensor\\
+			& \cite{Newcombe2011a} (2011)       &                                                                    &                       & GPU reliant\\
+			&                                   &                                                                    &                       &\\
+			\textbf{LSD SLAM}      & \cite{Engel2015} (2015)           & {\href{https://github.com/tum-vision/lsd_slam}{Link}}              & Monocular,            & Semi-dense\\
+			& \cite{engel14eccv} (2014)           &                                                                    & Stereo                & Runs on CPU\\
+			& \cite{engel2013iccv} (2013)           &                                                                    &                       &\\
+			&                                   &                                                                    &                       &\\
+			\textbf{MonoSLAM}      & \cite{Russo2014} (2014)           & {\href{https://github.com/rrg-polito/mono-slam}{Link}}             & Monocular             & Particle filter back-end\\
+			& \cite{Davison2007} (2007)         &                                                                    &                       &\\
+			&                                   &                                                                    &                       &\\
+			&                                   &                                                                    &                       &\\
+			\textbf{NID SLAM}      & \cite{Pascoe2017} (2017)          & -                                                                  & Monocular             & Robust to lighting and weather\\
+			&                                   &                                                                    &                       & GPU reliant\\
+			&                                   &                                                                    &                       &\\
+			\textbf{OKVIS}         & \cite{Leutenegger2015} (2015)     & {\href{https://github.com/ethz-asl/okvis_ros}{Link}}               & Stereo                & Focus on IMU integration\\
+			& \cite{Leutenegger2014} (2014)     &                                                                    & IMU                   &\\
+			& \cite{Leutenegger2013} (2013)     &                                                                    &                       &\\
+			&                                   &                                                                    &                       &\\
+			\textbf{ORB SLAM}      & \cite{Mur-Artal2017} (2017)       & \href{https://github.com/raulmur/ORB_SLAM2}{Link}                  &  Monocular,           & ORB descriptor\\
+			& \cite{Mur-Artal} (2016)      &                                                                    &  Stereo (v2),         & Runs on CPU\\
+			& \cite{orbslam} (2015)       &                                                                    &  RGB-D (v2)           & Extension of PTAM\\
+			& \cite{Mur-Artal2014} (2014)       &                                                                    &                       &\\
+			&                                   &                                                                    &                       &\\
+			\textbf{Pop-up SLAM}   & \cite{Yang2016} (2016)            & {\href{https://github.com/shichaoy/pop_up_image}{Link}}            & Monocular             & Depth prediction using CNN \\
+			&         &          &  predicts planar surfaces\\
+			&                                   &                                                                    &                       &\\
+			\textbf{PTAM}          & \cite{4538852} (2007)           & {\href{https://github.com/Oxford-PTAM/PTAM-GPL}{Link}}             & Monocular             & Parallel tracking and mapping\\
+			&                                   &                                                                    &                       &\\
+			&                                   &                                                                    &                       &\\
+			\textbf{RD SLAM}       & \cite{Tan2013a} (2013)            & -                                                                  & Monocular             & Focus on dynamic environments\\
+			&                                   &                                                                    &                       &\\
+			\textbf{REBVO}         & \cite{Tarrio2016} (2016)          & {\href{https://github.com/JuanTarrio/rebvo}{Link}}                 & Monocular,            & Odometry on edges\\
+			&                                   &                                                                    & IMU                   &\\
+			\textbf{REMODE}        & \cite{Pizzoli2014} (2014)         & {\href{https://github.com/uzh-rpg/rpg_open_remode}{Link}}          & Monocular             & Dense\\
+			&                                   &                                                                    &                       & GPU reliant\\
+			&                                   &                                                                    &                       &\\
+			\textbf{RGB-D SLAM}    & \cite{Endres2012} (2012)          & {\href{https://github.com/felixendres/rgbdslam_v2}{Link}}          & RGB-D                 & uses the monocular depth depth camera \\
+			& \cite{Endres2012a} (2012)         &                                                                    &                       &\\
+			&                                   &                                                                    &                       &\\
+			\textbf{RKSLAM}        & \cite{Liu2016} (2016)             & {\href{https://zjucvg.net/rkslam/rkslam.html}{Link}}               & Monocular,            & Robust to fast motion and rotation\\
+			&                                   &                                                                    & IMU                   &\\
+			&                                   &                                                                    &                       &\\
+			\textbf{ROCC}          & \cite{Buczko2017} (2017)          & -                                                                  & Monocular,            & Decouples rotation and translation\\
+			& \cite{Buczko2016} (2016)          &                                                                    & Stereo                & Feature outlier removal\\
+			& \cite{Buczko2016a} (2016)         &                                                                    &                       & Focus on automotive\\
+			&                                   &                                                                    &                       &\\
+			\textbf{ROVIO}         & \cite{Bloesch2015} (2014)         & {\href{https://github.com/ethz-asl/rovio}{Link}}                   & Monocular,            & Focus on IMU integration\\
+			&                                   &                                                                    & IMU                   & Relative representation\\
+			&                                   &                                                                    &                       &\\
+			\textbf{RSLAM}         & \cite{Mei2011} (2011)             & -                                                                  & Stereo                & Relative representation\\
+			&                                   &                                                                    &                       & No global optimization \\
+			&                                   &                                                                    &                       &\\\
+			\textbf{SOFT}          & \cite{Cvisic2015} (2015)          & -                                                                  & Stereo,               & Odometry based on feature selection\\
+			&                                   &                                                                    & IMU                   & Separates rotation and translation\\
+			&                                   &                                                                    &                       &\\
+			\textbf{S-PTAM}        & \cite{Pire2017} (2017)            & {\href{https://github.com/lrse/sptam}{Link}}                       & Stereo                & Robust to lighting changes\\
+			& \cite{Pire2015} (2015)            &                                                                    &                       & feature-based, BRISK descriptor\\
+			&                                   &                                                                    &                       &\\
+			\textbf{SVO}           & \cite{7782863} (2017)         & {\href{https://github.com/uzh-rpg/rpg_svo}{Link}}                  & Monocular             & Focus on runtime (embedded devices)\\
+			& \cite{Forster2014ICRA} (2014)        &                                                                    &                       & Needs a high framerate\\
+			&                                   &                                                                    &                       &\\
+			\textbf{V-LOAM}        & \cite{Zhang2015} (2015)           & -                                                                  & Monocular,            & Combination of camera and LIDAR\\
+			&                                   &                                                                    & LIDAR                 &\\
+			&                                   &                                                                    &                       &\\
+		\end{longtable}				
+		\newpage
+	
+
+\section{Camera calibration result}
+\label{section:A.2}
+The unit is in pixels
+\subsubsection{Picocam}
+
+\begin{itemize}
+	\item Resolution : 1024 x 1024
+	\item Camera matrix : 
+	      \begin{equation*}     
+			\begin{bmatrix}
+				& 752.97751 & & 0.0 & &  515.65644 & &  \\
+				& 0.0 & & 753.140470 & &520.70104  & &\\
+				& 0.0 & & 0.0 & &   1.0  & &\\
+			\end{bmatrix}
+			 \end{equation*}
+	\item Distortion coefficients : 
+	$ \begin{bmatrix}  
+	 	  -0.172570    & & 0.130613  & & 0.000180   &  &-0.000112  & & -0.032444 & \\
+	 \end{bmatrix} $ 
+	\item Average reprojection error : 0.09574
+\end{itemize}
+
+\subsubsection{Genius Widecam F100}
+
+\begin{itemize}
+	\item Resolution : 1280 x 720
+	\item Camera matrix : 
+	\begin{equation*}     
+	\begin{bmatrix}
+	& 461.64795     & & 0.0 & &  707.81686  & &  \\
+	& 0.0       & & 449.86477     & &  397.88914   & &\\
+	& 0.0       & & 0.0          & &   1.0  & &\\
+	\end{bmatrix}
+	\end{equation*}
+	\item Distortion coefficients : 
+	$ \begin{bmatrix}  
+	-0.041909    & &    0.030958   & &   -0.000754   & &   0.003227  & &  -0.022964   & \\
+	\end{bmatrix} $ 
+	\item Average reprojection error : 0.17257
+\end{itemize}
+\newpage
+\section{Base frame transformations}
+\label{section:A.3}
+The unit is in millimeters
+
+\subsubsection{Picocam to \acrshort{lidar} :} 
+
+\begin{equation*}     
+	\begin{bmatrix}
+	 & 1	 & &    -0.008	& &  -0.09   	& &  5.92  & & \\ 
+	& 0.008	& &       1	    & &   0.008	   & &   131.157 & & \\
+	& 0.07	& &     0.007	& &    1	  & &    161.481 & & \\
+	& 0  	    & &       0	    & &    0	 & &      1     & &   \\
+	\end{bmatrix}
+\end{equation*}
+\\
+\subsubsection{Genius widecam to \acrshort{lidar} :}
+
+\begin{equation*}     
+	\begin{bmatrix}
+ & 1	  & &    -0.01	& &   -0.01	   	& &  12.05  & & \\ 
+& 0.01   & &       1	 & &    0.12	 & &  43.08 & & \\
+& 0.01	& &     0.125	& &    1	   & &    135.09 & & \\
+& 0    & &       0	    & &    0	  & &      1     & &   \\
+	\end{bmatrix}
+\end{equation*}
+
+
+
 

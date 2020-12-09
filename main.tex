@@ -1,14 +1,10 @@
 
 %This is a proposed template for a master thesis.
 
-%You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+      %----------------------------------------------------%
+\documentclass[oneside,12pt,bibtotoc]{scrreprt}
 
-
-
-        %----------------------------------------------------%
-\documentclass[oneside,12pt,bibtotoc]{report}
-
-%'oneside' specifies that the pages will be printed on one sides of a every page. If you want to print on both sides of your pages use the pareameter 'twoside'. Remember to order the printing job on one side of every page!!!
+%'oneside' specifies that the pages will be printed on one sides of a every page.
 
 
     %%%%------------------PREAMBLE----------------%%%%
@@ -33,8 +29,11 @@
 \usepackage{soul}       %provides hyphenatable letterspacing, underlining and some derivatives such as everstriking and highlighting.
 \usepackage{nomencl}   %helps to format a nomenclature.
 %\usepackage{setspace}  %Allows you to specify the line spacing for all sections and paragraphs
-
+\usepackage{longtable}  
+\usepackage{multirow}                 %% for \multirow and \multicolumn commands
+\usepackage{hyperref}
 \usepackage[UKenglish]{isodate} %Provides the format for the date on the title page. Read the package documentation for all the possible date formats.
+\usepackage{csquotes}
 
 \usepackage{array}
 
@@ -52,18 +51,18 @@
 \renewcommand{\footrulewidth}{0.4pt}    % Default \footrulewidth is 0pt
 
 %\usepackage{footnote}      %Just in case you want to include footnotes
-\usepackage{indentfirst}    %Indent in every first paragraph after \chapter and \section.
+%\usepackage{indentfirst}    %Indent in every first paragraph after \chapter and \section.
 %\usepackage{setspace}      %Change spacing easily with simple commands
 
-%\usepackage{amsmath}       %This package introduces several new commands that are more powerful and flexible than the ones provided by LaTeX. Uncomment them if you are using complex mathematical notation.
+\usepackage{amsmath}       %This package introduces several new commands that are more powerful and flexible than the ones provided by LaTeX. Uncomment them if you are using complex mathematical notation.
 %\usepackage{mathtools}     %The mathtools package fixes some amsmath quirks and adds some useful settings, symbols, and environments to amsmath.
 
 \graphicspath{{images/}}    %Direction where LaTeX will look for the images.
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps}
 
-\usepackage[backend=biber,style=numeric,citestyle=numeric-comp]{biblatex}
+\usepackage[backend=biber,bibencoding=utf8,style=numeric,citestyle=numeric-comp]{biblatex}
 \addbibresource{references.bib}     %Imports bibliography file
-
+\addbibresource{refs.bib}
 \usepackage[acronym, toc]{glossaries}
 
 \makeglossaries
@@ -150,11 +149,11 @@
 
 \chapter{Visual Odometry (VO)}
     \input{chapters/chapter02}
-
+    
 \chapter{Camera}
     \input{chapters/chapter03}
 
-\chapter{Experimental Setup}
+\chapter{Experiment}
      \input{chapters/chapter04}
         
 \chapter{Evaluation}    
@@ -170,7 +169,7 @@
 \addcontentsline{toc}{chapter}{References}
 
 \appendix
-\chapter{Title of appendix A}
+\chapter{Appendix}
 \input{endmatter/appendix}
 
 

@@ -20,23 +20,555 @@
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
     \entry{Online}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=02bd92faa38aaa6cc0ea75e59937a1ef}{%
-           family={author},
-           familyi={a\bibinitperiod}}}%
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{howpublished}{\url{www.jpl.nasa.gov}}
+    \endentry
+    \entry{fast}{misc}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{howpublished}{\url{https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_fast/py_fast.html}}
+    \endentry
+    \entry{multiview}{misc}{}
+      \field{sortinit}{}
+      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
+      \field{howpublished}{\url{https://openmvg.readthedocs.io/en/latest/openMVG/multiview/multiview/}}
+    \endentry
+    \entry{bergmann2017online}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=a3eb3e20ba90926cc2bea3b942ebff5a}{%
+           family={Bergmann},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9a8e37c2db183faff113a94a5dbc4914}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
       }
-      \strng{namehash}{02bd92faa38aaa6cc0ea75e59937a1ef}
-      \strng{fullhash}{02bd92faa38aaa6cc0ea75e59937a1ef}
-      \strng{bibnamehash}{02bd92faa38aaa6cc0ea75e59937a1ef}
-      \strng{authorbibnamehash}{02bd92faa38aaa6cc0ea75e59937a1ef}
-      \strng{authornamehash}{02bd92faa38aaa6cc0ea75e59937a1ef}
-      \strng{authorfullhash}{02bd92faa38aaa6cc0ea75e59937a1ef}
-      \field{sortinit}{a}
-      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \strng{namehash}{462da3cee0e88cf73ed2be844971690e}
+      \strng{fullhash}{462da3cee0e88cf73ed2be844971690e}
+      \strng{bibnamehash}{462da3cee0e88cf73ed2be844971690e}
+      \strng{authorbibnamehash}{462da3cee0e88cf73ed2be844971690e}
+      \strng{authornamehash}{462da3cee0e88cf73ed2be844971690e}
+      \strng{authorfullhash}{462da3cee0e88cf73ed2be844971690e}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{source:www.jpl.nasa.gov}}
-      \field{title}{Title of Citation}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Online Photometric Calibration for Auto Exposure Video for Real time Visual Odometry and SLAM}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1710.02081
+      \endverb
+    \endentry
+    \entry{Bloesch2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f1435bb9c30ae81b29d01029941e7068}{%
+           family={Bloesch},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e32967f7894626294e741de8efd2ef03}{%
+           family={Omari},
+           familyi={O\bibinitperiod},
+           given={Sammy},
+           giveni={S\bibinitperiod}}}%
+        {{hash=164607f9daa616a03bed0e2bf6531a8d}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6ee8958bbf32527489012d8ca7c95ee3}{%
+           family={Siegwart},
+           familyi={S\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{a17b7b6a400d16e726e7d112721c4f03}
+      \strng{fullhash}{74e2fb5a370dbfe07c07423a577d155e}
+      \strng{bibnamehash}{a17b7b6a400d16e726e7d112721c4f03}
+      \strng{authorbibnamehash}{a17b7b6a400d16e726e7d112721c4f03}
+      \strng{authornamehash}{a17b7b6a400d16e726e7d112721c4f03}
+      \strng{authorfullhash}{74e2fb5a370dbfe07c07423a577d155e}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we present a monocular visual- inertial odometry algorithm which, by directly using pixel intensity errors of image patches, achieves accurate tracking performance while exhibiting a very high level of robustness. After detection, the tracking of the multilevel patch features is closely coupled to the underlying extended Kalman filter (EKF) by directly using the intensity errors as innovation term during the update step. We follow a purely robocentric approach where the location of 3D landmarks are always estimated with respect to the current camera pose. Furthermore, we decompose landmark positions into a bearing vector and a distance parametrization whereby we employ a minimal representation of differences on a corresponding -Algebra in order to achieve better consistency and to improve the computational performance. Due to the robocentric, inverse- distance landmark parametrization, the framework does not require any initialization procedure, leading to a truly power- up-and-go state estimation system. The presented approach is successfully evaluated in a set of highly dynamic hand-held experiments as well as directly employed in the control loop of a multirotor unmanned aerial vehicle (UAV).}
+      \field{isbn}{9781479999941}
+      \field{issn}{21530866}
+      \field{journaltitle}{IEEE Int. Conf. Intell. Robot. Syst.}
+      \field{title}{{Robust visual inertial odometry using a direct EKF-based approach}}
+      \field{volume}{2015-Decem}
+      \field{year}{2015}
+      \field{pages}{298\bibrangedash 304}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/IROS.2015.7353389
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Bloesch et al. - Unknown - Robust Visual Inertial Odometry Using a Direct EKF-Based Approach.pdf:pdf
+      \endverb
+      \keyw{Cameras,Estimation,Feature extraction,Robots,Technological innovation,Three-dimensional displays,Uncertainty}
+    \endentry
+    \entry{omni}{online}{}
+      \field{sortinit}{b}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labeltitlesource}{title}
+      \field{title}{bublcam}
+      \verb{urlraw}
+      \verb https://phys.org/news/2013-11-bublcam-life-spherical-perspective.html
+      \endverb
+      \verb{url}
+      \verb https://phys.org/news/2013-11-bublcam-life-spherical-perspective.html
+      \endverb
+    \endentry
+    \entry{Buczko2016}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ac27dee8ae8a7883bc34b09890cbd37f}{%
+           family={Buczko},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=32a23b7e85c4afdb94857649311ada72}{%
+           family={Willert},
+           familyi={W\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{fullhash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{bibnamehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{authorbibnamehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{authornamehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{authorfullhash}{3f7441916d3ff036be44efec95cc933f}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{{$\copyright$}} 2016 IEEE.In this paper, we present an iterative two-stage scheme for precise and robust frame-To-frame feature-based ego-motion estimation using stereo cameras. We analyze the characteristics of the optical flows and reprojection errors that are independently induced by each of the decoupled six degrees of freedom motion. As we will show, the different characteristics of these induced optical flows lead to a reprojection error that depends on the coordinates of the features. When using a proper normalization of the reprojection error, this coordinatedependency can be almost completely removed for decoupled motions. Furthermore, we present a way to use these results for automotive application where rotation and forward motion are coupled. This is done by compensating for the flow that is induced by the rotation, which decouples the translation flow from the overall flow. The resulting method generalizes the ROCC approach [4], where a robust outlier criterion was introduced and proved to increase robustness and quality for large forward translation motions. Therewith the proposed method generalizes ROCC to almost all possible automotive motions. The performance of the method is evaluated on Kitti benchmark and currently2 reaches the best translation error of all camera-based methods.}
+      \field{isbn}{9781509018895}
+      \field{journaltitle}{IEEE Conf. Intell. Transp. Syst. Proceedings, ITSC}
+      \field{title}{{Flow-decoupled normalized reprojection error for visual odometry}}
+      \field{year}{2016}
+      \field{pages}{1161\bibrangedash 1167}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ITSC.2016.7795703
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Flow-Decoupled Normalized Reprojection Error for Visual Odometry.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Buczko2016a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ac27dee8ae8a7883bc34b09890cbd37f}{%
+           family={Buczko},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=32a23b7e85c4afdb94857649311ada72}{%
+           family={Willert},
+           familyi={W\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{fullhash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{bibnamehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{authorbibnamehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{authornamehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{authorfullhash}{3f7441916d3ff036be44efec95cc933f}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we present an outlier removal scheme for stereo-based visual odometry which is especially suited for improving high-speed pose change estimations in large-scale depth environments. First we investigate the vari- ance of the reprojection error on the 3D position of a feature given a fixed error in pose change to conclude that a detection of outliers based on a fixed threshold on the reprojection error is inappropriate. Then we propose an optical flow dependent feature-adaptive scaling of the reprojection error to reach almost invariance to the 3D position of each feature. This feature-adaptive scaling is derived from an approximation showing the relation between longitudinal pose change of the camera, absolute value of the optical flow, and distance of the feature. Using this scaling, we develop an iterative alternating scheme to guide the separation of inliers from outliers. It optimizes the tradeoff between finding a good criterion to remove outliers based on a given pose change and improving the pose change hypothesis based on the current set of inliers. Including the new outlier removal scheme into a pure two-frame stereo-based visual odometry pipeline without applying bundle adjustment or SLAM-filtering we are currently ranked amongst the top camera-based algorithms and furthermore outperform camera and laser scanner methods in Kitti benchmark's high- speed scenarios.}
+      \field{isbn}{9781509018215}
+      \field{journaltitle}{IEEE Intell. Veh. Symp. Proc.}
+      \field{number}{Iv}
+      \field{title}{{How to distinguish inliers from outliers in visual odometry for high-speed automotive applications}}
+      \field{volume}{2016-Augus}
+      \field{year}{2016}
+      \field{pages}{478\bibrangedash 483}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IVS.2016.7535429
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/How to Distinguish Inliers from Outliers in Visual Odometry for High-speed Automotive Applications.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Buczko2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ac27dee8ae8a7883bc34b09890cbd37f}{%
+           family={Buczko},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=32a23b7e85c4afdb94857649311ada72}{%
+           family={Willert},
+           familyi={W\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{fullhash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{bibnamehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{authorbibnamehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{authornamehash}{3f7441916d3ff036be44efec95cc933f}
+      \strng{authorfullhash}{3f7441916d3ff036be44efec95cc933f}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-5090-4804-5}
+      \field{journaltitle}{2017 IEEE Intell. Veh. Symp.}
+      \field{number}{Iv}
+      \field{title}{{Monocular Outlier Detection for Visual Odometry}}
+      \field{year}{2017}
+      \field{pages}{739\bibrangedash 745}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/IVS.2017.7995805
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Monocular Outlier Detection for Visual Odometry.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://ieeexplore.ieee.org/document/7995805/
+      \endverb
+      \verb{url}
+      \verb http://ieeexplore.ieee.org/document/7995805/
+      \endverb
+      \keyw{Mapping and Localization,Image,Radar,Lidar Signal}
+    \endentry
+    \entry{opencvcalib}{online}{}
+      \field{sortinit}{c}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{calibration opencv}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://medium.com/@elifozcakiir/camera-calibration-with-opencv-9fb104fdf879
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@elifozcakiir/camera-calibration-with-opencv-9fb104fdf879
+      \endverb
+    \endentry
+    \entry{calibio}{online}{}
+      \field{sortinit}{c}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{calibration pattern}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://calib.io/blogs/knowledge-base/calibration-patterns-explained
+      \endverb
+      \verb{url}
+      \verb https://calib.io/blogs/knowledge-base/calibration-patterns-explained
+      \endverb
+    \endentry
+    \entry{Concha2015b}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bbbf9faad60596ebbb0e351ddca09c0d}{%
+           family={Concha},
+           familyi={C\bibinitperiod},
+           given={Alejo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=255a79b6250247eb19d8ebb2e15815ef}{%
+           family={Civera},
+           familyi={C\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c9959bc0f541f1096b05e28c86470f74}
+      \strng{fullhash}{c9959bc0f541f1096b05e28c86470f74}
+      \strng{bibnamehash}{c9959bc0f541f1096b05e28c86470f74}
+      \strng{authorbibnamehash}{c9959bc0f541f1096b05e28c86470f74}
+      \strng{authornamehash}{c9959bc0f541f1096b05e28c86470f74}
+      \strng{authorfullhash}{c9959bc0f541f1096b05e28c86470f74}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes a direct monocular SLAM algorithm that estimates a dense reconstruction of a scene in real-time on a CPU. Highly textured image areas are mapped using standard direct mapping techniques, that minimize the photometric error across different views. We make the assumption that homogeneous-color regions belong to approximately planar areas. Our contribution is a new algorithm for the estimation of such planar areas, based on the information of a superpixel segmentation and the semidense map from highly textured areas. We compare our approach against several alternatives using the public TUM dataset and additional live experiments with a hand-held camera.We demonstrate that our proposal for piecewise planar monocular SLAM is faster, more accurate and more robust than the piecewise planar baseline. In addition, our experimental results show how the depth regularization of monocular maps can damage its accuracy, being the piecewise planar assumption a reasonable option in indoor scenarios.}
+      \field{isbn}{9781479999941}
+      \field{issn}{21530866}
+      \field{journaltitle}{IEEE Int. Conf. Intell. Robot. Syst.}
+      \field{title}{{DPPTAM: Dense piecewise planar tracking and mapping from a monocular sequence}}
+      \field{volume}{2015-Decem}
+      \field{year}{2015}
+      \field{pages}{5686\bibrangedash 5693}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IROS.2015.7354184
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/DPPTAM$\backslash$: Dense Piecewise Planar Tracking and Mapping from a Monocular Sequence(2).pdf:pdf
+      \endverb
+    \endentry
+    \entry{Cvisic2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d805967e33b85bc92af36ab382157523}{%
+           family={Cvi{\v{s}}i{\'{c}}},
+           familyi={C\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+        {{hash=cd7baf6a7bec833dee56b65aed37d6ad}{%
+           family={Petrovi{\'{c}}},
+           familyi={P\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6ee2e95c3543edf9bffbcf02e989046}
+      \strng{fullhash}{d6ee2e95c3543edf9bffbcf02e989046}
+      \strng{bibnamehash}{d6ee2e95c3543edf9bffbcf02e989046}
+      \strng{authorbibnamehash}{d6ee2e95c3543edf9bffbcf02e989046}
+      \strng{authornamehash}{d6ee2e95c3543edf9bffbcf02e989046}
+      \strng{authorfullhash}{d6ee2e95c3543edf9bffbcf02e989046}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper we present a novel algorithm for fast and robust stereo visual odometry based on feature selection and tracking (SOFT). The reduction of drift is based on careful selection of a subset of stable features and their tracking through the frames. Rotation and translation between two consecutive poses are estimated separately. The five point method is used for rotation estimation, whereas the three point method is used for estimating translation. Experimental results show that the proposed algorithm has an average pose error of 1.03{\%} with pro- cessing speed above 10 Hz. According to publicly available KITTI leaderboard, SOFT outperforms all other validated methods. We also present a modified IMU-aided version of the algorithm, fast and suitable for embedded systems. This algorithm employs an IMU for outlier rejection and Kalman filter for rotation refinement. Experiments show that the IMU based system runs at 20 Hz on an ODROID U3 ARM-based embedded computer without any hardware acceleration. Integration of all components is}
+      \field{isbn}{9781467391634}
+      \field{journaltitle}{2015 Eur. Conf. Mob. Robot. ECMR 2015 - Proc.}
+      \field{title}{{Stereo odometry based on careful feature selection and tracking}}
+      \field{year}{2015}
+      \field{pages}{0--5}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/ECMR.2015.7324219
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Stereo odometry based on careful feature selection and tracking.pdf:pdf
+      \endverb
+      \keyw{Accuracy,Cameras,Estimation,Feature extraction,Kalman filters,Three-dimensional displays,Visualization}
+      \warn{\item Range field 'pages' in entry 'Cvisic2015' is malformed, falling back to literal}
+    \endentry
+    \entry{Daniel2014}{article}{}
+      \name{author}{5}{}{%
+        {{hash=23f39cc87ccd1a9bda8e886c063b16b8}{%
+           family={Daniel},
+           familyi={D\bibinitperiod},
+           given={Herrera\bibnamedelima C.},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=7cbc691b0743a71b8a8d6c557b3b931b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Kihwan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8d20e3f80f9d860f9a91b6f18054e4b1}{%
+           family={Kannala},
+           familyi={K\bibinitperiod},
+           given={Juho},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e427a227c39ff15e725716775899bd4f}{%
+           family={Pulli},
+           familyi={P\bibinitperiod},
+           given={Kari},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7c2877c6fd57232b044bf1f759fd4dd5}{%
+           family={Heikkil??},
+           familyi={H\bibinitperiod},
+           given={Janne},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{766d6ce2529a5ee77cd38b8c5a371557}
+      \strng{fullhash}{0ff753b477bdb4b73467f5063eb87b63}
+      \strng{bibnamehash}{766d6ce2529a5ee77cd38b8c5a371557}
+      \strng{authorbibnamehash}{766d6ce2529a5ee77cd38b8c5a371557}
+      \strng{authornamehash}{766d6ce2529a5ee77cd38b8c5a371557}
+      \strng{authorfullhash}{0ff753b477bdb4b73467f5063eb87b63}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Obtaining a good baseline between different video frames is one of the key elements in vision-based monocular SLAM systems. However, if the video frames contain only a few 2D feature correspondences with a good baseline, or the camera only rotates without sufficient translation in the beginning, tracking and mapping becomes unstable. We introduce a real-time visual SLAM system that incrementally tracks individual 2D features, and estimates camera pose by using matched 2D features, regardless of the length of the baseline. Triangulating 2D features into 3D points is deferred until key frames with sufficient baseline for the features are available. Our method can also deal with pure rotational motions, and fuse the two types of measurements in a bundle adjustment step. Adaptive criteria for key frame selection are also introduced for efficient optimization and dealing with multiple maps. We demonstrate that our SLAM system improves camera pose estimates and robustness, even with purely rotational motions.}
+      \field{isbn}{9781479970018}
+      \field{journaltitle}{Proc. - 2014 Int. Conf. 3D Vision, 3DV 2014}
+      \field{title}{{DT-SLAM: Deferred triangulation for robust SLAM}}
+      \field{year}{2014}
+      \field{pages}{609\bibrangedash 616}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/3DV.2014.49
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/DT-SLAM$\backslash$: Deferred Triangulation for Robust SLAM.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Davison2007}{article}{}
+      \name{author}{4}{}{%
+        {{hash=72b1f79a6f35439abb27d2ca5236fb0b}{%
+           family={Davison},
+           familyi={D\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8d82839be6afd59c432fc7cf084f4326}{%
+           family={Reid},
+           familyi={R\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=9ca0792dce8d0bb00e81887d841ce62e}{%
+           family={Molton},
+           familyi={M\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d976a252b6fa0efe1839e7c6de032d43}{%
+           family={Stasse},
+           familyi={S\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{e7ad5bfb8788debbf0bb18dd460b4084}
+      \strng{fullhash}{db458e765af5b7b9583f77f3d4f13efa}
+      \strng{bibnamehash}{e7ad5bfb8788debbf0bb18dd460b4084}
+      \strng{authorbibnamehash}{e7ad5bfb8788debbf0bb18dd460b4084}
+      \strng{authornamehash}{e7ad5bfb8788debbf0bb18dd460b4084}
+      \strng{authorfullhash}{db458e765af5b7b9583f77f3d4f13efa}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a real-time algorithm which can recover the 3D trajectory of a monocular camera, moving rapidly through a previously unknown scene. Our system, which we dub MonoSLAM, is the first successful application of the SLAM methodology from mobile robotics to the "pure vision" domain of a single uncontrolled camera, achieving real time but drift-free performance inaccessible to Structure from Motion approaches. The core of the approach is the online creation of a sparse but persistent map of natural landmarks within a probabilistic framework. Our key novel contributions include an active approach to mapping and measurement, the use of a general motion model for smooth camera movement, and solutions for monocular feature initialization and feature orientation estimation. Together, these add up to an extremely efficient and robust algorithm which runs at 30 Hz with standard PC and camera hardware. This work extends the range of robotic systems in which SLAM can be usefully applied, but also opens up new areas. We present applications of MonoSLAM to real-time 3D localization and mapping for a high-performance full-size humanoid robot and live augmented reality with a hand-held camera.}
+      \field{issn}{0162-8828}
+      \field{journaltitle}{Pattern Anal. Mach. Intell. (PAMI), IEEE Trans.}
+      \field{number}{6}
+      \field{title}{{MonoSLAM: real-time single camera SLAM.}}
+      \field{volume}{29}
+      \field{year}{2007}
+      \field{pages}{1052\bibrangedash 67}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2007.1049
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/MonoSLAM$\backslash$: Real-Time Single Camera SLAM.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/17431302
+      \endverb
+      \verb{url}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/17431302
+      \endverb
+      \keyw{Algorithms,Artificial Intelligence,Automated,Automated: methods,Computer Systems,Computer-Assisted,Computer-Assisted: methods,Image Enhancement,Image Enhancement: methods,Image Interpretation,Imaging,Information Storage and Retrieval,Information Storage and Retrieval: methods,Numerical Analysis,Pattern Recognition,Photogrammetry,Photogrammetry: methods,Signal Processing,Three-Dimensional,Three-Dimensional: methods,Video Recording,Video Recording: methods}
+    \endentry
+    \entry{Endres2012}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=4858aa954321596e8c1c81daac0271dd}{%
+           family={Endres},
+           familyi={E\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cb840f5d7339bc9d8e281fb4d8548d11}{%
+           family={Hess},
+           familyi={H\bibinitperiod},
+           given={Jurgen\bibnamedelima J{\"{u}}rgen},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=74eb3d7f2551ead562a73b7f96ff9150}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={J{\"{u}}rgen\bibnamedelimb Jurgen\bibnamedelima J{\"{u}}rgen},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=98f4ab1bc2ac191d8f8a0651315ce9c0}{%
+           family={Burgard},
+           familyi={B\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{be776e2c8585127ec4656233e88075d6}
+      \strng{fullhash}{013903e076655565b840c6c8026cab79}
+      \strng{bibnamehash}{be776e2c8585127ec4656233e88075d6}
+      \strng{authorbibnamehash}{be776e2c8585127ec4656233e88075d6}
+      \strng{authornamehash}{be776e2c8585127ec4656233e88075d6}
+      \strng{authorfullhash}{013903e076655565b840c6c8026cab79}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article we present a novel mapping system that robustly generates highly accurate 3D maps using an RGB-D camera. Our approach does not require any further sensors or odometry. With the availability of low-cost and light-weight RGB-D sensors such as the Microsoft Kinect, our approach applies to small domestic robots such as vacuum cleaners as well as flying robots such as quadrocopters. Furthermore, our system can also be used for free-hand reconstruction of detailed 3D models. In addition to the system itself, we present a thorough experimental evaluation on a publicly available bench- mark dataset. We analyze and discuss the influence of several parameters such as the choice of the feature descriptor, the number of visual features, and validation methods. The results of the experiments demonstrate that our system can robustly deal with challenging scenarios such as fast cameras motions and feature-poor environments while being fast enough for online operation. Our system is fully available as open-source and has already been widely adopted by the robotics community.}
+      \field{booktitle}{IEEE Trans. Robot.}
+      \field{issn}{1552-3098}
+      \field{number}{1}
+      \field{title}{{3D Mapping with an RGB-D Camera}}
+      \field{volume}{30}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TRO.2013.2279412
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/3D Mapping with an RGB-D Camera.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Endres2012a}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=358b55c51c3329f4b50a4197b37d3804}{%
+           family={Endres},
+           familyi={E\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f87acbb04c6594b4c6b97b34f5884e45}{%
+           family={Hess},
+           familyi={H\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b497d06526b052e00774b1b5cd19f227}{%
+           family={Engelhard},
+           familyi={E\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod}}}%
+        {{hash=10d34ae3cad85cacbdb1fd8ff08825df}{%
+           family={{\ldots}},
+           familyi={{\ldots}\bibinitperiod},
+           given={J\bibnamedelima Sturm},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e04aef2424b3d324c6429469601f5eb}
+      \strng{fullhash}{e2eb92f032783813d0bc460783dfeaed}
+      \strng{bibnamehash}{7e04aef2424b3d324c6429469601f5eb}
+      \strng{authorbibnamehash}{7e04aef2424b3d324c6429469601f5eb}
+      \strng{authornamehash}{7e04aef2424b3d324c6429469601f5eb}
+      \strng{authorfullhash}{e2eb92f032783813d0bc460783dfeaed}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Page 1. An Evaluation of the RGB-D SLAM System Felix Endres1 J{\"{u}}rgen Hess1 Nikolas Engelhard1 J{\"{u}}rgen Sturm2 Daniel Cremers2 Wolfram Burgard1 Abstract---We present an approach to simultaneous local- ization and ... $\backslash$n}
+      \field{booktitle}{IEEE Int. Conf. Robot. Autom.}
+      \field{isbn}{9781467314046}
+      \field{issn}{978-1-4673-1403-9}
+      \field{number}{c}
+      \field{title}{{An evaluation of the RGB-D SLAM system}}
+      \field{volume}{3}
+      \field{year}{2012}
+      \field{pages}{1691\bibrangedash 1696}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICRA.2012.6225199
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/An Evaluation of the RGB-D SLAM System.pdf:pdf
+      \endverb
     \endentry
     \entry{Engel-et-al-pami2018}{article}{}
       \name{author}{3}{}{%
@@ -106,6 +638,116 @@
       \field{year}{2014}
       \keyw{rgb-d,monocular,slam,semidense,lsdslam}
     \endentry
+    \entry{engel2013iccv}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f431c4c0840bfcc900d4659bb811366f}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ee2b5cfd37ac9362f58ba7c1fa3f2331}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d2e7a9453b9aec6fc6555a4551e262f5}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Sydney, Australia}%
+      }
+      \strng{namehash}{d46f5a78ab16da1d4f57307bd79b36de}
+      \strng{fullhash}{d46f5a78ab16da1d4f57307bd79b36de}
+      \strng{bibnamehash}{d46f5a78ab16da1d4f57307bd79b36de}
+      \strng{authorbibnamehash}{d46f5a78ab16da1d4f57307bd79b36de}
+      \strng{authornamehash}{d46f5a78ab16da1d4f57307bd79b36de}
+      \strng{authorfullhash}{d46f5a78ab16da1d4f57307bd79b36de}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Conference on Computer Vision (ICCV)}
+      \field{month}{12}
+      \field{title}{Semi-Dense Visual Odometry for a Monocular Camera}
+      \field{year}{2013}
+      \keyw{rgb-d,visual odometry,monocular,slam,semidense}
+    \endentry
+    \entry{Engel2015}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=105f32574a19425c80138198b0b09cd5}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hamburg}%
+      }
+      \strng{namehash}{6c84f956519fc9540676abb597262f2f}
+      \strng{fullhash}{6c84f956519fc9540676abb597262f2f}
+      \strng{bibnamehash}{6c84f956519fc9540676abb597262f2f}
+      \strng{authorbibnamehash}{6c84f956519fc9540676abb597262f2f}
+      \strng{authornamehash}{6c84f956519fc9540676abb597262f2f}
+      \strng{authorfullhash}{6c84f956519fc9540676abb597262f2f}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a novel Large-Scale Direct SLAM algorithm for stereo cameras (Stereo LSD-SLAM) that runs in real-time at high frame rate on standard CPUs. In contrast to sparse interest-point based methods, our approach aligns images directly based on the photoconsistency of all high- contrast pixels, including corners, edges and high texture areas. It concurrently estimates the depth at these pixels from two types of stereo cues: Static stereo through the fixed-baseline stereo camera setup as well as temporal multi-view stereo exploiting the camera motion. By incorporating both disparity sources, our algorithm can even estimate depth of pixels that are under-constrained when only using fixed-baseline stereo. Using a fixed baseline, on the other hand, avoids scale-drift that typically occurs in pure monocular SLAM.We furthermore propose a robust approach to enforce illumination invariance, capable of handling aggressive brightness changes between frames -- greatly improving the performance in realistic settings. In experiments, we demonstrate state-of-the-art results on stereo SLAM benchmarks such as Kitti or challenging datasets from the EuRoC Challenge 3 for micro aerial vehicles.}
+      \field{booktitle}{IEEE/RSJ Int. Conf. Intell. Robot. Syst.}
+      \field{isbn}{9781479999941}
+      \field{title}{{Large-Scale Direct SLAM with Stereo Cameras}}
+      \field{year}{2015}
+      \field{pages}{1935\bibrangedash 1942}
+      \range{pages}{8}
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Large-Scale Direct SLAM with Stereo Cameras.pdf:pdf
+      \endverb
+    \endentry
+    \entry{photometrically}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=105f32574a19425c80138198b0b09cd5}{%
+           family={Engel},
+           familyi={E\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=15a876c83d83c2150b47a50afea3aaed}{%
+           family={Usenko},
+           familyi={U\bibinitperiod},
+           given={Vladyslav},
+           giveni={V\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{972a0acc9b90be0d44c8b0ef83e11da6}
+      \strng{fullhash}{972a0acc9b90be0d44c8b0ef83e11da6}
+      \strng{bibnamehash}{972a0acc9b90be0d44c8b0ef83e11da6}
+      \strng{authorbibnamehash}{972a0acc9b90be0d44c8b0ef83e11da6}
+      \strng{authornamehash}{972a0acc9b90be0d44c8b0ef83e11da6}
+      \strng{authorfullhash}{972a0acc9b90be0d44c8b0ef83e11da6}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{A Photometrically Calibrated Benchmark For Monocular Visual Odometry}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1607.02555
+      \endverb
+    \endentry
     \entry{7782863}{article}{}
       \name{author}{5}{}{%
         {{hash=8bd41eae090481c6f617d62b201b7394}{%
@@ -152,6 +794,115 @@
       \field{pages}{249\bibrangedash 265}
       \range{pages}{17}
     \endentry
+    \entry{Forster2014ICRA}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=a6b6e778fcd0ba37d9fef8a433471203}{%
+           family={Forster},
+           familyi={F\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9d76407df0d2dd4b86058fe49ca9ef08}{%
+           family={Pizzoli},
+           familyi={P\bibinitperiod},
+           given={Matia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dac21ab4ede215439fcc6b051be53a11}{%
+           family={Scaramuzza},
+           familyi={S\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b8f8e8a2f250532f1fffa3fd8cde56c}
+      \strng{fullhash}{3b8f8e8a2f250532f1fffa3fd8cde56c}
+      \strng{bibnamehash}{3b8f8e8a2f250532f1fffa3fd8cde56c}
+      \strng{authorbibnamehash}{3b8f8e8a2f250532f1fffa3fd8cde56c}
+      \strng{authornamehash}{3b8f8e8a2f250532f1fffa3fd8cde56c}
+      \strng{authorfullhash}{3b8f8e8a2f250532f1fffa3fd8cde56c}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{{SVO}: Fast Semi-Direct Monocular Visual Odometry}
+      \field{year}{2014}
+    \endentry
+    \entry{citymodel}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=6a80b73e9f63d9a8ef74379dcddd7dd5}{%
+           family={Gakne},
+           familyi={G\bibinitperiod},
+           given={Paul\bibnamedelima Verlaine},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=812d2125eeaeb5d3c1030029b77d4f93}{%
+           family={O'Keefe},
+           familyi={O\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Toulouse, France}%
+      }
+      \strng{namehash}{5f1ccdcddb895fe98de690904389250f}
+      \strng{fullhash}{5f1ccdcddb895fe98de690904389250f}
+      \strng{bibnamehash}{5f1ccdcddb895fe98de690904389250f}
+      \strng{authorbibnamehash}{5f1ccdcddb895fe98de690904389250f}
+      \strng{authornamehash}{5f1ccdcddb895fe98de690904389250f}
+      \strng{authorfullhash}{5f1ccdcddb895fe98de690904389250f}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{ITSNT 2018, International Technical Symposium on Navigation and Timing}}
+      \field{month}{10}
+      \field{title}{{Tackling The Scale Factor Issue In A Monocular Visual Odometry Using A 3D City Model}}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.31701/itsnt2018.20
+      \endverb
+      \verb{file}
+      \verb https://hal-enac.archives-ouvertes.fr/hal-01942257/file/ITSNT18_Gakne_O%27Keefe.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal-enac.archives-ouvertes.fr/hal-01942257
+      \endverb
+      \verb{url}
+      \verb https://hal-enac.archives-ouvertes.fr/hal-01942257
+      \endverb
+    \endentry
+    \entry{DboW}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2325d3007f3471dc8658ce6c9f15f99e}{%
+           family={{Galvez-L\'{o}pez}},
+           familyi={G\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=08c9c0b9e263dee1c64053106631006e}{%
+           family={{Tardos}},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ea70ee0e18e84a7c3e4d08b5ace1f8b}
+      \strng{fullhash}{4ea70ee0e18e84a7c3e4d08b5ace1f8b}
+      \strng{bibnamehash}{4ea70ee0e18e84a7c3e4d08b5ace1f8b}
+      \strng{authorbibnamehash}{4ea70ee0e18e84a7c3e4d08b5ace1f8b}
+      \strng{authornamehash}{4ea70ee0e18e84a7c3e4d08b5ace1f8b}
+      \strng{authorfullhash}{4ea70ee0e18e84a7c3e4d08b5ace1f8b}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics}
+      \field{number}{5}
+      \field{title}{Bags of Binary Words for Fast Place Recognition in Image Sequences}
+      \field{volume}{28}
+      \field{year}{2012}
+      \field{pages}{1188\bibrangedash 1197}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TRO.2012.2197158
+      \endverb
+    \endentry
     \entry{gao2018ldso}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=019f4556b96dac3857ab0e3789e6fd57}{%
@@ -191,6 +942,122 @@
       \field{year}{2018}
       \keyw{dso,ldso}
     \endentry
+    \entry{vignette}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=2b1dbf0ade7bfa664198ef8ce0ea6bad}{%
+           family={Goldman},
+           familyi={G\bibinitperiod},
+           given={Dan\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=45457f25e51f3cb25424e2bfa6ec2352}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jiun-Hung},
+           giveni={J\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{ffdc9610b6353a473e0b61a3eec0ada0}
+      \strng{fullhash}{ffdc9610b6353a473e0b61a3eec0ada0}
+      \strng{bibnamehash}{ffdc9610b6353a473e0b61a3eec0ada0}
+      \strng{authorbibnamehash}{ffdc9610b6353a473e0b61a3eec0ada0}
+      \strng{authornamehash}{ffdc9610b6353a473e0b61a3eec0ada0}
+      \strng{authorfullhash}{ffdc9610b6353a473e0b61a3eec0ada0}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Tenth IEEE International Conference on Computer Vision (ICCV'05) Volume 1 - Volume 01}
+      \field{isbn}{076952334X01}
+      \field{series}{ICCV '05}
+      \field{title}{Vignette and Exposure Calibration and Compensation}
+      \field{year}{2005}
+      \field{pages}{899\bibrangedash 906}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICCV.2005.249
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/ICCV.2005.249
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/ICCV.2005.249
+      \endverb
+    \endentry
+    \entry{deepl}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=e2524cef0ee0a16d2d38b5879f98bc38}{%
+           family={{Greene}},
+           familyi={G\bibinitperiod},
+           given={W.\bibnamedelimi N.},
+           giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=37ba3d9704698861ce353a2b26686556}{%
+           family={{Roy}},
+           familyi={R\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{25b67c1d218d9e3d90bccef2a5162042}
+      \strng{fullhash}{25b67c1d218d9e3d90bccef2a5162042}
+      \strng{bibnamehash}{25b67c1d218d9e3d90bccef2a5162042}
+      \strng{authorbibnamehash}{25b67c1d218d9e3d90bccef2a5162042}
+      \strng{authornamehash}{25b67c1d218d9e3d90bccef2a5162042}
+      \strng{authorfullhash}{25b67c1d218d9e3d90bccef2a5162042}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Metrically-Scaled Monocular SLAM using Learned Scale Factors}
+      \field{year}{2020}
+      \field{pages}{43\bibrangedash 50}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICRA40945.2020.9196900
+      \endverb
+    \endentry
+    \entry{multiview_geometry}{book}{}
+      \name{author}{2}{}{%
+        {{hash=a0cea72f57464ff654a3f8362e58503d}{%
+           family={Hartley},
+           familyi={H\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c72fc39e94030f67717052309266a44d}{%
+           family={Zisserman},
+           familyi={Z\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e3dfde06144cdf8ac37a2746457797e}
+      \strng{fullhash}{0e3dfde06144cdf8ac37a2746457797e}
+      \strng{bibnamehash}{0e3dfde06144cdf8ac37a2746457797e}
+      \strng{authorbibnamehash}{0e3dfde06144cdf8ac37a2746457797e}
+      \strng{authornamehash}{0e3dfde06144cdf8ac37a2746457797e}
+      \strng{authorfullhash}{0e3dfde06144cdf8ac37a2746457797e}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Multiple View Geometry in Computer Vision}
+      \warn{\item Entry 'multiview_geometry' (references.bib): Invalid format 'March 2004' of date field 'date' - ignoring}
+    \endentry
+    \entry{ids}{online}{}
+      \field{sortinit}{i}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labeltitlesource}{title}
+      \field{title}{idsmono}
+      \verb{urlraw}
+      \verb https://en.ids-imaging.com/store/ui-5640se.html
+      \endverb
+      \verb{url}
+      \verb https://en.ids-imaging.com/store/ui-5640se.html
+      \endverb
+    \endentry
     \entry{Irani-et-al-1999}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=dd6fcc68380ebc7723a4d543c5f0e843}{%
@@ -220,6 +1087,86 @@
       \field{pages}{267\bibrangedash 277}
       \range{pages}{11}
     \endentry
+    \entry{Izadi2011}{article}{}
+      \name{author}{11}{}{%
+        {{hash=30658c00d64b7e9a0b02b52130aa66c0}{%
+           family={Izadi},
+           familyi={I\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f55fbaaca148300ac11f7752528cae3d}{%
+           family={Kim},
+           familyi={K\bibinitperiod}}}%
+        {{hash=1185981c083e6a4924486e9bdab22cdb}{%
+           family={Hilliges},
+           familyi={H\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod}}}%
+        {{hash=158678838547330eefe4d220eb4e9622}{%
+           family={Molyneaux},
+           familyi={M\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d09e913cb56c78d75d881ac6f7369d88}{%
+           family={Newcombe},
+           familyi={N\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cb0207368e596644cbaa518983912e70}{%
+           family={Kohli},
+           familyi={K\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=08e3a8cadeac63a084aa38641367daca}{%
+           family={Shotton},
+           familyi={S\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=91c226665f0d9dfb1d617dd1d97cd52c}{%
+           family={Hodges},
+           familyi={H\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8e914c9da3c7a72fcd3a41ab44918d62}{%
+           family={Freeman},
+           familyi={F\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e0beacc4a883679466ce9af45e48a18b}{%
+           family={Davison},
+           familyi={D\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f57dc74d2e1c3b415633df2c092bf638}{%
+           family={Fitzgibbon},
+           familyi={F\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{381879c773eadf5a66992d24304219f7}
+      \strng{fullhash}{4dcc8cb148b97b1d554e1dbf24260ae3}
+      \strng{bibnamehash}{381879c773eadf5a66992d24304219f7}
+      \strng{authorbibnamehash}{381879c773eadf5a66992d24304219f7}
+      \strng{authornamehash}{381879c773eadf5a66992d24304219f7}
+      \strng{authorfullhash}{4dcc8cb148b97b1d554e1dbf24260ae3}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract KinectFusion enables a user holding and moving a standard Kinect camera to rapidly create detailed 3D reconstructions of an indoor scene. Only the depth data from Kinect is used to track the 3D pose of the sensor and reconstruct , geometrically precise, ... $\backslash$n}
+      \field{journaltitle}{Proc. 24th Annu. ACM User Interface Softw. Technol. Symp. - UIST '11}
+      \field{title}{{KinectFusion: real-time 3D reconstruction and interaction using a moving depth camera}}
+      \field{year}{2011}
+      \field{pages}{559\bibrangedash 568}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/2047196.2047270
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/KinectFusion$\backslash$: Real-time 3D Reconstruction and InteractionUsing a Moving Depth Camera.pdf:pdf
+      \endverb
+      \keyw{3d,all or part of,ar,depth cameras,geometry-aware interactions,gpu,or hard copies of,permission to make digital,physics,research cambridge,research conducted at microsoft,surface reconstruction,this work for,tracking,uk}
+    \endentry
     \entry{chris}{thesis}{}
       \name{author}{1}{}{%
         {{hash=479e5fd84bda24f87442ac90fb46b1d6}{%
@@ -243,6 +1190,49 @@
       \field{labeltitlesource}{title}
       \field{title}{Implementation and Evaluation of Monocular SLAM for an Underwater Robot}
       \field{type}{type}
+    \endentry
+    \entry{Kerl2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c8b46d457d7577efc9d388d1c40fb783}{%
+           family={Kerl},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=24a77708b78b8200bf6c77c396eb9fff}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={Jurgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1bd2b6b6ca2fc15a90f164070b626131}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a43814c07cbabd8a1fb59f855353e4da}
+      \strng{fullhash}{a43814c07cbabd8a1fb59f855353e4da}
+      \strng{bibnamehash}{a43814c07cbabd8a1fb59f855353e4da}
+      \strng{authorbibnamehash}{a43814c07cbabd8a1fb59f855353e4da}
+      \strng{authornamehash}{a43814c07cbabd8a1fb59f855353e4da}
+      \strng{authorfullhash}{a43814c07cbabd8a1fb59f855353e4da}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we propose a dense visual SLAM method for RGB-D cameras that minimizes both the photometric and the depth error over all pixels. In contrast to sparse, feature-based methods, this allows us to better exploit the available information in the image data which leads to higher pose accuracy. Furthermore, we propose an entropy-based similarity measure for keyframe selection and loop closure detection. From all successful matches, we build up a graph that we optimize using the g2o framework. We evaluated our approach extensively on publicly available benchmark datasets, and found that it performs well in scenes with low texture as well as low structure. In direct comparison to several state-of-the-art methods, our approach yields a significantly lower trajectory error. We release our software as open-source.}
+      \field{isbn}{9781467363587}
+      \field{issn}{21530858}
+      \field{journaltitle}{IEEE Int. Conf. Intell. Robot. Syst.}
+      \field{title}{{Dense visual SLAM for RGB-D cameras}}
+      \field{year}{2013}
+      \field{pages}{2100\bibrangedash 2106}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/IROS.2013.6696650
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Dense Visual SLAM for RGB-D Cameras.pdf:pdf
+      \endverb
     \endentry
     \entry{KhalidYousif-et-al-2015}{journal}{}
       \name{author}{1}{}{%
@@ -275,6 +1265,65 @@
       \verb 10.1007/s40903-015-0032-7
       \endverb
     \endentry
+    \entry{kinect}{online}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labeltitlesource}{title}
+      \field{title}{Kinect}
+      \verb{urlraw}
+      \verb https://www.lib.ncsu.edu/devices/microsoft-xbox-kinect-3d-sensor
+      \endverb
+      \verb{url}
+      \verb https://www.lib.ncsu.edu/devices/microsoft-xbox-kinect-3d-sensor
+      \endverb
+    \endentry
+    \entry{planer}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=b5b1f8ba0176ccca354eb5c82e974c83}{%
+           family={Kitt},
+           familyi={K\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=95c151d8f096b9392eecb57bd72e46e0}{%
+           family={Rehder},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ca70f17dd8cd7169f2af5f9b00f95596}{%
+           family={Chambers},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4efe27b8e34fa00f761392b837b57d08}{%
+           family={Sch{\"{o}}nbein},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=19f1f4ac459664a02e70cab4a4ded4b0}{%
+           family={Lategahn},
+           familyi={L\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9fac89963c0879a1b0de6ed3d4286896}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e0f5f89e96911ce4a5e0184166a8a7f}
+      \strng{fullhash}{f96a6b6acb9ba5894c2046f36b21c27e}
+      \strng{bibnamehash}{5e0f5f89e96911ce4a5e0184166a8a7f}
+      \strng{authorbibnamehash}{5e0f5f89e96911ce4a5e0184166a8a7f}
+      \strng{authornamehash}{5e0f5f89e96911ce4a5e0184166a8a7f}
+      \strng{authorfullhash}{f96a6b6acb9ba5894c2046f36b21c27e}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ECMR}
+      \field{title}{Monocular Visual Odometry using a Planar Road Model to Solve Scale Ambiguity}
+      \field{year}{2011}
+    \endentry
     \entry{4538852}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=81c119e7adf31efd54cf22ccc13a68b1}{%
@@ -304,6 +1353,334 @@
       \field{pages}{225\bibrangedash 234}
       \range{pages}{10}
     \endentry
+    \entry{Klingensmith2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a49e2cf6ca0589ec4a8dcefc93bc3c76}{%
+           family={Klingensmith},
+           familyi={K\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=41aee854cae7cb8c8502494b6b64e1bd}{%
+           family={Sirinivasa},
+           familyi={S\bibinitperiod},
+           given={Siddartha\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=da701266dff9b3f01fdc8e0d18e5f021}{%
+           family={Kaess},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{00058b3e2cafa8b81be45eb1488fecd4}
+      \strng{fullhash}{00058b3e2cafa8b81be45eb1488fecd4}
+      \strng{bibnamehash}{00058b3e2cafa8b81be45eb1488fecd4}
+      \strng{authorbibnamehash}{00058b3e2cafa8b81be45eb1488fecd4}
+      \strng{authornamehash}{00058b3e2cafa8b81be45eb1488fecd4}
+      \strng{authorfullhash}{00058b3e2cafa8b81be45eb1488fecd4}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A robot with a hand-mounted depth sensor scans a scene. When the robot's joint angles are not known with certainty, how can it best reconstruct the scene? In this work, we simultaneously estimate the joint angles of the robot and reconstruct a dense volumetric model of the scene. In this way, we perform simultaneous localization and mapping in the configuration space of the robot, rather than in the pose space of the camera. We show using simulations and robot experiments that our approach greatly reduces both 3D reconstruction error and joint angle error over simply using the forward kinematics. Unlike other approaches, ours directly reasons about robot joint angles, and can use these to constrain the pose of the sensor. Because of this, it is more robust to missing or ambiguous depth data than approaches that are unconstrained by the robot's kinematics.}
+      \field{isbn}{9781467380256}
+      \field{issn}{23773766}
+      \field{journaltitle}{IEEE Robot. Autom. Lett.}
+      \field{number}{2}
+      \field{title}{{Articulated Robot Motion for Simultaneous Localization and Mapping (ARM-SLAM)}}
+      \field{volume}{1}
+      \field{year}{2016}
+      \field{pages}{1156\bibrangedash 1163}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/LRA.2016.2518242
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Articulated Robot Motion for SimultaneousLocalization and Mapping (ARM-SLAM).pdf:pdf
+      \endverb
+      \keyw{Kinematics,Mapping,RGBD Perception,SLAM,Visual-Based navigation}
+    \endentry
+    \entry{Konolige2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7aa08b4f01b4f639731fdb416173ccd1}{%
+           family={Konolige},
+           familyi={K\bibinitperiod},
+           given={Kurt},
+           giveni={K\bibinitperiod}}}%
+        {{hash=197cfe601cc3aa61a72f51873208cc94}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Motilal},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{4fef1b0d094e253488e7a0a2b70c519f}
+      \strng{fullhash}{4fef1b0d094e253488e7a0a2b70c519f}
+      \strng{bibnamehash}{4fef1b0d094e253488e7a0a2b70c519f}
+      \strng{authorbibnamehash}{4fef1b0d094e253488e7a0a2b70c519f}
+      \strng{authornamehash}{4fef1b0d094e253488e7a0a2b70c519f}
+      \strng{authorfullhash}{4fef1b0d094e253488e7a0a2b70c519f}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{---Many successful indoor mapping techniques employ frame-to-frame matching of laser scans to produce detailed local maps, as well as closing large loops. In this paper, we propose a framework for applying the same techniques to visual imagery. We match visual frames with large numbers of point features, using classic bundle adjustment techniques from computational vision, but keep only relative frame pose information (a skeleton). The skeleton is a reduced nonlinear system that is a faithful approximation of the larger system, and can be used to solve large loop closures quickly, as well as forming a backbone for data association and local registration. We illustrate the working of the system with large outdoor datasets (10 km), showing large-scale loop closure and precise localization in real time.}
+      \field{isbn}{1552-3098}
+      \field{issn}{15523098}
+      \field{journaltitle}{IEEE Trans. Robot.}
+      \field{number}{5}
+      \field{title}{{FrameSLAM : from Bundle Adjustment to Realtime Visual Mappping}}
+      \field{volume}{24}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TRO.2008.2004832
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/FrameSLAM$\backslash$: from Bundle Adjustment to Realtime Visual Mappping.pdf:pdf
+      \endverb
+    \endentry
+    \entry{g2o}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=780dc7862929dc3485a496dcf3d01492}{%
+           family={{K\"{u}mmerle}},
+           familyi={K\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6e03fdf76474b45acb7f7f74b250b666}{%
+           family={{Grisetti}},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c15430e60fdcb2d52fe30f808e23789f}{%
+           family={{Strasdat}},
+           familyi={S\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a18afbdc870bfb2e02b6c1553aa6169b}{%
+           family={{Konolige}},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=33f960734163cca595a2898e40ead972}{%
+           family={{Burgard}},
+           familyi={B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7aa04c84e20db4c0e5b557c950b3aa6}
+      \strng{fullhash}{b5490157a2385a5e8ba77ab392198b47}
+      \strng{bibnamehash}{d7aa04c84e20db4c0e5b557c950b3aa6}
+      \strng{authorbibnamehash}{d7aa04c84e20db4c0e5b557c950b3aa6}
+      \strng{authornamehash}{d7aa04c84e20db4c0e5b557c950b3aa6}
+      \strng{authorfullhash}{b5490157a2385a5e8ba77ab392198b47}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2011 IEEE International Conference on Robotics and Automation}
+      \field{title}{G2o: A general framework for graph optimization}
+      \field{year}{2011}
+      \field{pages}{3607\bibrangedash 3613}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ICRA.2011.5979949
+      \endverb
+    \endentry
+    \entry{Leutenegger2014}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=25564f7f36f46be27f7326210cc5c2ad}{%
+           family={Leutenegger},
+           familyi={L\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {ETH Zurich}%
+      }
+      \strng{namehash}{25564f7f36f46be27f7326210cc5c2ad}
+      \strng{fullhash}{25564f7f36f46be27f7326210cc5c2ad}
+      \strng{bibnamehash}{25564f7f36f46be27f7326210cc5c2ad}
+      \strng{authorbibnamehash}{25564f7f36f46be27f7326210cc5c2ad}
+      \strng{authornamehash}{25564f7f36f46be27f7326210cc5c2ad}
+      \strng{authorfullhash}{25564f7f36f46be27f7326210cc5c2ad}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Unmanned solar airplanes - Design and Algorithms for Efficient and RobustAutonomous Operation}}
+      \field{type}{Dissertation}
+      \field{year}{2014}
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Operation - 2014 - Unmanned solar airplanes.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/90524/eth-46751-02.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/90524/eth-46751-02.pdf
+      \endverb
+    \endentry
+    \entry{Leutenegger2015}{article}{}
+      \name{author}{5}{}{%
+        {{hash=25564f7f36f46be27f7326210cc5c2ad}{%
+           family={Leutenegger},
+           familyi={L\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f1f30ae8b7d1975ffa2e3f2c80a78a42}{%
+           family={Lynen},
+           familyi={L\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ee31dafdad04c8baf1a0304f3e9cb39a}{%
+           family={Bosse},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6ee8958bbf32527489012d8ca7c95ee3}{%
+           family={Siegwart},
+           familyi={S\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9f26483b21e967b59019c49805811483}{%
+           family={Furgale},
+           familyi={F\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{143a0baf4e18f8ed752f9e514de1fd5d}
+      \strng{fullhash}{61f7f94783f280680ee249d487740425}
+      \strng{bibnamehash}{143a0baf4e18f8ed752f9e514de1fd5d}
+      \strng{authorbibnamehash}{143a0baf4e18f8ed752f9e514de1fd5d}
+      \strng{authornamehash}{143a0baf4e18f8ed752f9e514de1fd5d}
+      \strng{authorfullhash}{61f7f94783f280680ee249d487740425}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Combining visual and inertial measurements has become popular in mobile robotics, since the two sensing modalities offer complementary characteristics that make them the ideal choice for accurate visual--inertial odometry or simultaneous localization and mapping (SLAM). While historically the problem has been addressed with filtering, advancements in visual estimation suggest that nonlinear optimization offers superior accuracy, while still tractable in complexity thanks to the sparsity of the underlying problem. Taking inspiration from these findings, we formulate a rigorously probabilistic cost function that combines reprojection errors of landmarks and inertial terms. The problem is kept tractable and thus ensuring real-time operation by limiting the optimization to a bounded window of keyframes through marginalization. Keyframes may be spaced in time by arbitrary intervals, while still related by linearized inertial terms. We present evaluation results on complementary datasets recorded with our custom-built stereo visual--inertial hardware that accurately synchronizes accelerometer and gyroscope measurements with imagery. A comparison of both a stereo and monocular version of our algorithm with and without online extrinsics estimation is shown with respect to ground truth. Furthermore, we compare the performance to an implementation of a state-of-the-art stochastic cloning sliding-window filter. This competitive reference implementation performs tightly coupled filtering-based visual--inertial odometry. While our approach declaredly demands more computation, we show its superior performance in terms of accuracy.}
+      \field{isbn}{0278-3649}
+      \field{issn}{0278-3649}
+      \field{journaltitle}{Int. J. Rob. Res.}
+      \field{number}{3}
+      \field{title}{{Keyframe-based visual-inertial odometry using nonlinear optimization}}
+      \field{volume}{34}
+      \field{year}{2015}
+      \field{pages}{314\bibrangedash 334}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1177/0278364914554813
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Leutenegger et al. - 2015 - Keyframe-based visual -- inertial odometry using nonlinear optimization.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.sagepub.com/doi/10.1177/0278364914554813
+      \endverb
+      \verb{url}
+      \verb http://journals.sagepub.com/doi/10.1177/0278364914554813
+      \endverb
+      \keyw{bundle adjustment,imu,inertial measurement unit,inertial odometry,keyframes,robotics,sensor fusion,simultaneous localization and mapping,slam,stereo camera,visual}
+    \endentry
+    \entry{Leutenegger2013}{article}{}
+      \name{author}{6}{}{%
+        {{hash=5b42d03417d60587e3ffd0e951790f8c}{%
+           family={Leutenegger},
+           familyi={L\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1397f6c7fc8ec072e49da094042f960c}{%
+           family={Furgale},
+           familyi={F\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a1cce4aca94627969633c4dc00fd1d94}{%
+           family={Rabaud},
+           familyi={R\bibinitperiod},
+           given={V},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a5b2c7e32df761f7a6416b8a33d95c0d}{%
+           family={Chli},
+           familyi={C\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fac8fab297eebd573fdb17c438af901b}{%
+           family={Konolige},
+           familyi={K\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=07818300893272680700e26b484b2f50}{%
+           family={Siegwart},
+           familyi={S\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{07217c57f212b3a454237e91417d1b02}
+      \strng{fullhash}{f2777c7b1994f64e3034dbe22e9aec4a}
+      \strng{bibnamehash}{07217c57f212b3a454237e91417d1b02}
+      \strng{authorbibnamehash}{07217c57f212b3a454237e91417d1b02}
+      \strng{authornamehash}{07217c57f212b3a454237e91417d1b02}
+      \strng{authorfullhash}{f2777c7b1994f64e3034dbe22e9aec4a}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The fusion of visual and inertial cues has become popular in robotics due to the complementary nature of the two sensing modalities. While most fusion strategies to date rely on filtering schemes, the visual robotics community has recently turned to non-linear optimization approaches for tasks such as visual Simultaneous Localization And Mapping (SLAM), following the discovery that this comes with signifi- cant advantages in quality of performance and computational complexity. Following this trend, we present a novel approach to tightly integrate visual measurements with readings from an Inertial Measurement Unit (IMU) in SLAM. An IMU error term is integrated with the landmark reprojection error in a fully probabilistic manner, resulting to a joint non-linear cost function to be optimized. Employing the powerful concept of \textquoteleft{}keyframes' we partially marginalize old states to maintain a bounded-sized optimization window, ensuring real-time opera- tion. Comparing against both vision-only and loosely-coupled visual-inertial algorithms, our experiments confirm the benefits of tight fusion in terms of accuracy and robustness.}
+      \field{isbn}{0278-3649}
+      \field{issn}{0278-3649}
+      \field{journaltitle}{Proc. Robot. Sci. Syst.}
+      \field{title}{{Keyframe Based Visual Inertial SLAM Using Nonlinear Optimization}}
+      \field{year}{2013}
+      \field{pages}{0}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1177/0278364914554813
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Keyframe-Based Visual-Inertial SLAM Using Nonlinear Optimization.pdf:pdf
+      \endverb
+      \warn{\item Range field 'pages' in entry 'Leutenegger2013' is malformed, falling back to literal}
+    \endentry
+    \entry{Liu2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=db04f4663863b8771e44717e7b593340}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Haomin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0150ab01be364b2d61fa4e2f9e01e23b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Guofeng},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c384a68d4495c23c2753e5bbbad04be0}{%
+           family={Bao},
+           familyi={B\bibinitperiod},
+           given={Hujun},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{929a64adfd00900c498bf1206fe0efad}
+      \strng{fullhash}{929a64adfd00900c498bf1206fe0efad}
+      \strng{bibnamehash}{929a64adfd00900c498bf1206fe0efad}
+      \strng{authorbibnamehash}{929a64adfd00900c498bf1206fe0efad}
+      \strng{authornamehash}{929a64adfd00900c498bf1206fe0efad}
+      \strng{authorfullhash}{929a64adfd00900c498bf1206fe0efad}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Keyframe-based SLAM has achieved great success in terms of ac- curacy, efficiency and scalability. However, due to parallax re- quirement and delay of map expansion, traditional keyframe-based methods easily encounter the robustness problem in the challeng- ing cases especially for fast motion with strong rotation. For AR applications in practice, these challenging cases are easily encoun- tered, since a home user may not carefully move the camera to avoid potential problems. With the above motivation, in this paper, we present RKSLAM, a robust keyframe-based monocular SLAM system that can reliably handle fast motion and strong rotation, ensuring good AR experiences. First, we propose a novel multi- homography based feature tracking method which is robust and ef- ficient for fast motion and strong rotation. Based on it, we propose a real-time local map expansion scheme to triangulate the observed 3D points immediately without delay. A sliding-window based camera pose optimization framework is proposed, which imposes the motion prior constraints between consecutive frames through simulated or real IMU data. Qualitative and quantitative compar- isons with the state-of-the-art methods, and an AR application on mobile devices demonstrate the effectiveness of the proposed ap- proach. Index}
+      \field{booktitle}{IEEE Int. Symp. Mix. Augment. Real. Robust}
+      \field{isbn}{9781509036417}
+      \field{title}{{Robust Keyframe-based Monocular SLAM for Augmented Reality}}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1109/ISMAR.2016.24
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Robust Keyframe-based Monocular SLAM for Augmented Reality.pdf:pdf
+      \endverb
+    \endentry
     \entry{Lucas81}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=2f07e3d394a67f930ca045a8c91ffc60}{%
@@ -332,6 +1709,95 @@
       \field{year}{1981}
       \field{pages}{674\bibrangedash 679}
       \range{pages}{6}
+    \endentry
+    \entry{cameracalib}{book}{}
+      \name{author}{2}{}{%
+        {{hash=bc3f1042b7bc0d2fbf099ad227ef50c4}{%
+           family={Medioni},
+           familyi={M\bibinitperiod},
+           given={Gerard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f2da9652274166304aa600398dace530}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Sing\bibnamedelima Bing},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall PTR}%
+      }
+      \strng{namehash}{92fa2cb0efc05eb3e0432e6ac11cfa48}
+      \strng{fullhash}{92fa2cb0efc05eb3e0432e6ac11cfa48}
+      \strng{bibnamehash}{92fa2cb0efc05eb3e0432e6ac11cfa48}
+      \strng{authorbibnamehash}{92fa2cb0efc05eb3e0432e6ac11cfa48}
+      \strng{authornamehash}{92fa2cb0efc05eb3e0432e6ac11cfa48}
+      \strng{authorfullhash}{92fa2cb0efc05eb3e0432e6ac11cfa48}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0131013661}
+      \field{title}{Emerging Topics in Computer Vision}
+      \field{year}{2004}
+    \endentry
+    \entry{Mei2011}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ad1bdfe5ac45e5a58d38518f9f6b42d8}{%
+           family={Mei},
+           familyi={M\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5d3e14f4d07a35792783e2cf9a8fb0df}{%
+           family={Sibley},
+           familyi={S\bibinitperiod},
+           given={Gabe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8c0008f6e938613d557794a4a4f7e0c9}{%
+           family={Cummins},
+           familyi={C\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ca24e95476e264dad412fe7e4302db16}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8d82839be6afd59c432fc7cf084f4326}{%
+           family={Reid},
+           familyi={R\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{0c904c74d2a5d54999d1babb296b2954}
+      \strng{fullhash}{db8adcd1af77c3b4441c1354686d5948}
+      \strng{bibnamehash}{0c904c74d2a5d54999d1babb296b2954}
+      \strng{authorbibnamehash}{0c904c74d2a5d54999d1babb296b2954}
+      \strng{authornamehash}{0c904c74d2a5d54999d1babb296b2954}
+      \strng{authorfullhash}{db8adcd1af77c3b4441c1354686d5948}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Large scale exploration of the environment requires a constant time estimation engine. Bundle adjustment or pose relaxation do not fulfil these requirements as the number of parameters to solve grows with the size of the environment. We describe a relative simultaneous localisation and mapping system (RSLAM) for the constant-time estimation of structure and motion using a binocular stereo camera system as the sole sensor. Achieving robustness in the presence of difficult and changing lighting conditions and rapid motion requires careful engineering of the visual processing, and we describe a number of innovations which we show lead to high accuracy and robustness. In order to achieve real-time performance without placing severe limits on the size of the map that can be built, we use a topo-metric representation in terms of a sequence of relative locations. When combined with fast and reliable loop-closing, we mitigate the drift to obtain highly accurate global position estimates without any global minimisation. We discuss some of the issues that arise from using a relative representation, and evaluate our system on long sequences processed at a constant 30--45 Hz, obtaining precisions down to a few meters over distances of a few kilometres.}
+      \field{isbn}{0920-5691}
+      \field{issn}{09205691}
+      \field{journaltitle}{Int. J. Comput. Vis.}
+      \field{number}{2}
+      \field{title}{{RSLAM: A system for large-scale mapping in constant-time using stereo}}
+      \field{volume}{94}
+      \field{year}{2011}
+      \field{pages}{198\bibrangedash 214}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s11263-010-0361-7
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/RSLAM$\backslash$: A System for Large-Scale Mapping in Constant-Time using Stereo.pdf:pdf
+      \endverb
+      \keyw{Loop closing,SIFT,SLAM,Stereo,Tracking}
     \endentry
     \entry{Aqel-et-al-2016}{journal}{}
       \name{author}{2}{}{%
@@ -368,25 +1834,64 @@
       \verb 10.1186/s40064-016-3573-7
       \endverb
     \endentry
-    \entry{Mur-Artal}{article}{}
-      \name{author}{2}{}{%
-        {{hash=e9100e469960dd7fcdaeb3605f8acb4a}{%
-           family={Mur{-}Artal},
+    \entry{orbslam}{article}{}
+      \name{author}{3}{}{%
+        {{hash=97e889e4a152086a749293c55b93beed}{%
+           family={{Mur-Artal}},
            familyi={M\bibinitperiod},
-           given={Raul},
+           given={R.},
            giveni={R\bibinitperiod}}}%
-        {{hash=d93b275a096ff93a90d47e1e4bb08f1f}{%
-           family={Tard{\'{o}}s},
+        {{hash=b8c6f387d6ed9a4f364c8d512f8349b2}{%
+           family={{Montiel}},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi M.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=dcac883d1163bb357110296253aa60a3}{%
+           family={{Tard\'{o}s}},
            familyi={T\bibinitperiod},
-           given={Juan\bibnamedelima D.},
+           given={J.\bibnamedelimi D.},
            giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
       }
-      \strng{namehash}{ab3eb218820d25740497954f6ab3934f}
-      \strng{fullhash}{ab3eb218820d25740497954f6ab3934f}
-      \strng{bibnamehash}{ab3eb218820d25740497954f6ab3934f}
-      \strng{authorbibnamehash}{ab3eb218820d25740497954f6ab3934f}
-      \strng{authornamehash}{ab3eb218820d25740497954f6ab3934f}
-      \strng{authorfullhash}{ab3eb218820d25740497954f6ab3934f}
+      \strng{namehash}{c3706d541a7900a91fdb85b4a6ed9f68}
+      \strng{fullhash}{c3706d541a7900a91fdb85b4a6ed9f68}
+      \strng{bibnamehash}{c3706d541a7900a91fdb85b4a6ed9f68}
+      \strng{authorbibnamehash}{c3706d541a7900a91fdb85b4a6ed9f68}
+      \strng{authornamehash}{c3706d541a7900a91fdb85b4a6ed9f68}
+      \strng{authorfullhash}{c3706d541a7900a91fdb85b4a6ed9f68}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Robotics}
+      \field{number}{5}
+      \field{title}{ORB-SLAM: A Versatile and Accurate Monocular SLAM System}
+      \field{volume}{31}
+      \field{year}{2015}
+      \field{pages}{1147\bibrangedash 1163}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1109/TRO.2015.2463671
+      \endverb
+    \endentry
+    \entry{Mur-Artal}{article}{}
+      \name{author}{2}{}{%
+        {{hash=97e889e4a152086a749293c55b93beed}{%
+           family={{Mur-Artal}},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=dcac883d1163bb357110296253aa60a3}{%
+           family={{Tard\'{o}s}},
+           familyi={T\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2e8a5c5bc2363813e089abcb4cc303a}
+      \strng{fullhash}{c2e8a5c5bc2363813e089abcb4cc303a}
+      \strng{bibnamehash}{c2e8a5c5bc2363813e089abcb4cc303a}
+      \strng{authorbibnamehash}{c2e8a5c5bc2363813e089abcb4cc303a}
+      \strng{authornamehash}{c2e8a5c5bc2363813e089abcb4cc303a}
+      \strng{authorfullhash}{c2e8a5c5bc2363813e089abcb4cc303a}
       \field{sortinit}{M}
       \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
       \field{labelnamesource}{author}
@@ -406,7 +1911,661 @@
       \verb http://arxiv.org/abs/1610.06475
       \endverb
     \endentry
-    \entry{6126544}{inproceedings}{}
+    \entry{Mur-Artal2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3bcf9140fcfbbb3fa5cdedbcb3380ee8}{%
+           family={Mur-Artal},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=99938e064c47b1c55178a5ae0f1f53e4}{%
+           family={Tardos},
+           familyi={T\bibinitperiod},
+           given={Juan\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8b7d44e534379df4e765c18705c89a3}
+      \strng{fullhash}{f8b7d44e534379df4e765c18705c89a3}
+      \strng{bibnamehash}{f8b7d44e534379df4e765c18705c89a3}
+      \strng{authorbibnamehash}{f8b7d44e534379df4e765c18705c89a3}
+      \strng{authornamehash}{f8b7d44e534379df4e765c18705c89a3}
+      \strng{authorfullhash}{f8b7d44e534379df4e765c18705c89a3}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In recent years there have been excellent results in Visual-Inertial Odometry techniques, which aim to compute the incremental motion of the sensor with high accuracy and robustness. However these approaches lack the capability to close loops, and trajectory estimation accumulates drift even if the sensor is continually revisiting the same place. In this work we present a novel tightly-coupled Visual-Inertial Simultaneous Localization and Mapping system that is able to close loops and reuse its map to achieve zero-drift localization in already mapped areas. While our approach can be applied to any camera configuration, we address here the most general problem of a monocular camera, with its well-known scale ambiguity. We also propose a novel IMU initialization method, which computes the scale, the gravity direction, the velocity, and gyroscope and accelerometer biases, in a few seconds with high accuracy. We test our system in the 11 sequences of a recent micro-aerial vehicle public dataset achieving a typical scale factor error of 1{\%} and centimeter precision. We compare to the state-of-the-art in visual-inertial odometry in sequences with revisiting, proving the better accuracy of our method due to map reuse and no drift accumulation.}
+      \field{eprinttype}{arXiv}
+      \field{issn}{2377-3766}
+      \field{journaltitle}{IEEE Robot. Autom. Lett.}
+      \field{title}{{Visual-Inertial Monocular SLAM with Map Reuse}}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1109/LRA.2017.2653359
+      \endverb
+      \verb{eprint}
+      \verb 1610.05949
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Visual-Inertial Monocular SLAM with Map Reuse.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Mur-Artal2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b7a891686f40b49c846c02e133e7f22a}{%
+           family={Mur-Artal},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={Ra{\'{u}}l},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d93b275a096ff93a90d47e1e4bb08f1f}{%
+           family={Tard{\'{o}}s},
+           familyi={T\bibinitperiod},
+           given={Juan\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{015e5839bbb642a6c9d549c1537ae518}
+      \strng{fullhash}{015e5839bbb642a6c9d549c1537ae518}
+      \strng{bibnamehash}{015e5839bbb642a6c9d549c1537ae518}
+      \strng{authorbibnamehash}{015e5839bbb642a6c9d549c1537ae518}
+      \strng{authornamehash}{015e5839bbb642a6c9d549c1537ae518}
+      \strng{authorfullhash}{015e5839bbb642a6c9d549c1537ae518}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper we present for the first time a relocalisation method for keyframe-based SLAM that can deal with severe viewpoint change, at frame-rate, in maps containing thousands of keyframes. As this method relies on local features, it permits the interoperability between cameras, allowing a camera to relocalise in a map built by a different camera. We also perform loop closing (detection + correction), at keyframe- rate, in loops containing hundreds of keyframes. For both relocalisation and loop closing, we propose a bag of words place recognizer with ORB features, which is able to recognize places spending less than 39 ms, including feature extrac- tion, in databases containing 10K images (without geometrical verification). We evaluate the performance of this recognizer in four different datasets, achieving high recall and no false matches, and getting better results than the state-of-art in place recognition,}
+      \field{isbn}{9781479936847}
+      \field{issn}{10504729}
+      \field{journaltitle}{Proc. - IEEE Int. Conf. Robot. Autom.}
+      \field{title}{{Fast relocalisation and loop closing in keyframe-based SLAM}}
+      \field{year}{2014}
+      \field{pages}{846\bibrangedash 853}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICRA.2014.6906953
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/2014{\_}IEEE{\_}ICRA{\_}Mur{\_}Tardos.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Nerurkar2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0de244a393f4fefe7e4aa597dc60bf51}{%
+           family={Nerurkar},
+           familyi={N\bibinitperiod},
+           given={Esha\bibnamedelima D.},
+           giveni={E\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=820efb1146e658a77dc4edd0ded98cc1}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Kejian\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4215cf04576d4414191eacaedc768742}{%
+           family={Roumeliotis},
+           familyi={R\bibinitperiod},
+           given={Stergios\bibnamedelima I.},
+           giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{24e2ed8e9dd154750320e2b8bad41214}
+      \strng{fullhash}{24e2ed8e9dd154750320e2b8bad41214}
+      \strng{bibnamehash}{24e2ed8e9dd154750320e2b8bad41214}
+      \strng{authorbibnamehash}{24e2ed8e9dd154750320e2b8bad41214}
+      \strng{authornamehash}{24e2ed8e9dd154750320e2b8bad41214}
+      \strng{authorfullhash}{24e2ed8e9dd154750320e2b8bad41214}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we present C-KLAM, a Maximum A Posteriori (MAP) estimator-based keyframe approach for SLAM. Instead of discarding information from non-keyframes for reducing the computational complexity, the proposed C-KLAM presents a novel, elegant, and computationally-efficient technique for incorporating most of this information in a consistent manner, resulting in improved estimation accuracy. To achieve this, C-KLAM projects both proprioceptive and exteroceptive information from the non-keyframes to the keyframes, using marginalization, while maintaining the sparse structure of the associated information matrix, resulting in fast and efficient solutions. The performance of C-KLAM has been tested in experiments, using visual and inertial measurements, to demonstrate that it achieves performance comparable to that of the computationally-intensive batch MAP-based 3D SLAM, that uses all available measurement information.}
+      \field{isbn}{9781479936854}
+      \field{issn}{10504729}
+      \field{journaltitle}{Proc. - IEEE Int. Conf. Robot. Autom.}
+      \field{title}{{C-KLAM: Constrained keyframe-based localization and mapping}}
+      \field{year}{2014}
+      \field{pages}{3638\bibrangedash 3643}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICRA.2014.6907385
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/C-KLAM$\backslash$: Constrained Keyframe-Based Localization and Mapping.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Newcombe2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ebe14968489553c5a363813b778f2928}{%
+           family={Newcombe},
+           familyi={N\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=359fc370bc0ffe55e28ccf00d80484ef}{%
+           family={Lovegrove},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d1b136f9f7ca4aed6317c62255ffa521}{%
+           family={Davison},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2afc1b38d54bd25277208213ac853268}
+      \strng{fullhash}{2afc1b38d54bd25277208213ac853268}
+      \strng{bibnamehash}{2afc1b38d54bd25277208213ac853268}
+      \strng{authorbibnamehash}{2afc1b38d54bd25277208213ac853268}
+      \strng{authornamehash}{2afc1b38d54bd25277208213ac853268}
+      \strng{authorfullhash}{2afc1b38d54bd25277208213ac853268}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{DTAM is a system for real-time camera tracking and reconstruction which relies not on feature extraction but dense, every pixel methods. As a single hand-held RGB camera flies over a static scene, we estimate detailed textured depth maps at selected keyframes to produce a surface patchwork with millions of vertices. We use the hundreds of images available in a video stream to improve the quality of a simple photometric data term, and minimise a global spatially regularised energy functional in a novel non-convex optimisation framework. Interleaved, we track the camera's 6DOF motion precisely by frame-rate whole image alignment against the entire dense model. Our algorithms are highly parallelisable throughout and DTAM achieves real-time performance using current commodity GPU hardware. We demonstrate that a dense model permits superior tracking performance under rapid motion compared to a state of the art method using features; and also show the additional usefulness of the dense model for real-time scene interaction in a physics-enhanced augmented reality application.}
+      \field{isbn}{9781457711015}
+      \field{issn}{1550-5499}
+      \field{journaltitle}{Proc. IEEE Int. Conf. Comput. Vis.}
+      \field{title}{{DTAM: Dense tracking and mapping in real-time}}
+      \field{year}{2011}
+      \field{pages}{2320\bibrangedash 2327}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICCV.2011.6126513
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/DTAM$\backslash$: Dense Tracking and Mapping in Real-Time.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Newcombe2011a}{article}{}
+      \name{author}{10}{}{%
+        {{hash=ebe14968489553c5a363813b778f2928}{%
+           family={Newcombe},
+           familyi={N\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=19d80a2a01693de3631decaa652d4d3f}{%
+           family={Izadi},
+           familyi={I\bibinitperiod},
+           given={Shahram},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e4282a8b050f6ec88f43896369f6fe38}{%
+           family={Hilliges},
+           familyi={H\bibinitperiod},
+           given={Otmar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=23c72b179d65cca0461f33a964f1f98b}{%
+           family={Molyneaux},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4bbde8a08938e282b6bd70ea30ba2b09}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d1b136f9f7ca4aed6317c62255ffa521}{%
+           family={Davison},
+           familyi={D\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d0d21ff02dda6c0a7d09ef7436bd329b}{%
+           family={Kohli},
+           familyi={K\bibinitperiod},
+           given={Pushmeet},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3b90a1e3dad54d8cb1230eec501fdf04}{%
+           family={Shotton},
+           familyi={S\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=16c2fad85c202f0f60f5d77854ca1cd8}{%
+           family={Hodges},
+           familyi={H\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8eb0347090bee0e3077a241bdad85387}{%
+           family={Fitzgibbon},
+           familyi={F\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea53013b1db86482cb4573dab899984d}
+      \strng{fullhash}{da9c816eb303e2d6ef5d13aaf9525c4b}
+      \strng{bibnamehash}{ea53013b1db86482cb4573dab899984d}
+      \strng{authorbibnamehash}{ea53013b1db86482cb4573dab899984d}
+      \strng{authornamehash}{ea53013b1db86482cb4573dab899984d}
+      \strng{authorfullhash}{da9c816eb303e2d6ef5d13aaf9525c4b}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a system for accurate real-time mapping of complex and arbitrary indoor scenes in variable lighting conditions, using only a moving low-cost depth camera and commodity graphics hardware. We fuse all of the depth data streamed from a Kinect sensor into a single global implicit surface model of the observed scene in real-time. The current sensor pose is simultaneously obtained by tracking the live depth frame relative to the global model using a coarse-to-fine iterative closest point (ICP) algorithm, which uses all of the observed depth data available. We demonstrate the advantages of tracking against the growing full surface model compared with frame-to-frame tracking, obtaining tracking and mapping results in constant time within room sized scenes with limited drift and high accuracy. We also show both qualitative and quantitative results relating to various aspects of our tracking and mapping system. Modelling of natural scenes, in real-time with only commodity sensor and GPU hardware, promises an exciting step forward in augmented reality (AR), in particular, it allows dense surfaces to be reconstructed in real-time, with a level of detail and robustness beyond any solution yet presented using passive computer vision.}
+      \field{isbn}{9781457721830}
+      \field{journaltitle}{2011 10th IEEE Int. Symp. Mix. Augment. Reality, ISMAR 2011}
+      \field{title}{{KinectFusion: Real-time dense surface mapping and tracking}}
+      \field{year}{2011}
+      \field{pages}{127\bibrangedash 136}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ISMAR.2011.6092378
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/KinectFusion$\backslash$: Real-Time Dense Surface Mapping and Tracking.pdf:pdf
+      \endverb
+      \keyw{AR,Dense Reconstruction,Depth Cameras,GPU,Real-Time,SLAM,Tracking,Volumetric Representation}
+    \endentry
+    \entry{Olson2011}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8f743eebb2f64f75592e54ba06f94320}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f743eebb2f64f75592e54ba06f94320}
+      \strng{fullhash}{8f743eebb2f64f75592e54ba06f94320}
+      \strng{bibnamehash}{8f743eebb2f64f75592e54ba06f94320}
+      \strng{authorbibnamehash}{8f743eebb2f64f75592e54ba06f94320}
+      \strng{authornamehash}{8f743eebb2f64f75592e54ba06f94320}
+      \strng{authorfullhash}{8f743eebb2f64f75592e54ba06f94320}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{While the use of naturally-occurring features is a central focus of machine perception, artificial features (fiducials) play an important role in creating controllable experiments, ground truthing, and in simplifying the development of systems where perception is not the central objective. We describe a new visual fiducial system that uses a 2D bar code style {\&}{\#}x201C;tag{\&}{\#}x201D;, allowing full 6 DOF localization of features from a single image. Our system improves upon previous systems, incorporating a fast and robust line detection system, a stronger digital coding system, and greater robustness to occlusion, warping, and lens distortion. While similar in concept to the ARTag system, our method is fully open and the algorithms are documented in detail.}
+      \field{journaltitle}{Proc. - IEEE Int. Conf. Robot. Autom.}
+      \field{title}{{AprilTag: A robust and flexible visual fiducial system}}
+      \field{year}{2011}
+      \field{pages}{3400\bibrangedash 3407}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICRA.2011.5979561
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/AprilTag$\backslash$: A robust and flexible visual fiducial system.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Pascoe2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=abf6a3626d1e7f8279948170f06c0d22}{%
+           family={Pascoe},
+           familyi={P\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8e2b4d07ef336af77643954c9658035d}{%
+           family={Maddern},
+           familyi={M\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d855957a4b3f6bdfb51acb4b88f0cbdf}{%
+           family={Tanner},
+           familyi={T\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=27e8029b130e7e9df7b183b60892c2cb}{%
+           family={Pini{\'{e}}s},
+           familyi={P\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9525dbe69288497b342a6d2d49a633f5}{%
+           family={Newman},
+           familyi={N\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb7b20f9e5647d1f34d73757cab07fd7}
+      \strng{fullhash}{579e6b28578c13f7030acb663fc5c591}
+      \strng{bibnamehash}{fb7b20f9e5647d1f34d73757cab07fd7}
+      \strng{authorbibnamehash}{fb7b20f9e5647d1f34d73757cab07fd7}
+      \strng{authornamehash}{fb7b20f9e5647d1f34d73757cab07fd7}
+      \strng{authorfullhash}{579e6b28578c13f7030acb663fc5c591}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Comput. Vis. Pattern Recognit.}
+      \field{title}{{NID-SLAM: Robust Monocular SLAM using Normalised Information Distance}}
+      \field{year}{2017}
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/NID-SLAM$\backslash$: Robust Monocular SLAM using Normalised Information Distance.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://goo.gl/ASUFAw
+      \endverb
+      \verb{url}
+      \verb https://goo.gl/ASUFAw
+      \endverb
+    \endentry
+    \entry{Pire2015}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3ffea018fa20d50001cc09b233577088}{%
+           family={Pire},
+           familyi={P\bibinitperiod},
+           given={Taihu},
+           giveni={T\bibinitperiod}}}%
+        {{hash=582e61688f938e2dc9f9c019ba6e496f}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=255a79b6250247eb19d8ebb2e15815ef}{%
+           family={Civera},
+           familyi={C\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d49ba37b1f28f089667ad1a4fc54c3db}{%
+           family={{De Cristoforis}},
+           familyi={D\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ba0637c4a9c1b612fd301ee35ee34303}{%
+           family={Berlles},
+           familyi={B\bibinitperiod},
+           given={Julio\bibnamedelima Jacobo},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f93d5ff590afdb73c9975139d53ebc27}
+      \strng{fullhash}{3a2b89032ba3ef5eebb7282030727117}
+      \strng{bibnamehash}{f93d5ff590afdb73c9975139d53ebc27}
+      \strng{authorbibnamehash}{f93d5ff590afdb73c9975139d53ebc27}
+      \strng{authornamehash}{f93d5ff590afdb73c9975139d53ebc27}
+      \strng{authorfullhash}{3a2b89032ba3ef5eebb7282030727117}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper describes a visual SLAM system based on stereo cameras and focused on real-time localization for mobile robots. To achieve this, it heavily exploits the parallel nature of the SLAM problem, separating the time-constrained pose estimation from less pressing matters such as map building and refinement tasks. On the other hand, the stereo setting allows to reconstruct a metric 3D map for each frame of stereo images, improving the accuracy of the mapping process with respect to monocular SLAM and avoiding the well-known bootstrapping problem. Also, the real scale of the environment is an essential feature for robots which have to interact with their surrounding workspace. A series of experiments, on-line on a robot as well as off-line with public datasets, are performed to validate the accuracy and real-time performance of the developed method.}
+      \field{isbn}{9781479999941}
+      \field{issn}{21530866}
+      \field{journaltitle}{IEEE Int. Conf. Intell. Robot. Syst.}
+      \field{title}{{Stereo parallel tracking and mapping for robot localization}}
+      \field{volume}{2015-Decem}
+      \field{year}{2015}
+      \field{pages}{1373\bibrangedash 1378}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IROS.2015.7353546
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Stereo parallel tracking and mapping for robot localization.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Pire2017}{article}{}
+      \name{author}{6}{}{%
+        {{hash=cad5f061fe796fe24679f6108074faac}{%
+           family={Pire},
+           familyi={P\bibinitperiod},
+           given={Taih{\'{u}}},
+           giveni={T\bibinitperiod}}}%
+        {{hash=582e61688f938e2dc9f9c019ba6e496f}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b7814ea5e367f6e1def8dca81e878f06}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={Gast{\'{o}}n},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d07e5e8c5347e17abc4745491779a9be}{%
+           family={{De Crist{\'{o}}foris}},
+           familyi={D\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=255a79b6250247eb19d8ebb2e15815ef}{%
+           family={Civera},
+           familyi={C\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=180b4c50b4fb71e98d8278d1f8113a43}{%
+           family={{Jacobo Berlles}},
+           familyi={J\bibinitperiod},
+           given={Julio},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier B.V.}%
+      }
+      \strng{namehash}{0f54b33d68e847be1955431de573ac16}
+      \strng{fullhash}{6fd0764c8aba396b66f43a29245257e5}
+      \strng{bibnamehash}{0f54b33d68e847be1955431de573ac16}
+      \strng{authorbibnamehash}{0f54b33d68e847be1955431de573ac16}
+      \strng{authornamehash}{0f54b33d68e847be1955431de573ac16}
+      \strng{authorfullhash}{6fd0764c8aba396b66f43a29245257e5}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper describes a real-time feature-based stereo SLAM system that is robust and accurate in a wide variety of conditions -- indoors, outdoors, with dynamic objects, changing light conditions, fast robot motions and large-scale loops. Our system follows a parallel-tracking-and-mapping strategy: a tracking thread estimates the camera pose at frame rate; and a mapping thread updates a keyframe-based map at a lower frequency. The stereo constraints of our system allow a robust initialization -- avoiding the well-known bootstrapping problem in monocular systems--and the recovery of the real scale. Both aspects are essential for its practical use in real robotic systems that interact with the physical world. In this paper we provide the implementation details, an exhaustive evaluation of the system in public datasets and a comparison of most state-of-the-art feature detectors and descriptors on the presented system. For the benefit of the community, its code for ROS (Robot Operating System) has been released.}
+      \field{issn}{09218890}
+      \field{journaltitle}{Rob. Auton. Syst.}
+      \field{title}{{S-PTAM: Stereo Parallel Tracking and Mapping}}
+      \field{volume}{93}
+      \field{year}{2017}
+      \field{pages}{27\bibrangedash 42}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.robot.2017.03.019
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/S-PTAM - Stereo Parallel Tracking and Mapping.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.robot.2017.03.019
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.robot.2017.03.019
+      \endverb
+      \keyw{Loop closure,SLAM,Stereo SLAM,Stereo vision,Visual SLAM}
+    \endentry
+    \entry{Pirker2011}{article}{}
+      \name{author}{3}{}{%
+        {{hash=78e3aee95f1c5cc4753cf509465ced0f}{%
+           family={Pirker},
+           familyi={P\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7fe2fbdc83c3917c3b8c92db0e9469f6}{%
+           family={Ruther},
+           familyi={R\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3e36d7b360de7388d78599c2446ac34}{%
+           family={Bischof},
+           familyi={B\bibinitperiod},
+           given={Horst},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{5704717ca2f4eb0df065e779fdd47ac2}
+      \strng{fullhash}{5704717ca2f4eb0df065e779fdd47ac2}
+      \strng{bibnamehash}{5704717ca2f4eb0df065e779fdd47ac2}
+      \strng{authorbibnamehash}{5704717ca2f4eb0df065e779fdd47ac2}
+      \strng{authornamehash}{5704717ca2f4eb0df065e779fdd47ac2}
+      \strng{authorfullhash}{5704717ca2f4eb0df065e779fdd47ac2}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE/RSJ Int. Conf. Intell. Robot. Syst. IROS}
+      \field{title}{{CD SLAM - continuous localization and mapping in a dynamic world}}
+      \field{year}{2011}
+      \field{pages}{3990\bibrangedash 3997}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IROS.2011.6094588
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/CD SLAM - Continuous Localization and Mapping in a Dynamic World.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Pirker2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=78e3aee95f1c5cc4753cf509465ced0f}{%
+           family={Pirker},
+           familyi={P\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9523d6abf0987c96513379e8293de031}{%
+           family={R{\"{u}}ther},
+           familyi={R\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3e36d7b360de7388d78599c2446ac34}{%
+           family={Bischof},
+           familyi={B\bibinitperiod},
+           given={Horst},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c55127ae002d80c7dd8683a954336dd}
+      \strng{fullhash}{8c55127ae002d80c7dd8683a954336dd}
+      \strng{bibnamehash}{8c55127ae002d80c7dd8683a954336dd}
+      \strng{authorbibnamehash}{8c55127ae002d80c7dd8683a954336dd}
+      \strng{authornamehash}{8c55127ae002d80c7dd8683a954336dd}
+      \strng{authorfullhash}{8c55127ae002d80c7dd8683a954336dd}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Simultaneous localization and mapping (SLAM) is a basic prerequisite in autonomous mobile robotics. Most existing visual SLAM approaches either assume a static environ- ment, or simply 'forget' old parts of the map to cope with map size constraints and scene dynamics. We present a novel map representation for sparse visual features. A new 3D point descriptor called Histogram of Oriented Cameras (HOC) encodes anisotropic spa- tial visibility information and the importance of each three-dimensional landmark. Each feature holds and updates a histogram of the poses of observing cameras. It is hereby able to estimate its probability of occlusion and importance for localization from a given viewpoint. In a series of simulated and real-world experiments we prove that the pro- posed descriptor allows to cope with dynamic changes in the map, improves localization accuracy and enables reasonable control of the map size. 1}
+      \field{isbn}{1-901725-40-5}
+      \field{journaltitle}{Br. Mach. Vis. Conf.}
+      \field{title}{{Histogram of Oriented Cameras - A New Descriptor for Visual SLAM in Dynamic Environments}}
+      \field{year}{2010}
+      \field{pages}{76.1\bibrangedash 76.12}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.5244/C.24.76
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Histogram of oriented cameras - a new descriptor for visual slam in dynamic environments.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Pirker2011a}{article}{}
+      \name{author}{4}{}{%
+        {{hash=78e3aee95f1c5cc4753cf509465ced0f}{%
+           family={Pirker},
+           familyi={P\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9523d6abf0987c96513379e8293de031}{%
+           family={R{\"{u}}ther},
+           familyi={R\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1f67d5e8dbf067b78543a8badcafd85f}{%
+           family={Schweighofer},
+           familyi={S\bibinitperiod},
+           given={Gerald},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a3e36d7b360de7388d78599c2446ac34}{%
+           family={Bischof},
+           familyi={B\bibinitperiod},
+           given={Horst},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb175934a2fb045fe6a41b0a84ad26a3}
+      \strng{fullhash}{553d5affadb4fad91d500f082f5b9cd6}
+      \strng{bibnamehash}{bb175934a2fb045fe6a41b0a84ad26a3}
+      \strng{authorbibnamehash}{bb175934a2fb045fe6a41b0a84ad26a3}
+      \strng{authornamehash}{bb175934a2fb045fe6a41b0a84ad26a3}
+      \strng{authorfullhash}{553d5affadb4fad91d500f082f5b9cd6}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose a novel, hybrid SLAM system to construct a dense occupancy grid map$\backslash$nbased on sparse visual features and dense depth information. While previous approaches$\backslash$ndeemed the occupancy grid usable only in 2D mapping, and in combination with a probabilistic$\backslash$napproach, we show that geometric SLAM can produce consistent, robust and$\backslash$ndense occupancy information, and maintain it even during erroneous exploration and$\backslash$nloop closure. We require only a single hypothesis of the occupancy map and employ a$\backslash$nweighted inverse mapping scheme to align it to sparse geometric information. We propose$\backslash$na novel map-update criterion to prevent inconsistencies, and a robust measure to$\backslash$ndiscriminate exploration from localization.}
+      \field{isbn}{1-901725-43-X}
+      \field{journaltitle}{Procedings Br. Mach. Vis. Conf. 2011}
+      \field{title}{{GPSlam: Marrying Sparse Geometric and Dense Probabilistic Visual Mapping}}
+      \field{year}{2011}
+      \field{pages}{115.1\bibrangedash 115.12}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.5244/C.25.115
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/GPSlam$\backslash$: Marrying Sparse Geometric and Dense Probabilistic Visual Mapping.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.bmva.org/bmvc/2011/proceedings/paper115/index.html
+      \endverb
+      \verb{url}
+      \verb http://www.bmva.org/bmvc/2011/proceedings/paper115/index.html
+      \endverb
+    \endentry
+    \entry{Pirovano2012}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=5c6357153b3cf8fae818487bba9165f7}{%
+           family={Pirovano},
+           familyi={P\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5c6357153b3cf8fae818487bba9165f7}
+      \strng{fullhash}{5c6357153b3cf8fae818487bba9165f7}
+      \strng{bibnamehash}{5c6357153b3cf8fae818487bba9165f7}
+      \strng{authorbibnamehash}{5c6357153b3cf8fae818487bba9165f7}
+      \strng{authornamehash}{5c6357153b3cf8fae818487bba9165f7}
+      \strng{authorfullhash}{5c6357153b3cf8fae818487bba9165f7}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{October 2011}
+      \field{title}{{Kinfu - an open source implementation of Kinect Fusion + case study: implementing a 3D scanner with PCL}}
+      \field{year}{2012}
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Kinfu -- an open source implementation of KinectFusion + case study $\backslash$: implementing a 3D scanner with PCL.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://homes.di.unimi.it/borghese/Teaching/IntelligentSystems/Documents/PirovanoMichele-VisualReconstructionReport.pdf
+      \endverb
+      \verb{url}
+      \verb https://homes.di.unimi.it/borghese/Teaching/IntelligentSystems/Documents/PirovanoMichele-VisualReconstructionReport.pdf
+      \endverb
+    \endentry
+    \entry{Pizzoli2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9d76407df0d2dd4b86058fe49ca9ef08}{%
+           family={Pizzoli},
+           familyi={P\bibinitperiod},
+           given={Matia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a6b6e778fcd0ba37d9fef8a433471203}{%
+           family={Forster},
+           familyi={F\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dac21ab4ede215439fcc6b051be53a11}{%
+           family={Scaramuzza},
+           familyi={S\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{061a89feb6625b5dddb91a6197864570}
+      \strng{fullhash}{061a89feb6625b5dddb91a6197864570}
+      \strng{bibnamehash}{061a89feb6625b5dddb91a6197864570}
+      \strng{authorbibnamehash}{061a89feb6625b5dddb91a6197864570}
+      \strng{authornamehash}{061a89feb6625b5dddb91a6197864570}
+      \strng{authorfullhash}{061a89feb6625b5dddb91a6197864570}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we solve the problem of estimating dense and accurate depth maps from a single moving camera. A probabilistic depth measurement is carried out in real time on a per-pixel basis and the computed uncertainty is used to reject erroneous estimations and provide live feedback on the reconstruction progress. Our contribution is a novel approach to depth map computation that combines Bayesian estimation and recent development on convex optimization for image processing.We demonstrate that our method outperforms state- of-the-art techniques in terms of accuracy, while exhibiting high efficiency in memory usage and computing power. We call our approach REMODE (REgularized MOnocular Depth Estimation). Our CUDA-based implementation runs at 30Hz on a laptop computer and is released as open-source software.}
+      \field{isbn}{9781479936847}
+      \field{issn}{10504729}
+      \field{journaltitle}{Proc. - IEEE Int. Conf. Robot. Autom.}
+      \field{title}{{REMODE: Probabilistic, monocular dense reconstruction in real time}}
+      \field{year}{2014}
+      \field{pages}{2609\bibrangedash 2616}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICRA.2014.6907233
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/REMODE$\backslash$: Probabilistic, Monocular Dense Reconstruction in Real Time.pdf:pdf
+      \endverb
+    \endentry
+    \entry{ORB}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=147024023123c71738c9d3364856a997}{%
            family={{Rublee}},
@@ -445,6 +2604,111 @@
       \field{pages}{2564\bibrangedash 2571}
       \range{pages}{8}
     \endentry
+    \entry{synthetic}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2462991a7e2a721b4e609574c35df8f0}{%
+           family={Rukhovich},
+           familyi={R\bibinitperiod},
+           given={Danila},
+           giveni={D\bibinitperiod}}}%
+        {{hash=14694b9fe38f7b7df3627fac240b2307}{%
+           family={Mouritzen},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1b8da8eb15265af9d59032e28c05f88c}{%
+           family={Kaestner},
+           familyi={K\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=88bf2c0ad94c21a7024ad273195be978}{%
+           family={Rufli},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c6a3491a99103118caca43dab565f812}{%
+           family={Velizhev},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{72b3620991cf32ec02f7ea79b6355565}
+      \strng{fullhash}{8ffb8f8a977c0db23221c60b901e9099}
+      \strng{bibnamehash}{72b3620991cf32ec02f7ea79b6355565}
+      \strng{authorbibnamehash}{72b3620991cf32ec02f7ea79b6355565}
+      \strng{authornamehash}{72b3620991cf32ec02f7ea79b6355565}
+      \strng{authorfullhash}{8ffb8f8a977c0db23221c60b901e9099}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Estimation of Absolute Scale in Monocular {SLAM} Using Synthetic Data}
+      \field{volume}{abs/1909.00713}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1909.00713
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1909.00713
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1909.00713
+      \endverb
+    \endentry
+    \entry{Russo2014}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=aeea023ba5efb56b46aae47801128cd1}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Ludovico},
+           giveni={L\bibinitperiod}}}%
+        {{hash=844315c70f156ed91e444de664b7bab4}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f344f6a472b6c51b64481244a963a8f8}{%
+           family={Bona},
+           familyi={B\bibinitperiod},
+           given={Basilio},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9c17d48288f42137d6e435152af76171}{%
+           family={Matteucci},
+           familyi={M\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{84c0274271d9d0749b32c1e33442c18a}
+      \strng{fullhash}{3a7f1098f6bc2d7e0498aaa4346dc61f}
+      \strng{bibnamehash}{84c0274271d9d0749b32c1e33442c18a}
+      \strng{authorbibnamehash}{84c0274271d9d0749b32c1e33442c18a}
+      \strng{authornamehash}{84c0274271d9d0749b32c1e33442c18a}
+      \strng{authorfullhash}{3a7f1098f6bc2d7e0498aaa4346dc61f}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Computer vision approaches are increasingly used in mobile robotic systems, since they allow to obtain a very good representation of the environment by using low-power and cheap sensors. In particular it has been shown that they can compete with standard solutions based on laser range scanners when dealing with the problem of simultaneous localization and mapping (SLAM), where the robot has to explore an unknown environment while building a map of it and localizing in the same map. We present a package for simultaneous localization and mapping in ROS (Robot Operating System) using a monocular camera sensor only. Experimental results in real scenarios as well as on standard datasets show that the algorithm is able to track the trajectory of the robot and build a consistent map of small environments, while running in near real-time on a standard PC.}
+      \field{booktitle}{CS IT-CSCP}
+      \field{title}{{A ROS Implementation of the Mono-Slam Algorithm}}
+      \field{year}{2014}
+      \field{pages}{339\bibrangedash 351}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.5121/csit.2014.4131
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/A{\_}ROS{\_}Implementation{\_}of{\_}the{\_}Mono-Slam{\_}Algorithm.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.airccj.org/CSCP/vol4/csit41831.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.airccj.org/CSCP/vol4/csit41831.pdf
+      \endverb
+    \endentry
     \entry{ScaramuzzaVO}{article}{}
       \name{author}{2}{}{%
         {{hash=0fe012669336367b1cda6c33076ffd37}{%
@@ -475,6 +2739,228 @@
       \field{year}{2011}
       \field{pages}{80\bibrangedash 92}
       \range{pages}{13}
+    \endentry
+    \entry{zed}{online}{}
+      \field{sortinit}{s}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{stereolabs}
+      \verb{urlraw}
+      \verb https://www.stereolabs.com/zed/
+      \endverb
+      \verb{url}
+      \verb https://www.stereolabs.com/zed/
+      \endverb
+    \endentry
+    \entry{sfm}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{Structure from motion}
+      \verb{urlraw}
+      \verb http://www.theia-sfm.org/sfm.html
+      \endverb
+      \verb{url}
+      \verb http://www.theia-sfm.org/sfm.html
+      \endverb
+    \endentry
+    \entry{sturmcalib}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3a70d02f6a27bbc7f12bdb04b0b9a3f3}{%
+           family={Sturm},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cbcc4e09dbc8f7722ce9f3e8330a6c6b}{%
+           family={Maybank},
+           familyi={M\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{39c3615554bbb4b1fc7fe538954ea865}
+      \strng{fullhash}{39c3615554bbb4b1fc7fe538954ea865}
+      \strng{bibnamehash}{39c3615554bbb4b1fc7fe538954ea865}
+      \strng{authorbibnamehash}{39c3615554bbb4b1fc7fe538954ea865}
+      \strng{authornamehash}{39c3615554bbb4b1fc7fe538954ea865}
+      \strng{authorfullhash}{39c3615554bbb4b1fc7fe538954ea865}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings. 1999 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (Cat. No PR00149)}
+      \field{title}{On plane-based camera calibration: A general algorithm, singularities, applications}
+      \field{volume}{1}
+      \field{year}{1999}
+      \field{pages}{432\bibrangedash 437 Vol. 1}
+      \range{pages}{-1}
+    \endentry
+    \entry{Tan2013a}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=2027d87ecbb78155b509c7838f415304}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{2027d87ecbb78155b509c7838f415304}
+      \strng{fullhash}{2027d87ecbb78155b509c7838f415304}
+      \strng{bibnamehash}{2027d87ecbb78155b509c7838f415304}
+      \strng{authorbibnamehash}{2027d87ecbb78155b509c7838f415304}
+      \strng{authornamehash}{2027d87ecbb78155b509c7838f415304}
+      \strng{authorfullhash}{2027d87ecbb78155b509c7838f415304}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Int. Symp. Mix. Augment. Real. 2013}
+      \field{title}{{Robust Monocular SLAM in Dynamic Environments}}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1109/ISMAR.2013.6671781
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Robust Monocular SLAM in Dynamic Environments.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Tarrio2016}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f956ac85064f5e06a4ba1409b052a1d9}{%
+           family={Tarrio},
+           familyi={T\bibinitperiod},
+           given={Juan\bibnamedelima Jose},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0ed3eda4b7370e5c94f5ef38e749694d}{%
+           family={Pedre},
+           familyi={P\bibinitperiod},
+           given={Sol},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d9584027b140cc79bcd5de66547df98}
+      \strng{fullhash}{7d9584027b140cc79bcd5de66547df98}
+      \strng{bibnamehash}{7d9584027b140cc79bcd5de66547df98}
+      \strng{authorbibnamehash}{7d9584027b140cc79bcd5de66547df98}
+      \strng{authornamehash}{7d9584027b140cc79bcd5de66547df98}
+      \strng{authorfullhash}{7d9584027b140cc79bcd5de66547df98}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this work we present a novel algorithm for realtime visual odometry for a monocular camera. The main idea is to develop an approach between classical feature-based vi-sual odometry systems and modern direct dense/semi-dense methods, trying to benefit from the best attributes of both. Similar to feature-based systems, we extract information from the images, instead of working with raw image inten-sities as direct methods. In particular, the information ex-tracted are the edges present in the image, while the rest of the algorithm is designed to take advantage of the struc-tural information provided when pixels are treated as edges. Edge extraction is an efficient and higly parallelizable op-eration. The edge depth information extracted is dense enough to allow acceptable surface fitting, similar to mod-ern semi-dense methods. This is a valuable attribute that feature-based odometry lacks. Experimental results show that the proposed method has similar drift than state of the art feature-based and direct methods, and is a simple algo-rithm that runs at realtime and can be parallelized. Finally, we have also developed an inertial aided version that suc-cessfully stabilizes an unmanned air vehicle in complex in-door environments using only a frontal camera, while run-ning the complete solution in the embedded hardware on board the vehicle.}
+      \field{isbn}{9781467383912}
+      \field{issn}{15505499}
+      \field{journaltitle}{Proc. IEEE Int. Conf. Comput. Vis.}
+      \field{title}{{Realtime edge-based visual odometry for a monocular camera}}
+      \field{volume}{11-18-Dece}
+      \field{year}{2016}
+      \field{pages}{702\bibrangedash 710}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/ICCV.2015.87
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Jos, Pedre, Cnea - Unknown - Realtime edge-based visual odometry for a monocular camera.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Tateno2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b7be7bb00eaa87f428d0b9d1fe8c2553}{%
+           family={Tateno},
+           familyi={T\bibinitperiod},
+           given={Keisuke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e71e31ec8fee14d9e0a2df6e9a85f2c4}{%
+           family={Tombari},
+           familyi={T\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0f12ecb2e7318477c4f945ff181c731c}{%
+           family={Laina},
+           familyi={L\bibinitperiod},
+           given={Iro},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c107bbd317cd780c2aa7006dbe61d83f}{%
+           family={Navab},
+           familyi={N\bibinitperiod},
+           given={Nassir},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{b83ff47a869f483ed328094373d535c3}
+      \strng{fullhash}{b14ddba63bf8c7d381c0805a165d9659}
+      \strng{bibnamehash}{b83ff47a869f483ed328094373d535c3}
+      \strng{authorbibnamehash}{b83ff47a869f483ed328094373d535c3}
+      \strng{authornamehash}{b83ff47a869f483ed328094373d535c3}
+      \strng{authorfullhash}{b14ddba63bf8c7d381c0805a165d9659}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Given the recent advances in depth prediction from Convolutional Neural Networks (CNNs), this paper investigates how predicted depth maps from a deep neural network can be deployed for accurate and dense monocular reconstruction. We propose a method where CNN-predicted dense depth maps are naturally fused together with depth measurements obtained from direct monocular SLAM. Our fusion scheme privileges depth prediction in image locations where monocular SLAM approaches tend to fail, e.g. along low-textured regions, and vice-versa. We demonstrate the use of depth prediction for estimating the absolute scale of the reconstruction, hence overcoming one of the major limitations of monocular SLAM. Finally, we propose a framework to efficiently fuse semantic labels, obtained from a single frame, with dense SLAM, yielding semantically coherent scene reconstruction from a single view. Evaluation results on two benchmark datasets show the robustness and accuracy of our approach.}
+      \field{eprinttype}{arXiv}
+      \field{title}{{CNN-SLAM: Real-time dense monocular SLAM with learned depth prediction}}
+      \field{year}{2017}
+      \verb{eprint}
+      \verb 1704.03489
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/CNN-SLAM$\backslash$: Real-time dense monocular SLAM with learned depth prediction.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1704.03489
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1704.03489
+      \endverb
+    \endentry
+    \entry{turtlebot2}{online}{}
+      \field{sortinit}{t}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labeltitlesource}{title}
+      \field{title}{turtlebot2}
+      \verb{urlraw}
+      \verb https://www.turtlebot.com/turtlebot2/
+      \endverb
+      \verb{url}
+      \verb https://www.turtlebot.com/turtlebot2/
+      \endverb
+    \endentry
+    \entry{Wang2016}{article}{}
+      \name{author}{2}{}{%
+        {{hash=91b0ceddefe1df2be88f9c70c4507e4b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8f743eebb2f64f75592e54ba06f94320}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f9eb108db0b2c60537d5a530b64d28a}
+      \strng{fullhash}{8f9eb108db0b2c60537d5a530b64d28a}
+      \strng{bibnamehash}{8f9eb108db0b2c60537d5a530b64d28a}
+      \strng{authorbibnamehash}{8f9eb108db0b2c60537d5a530b64d28a}
+      \strng{authornamehash}{8f9eb108db0b2c60537d5a530b64d28a}
+      \strng{authorfullhash}{8f9eb108db0b2c60537d5a530b64d28a}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{AprilTags and other passive fiducial markers require specialized algorithms to detect markers among other features in a natural scene. The vision processing steps generally dominate the computation time of a tag detection pipeline, so even small improvements in marker detection can translate to a faster tag detection system. We incorporated lessons learned from implementing and supporting the AprilTag system into this improved system. This work describes AprilTag 2, a completely redesigned tag detector that improves robustness and efficiency compared to the original AprilTag system. The tag coding scheme is unchanged, retaining the same robustness to false positives inherent to the coding system. The new detector improves performance with higher detection rates, fewer false positives, and lower computational time. Improved performance on small images allows the use of decimated input images, resulting in dramatic gains in detection speed.}
+      \field{isbn}{9781509037629}
+      \field{issn}{21530866}
+      \field{journaltitle}{IEEE Int. Conf. Intell. Robot. Syst.}
+      \field{title}{{AprilTag 2: Efficient and robust fiducial detection}}
+      \field{volume}{2016-Novem}
+      \field{year}{2016}
+      \field{pages}{4193\bibrangedash 4198}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IROS.2016.7759617
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/AprilTag 2$\backslash$: Efficient and robust fiducial detection.pdf:pdf
+      \endverb
     \endentry
     \entry{7989236}{inproceedings}{}
       \name{author}{4}{}{%
@@ -514,6 +3000,65 @@
       \field{year}{2017}
       \field{pages}{2043\bibrangedash 2050}
       \range{pages}{8}
+    \endentry
+    \entry{geometric}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=298db7fe95de35f7ad8f9a6126e3159b}{%
+           family={{Wang}},
+           familyi={W\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=1dba7954181d04ac67d05bc2ed559ed4}{%
+           family={{Zhang}},
+           familyi={Z\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=78dbc78111fdf168a70696ea3a00a9de}{%
+           family={{Yin}},
+           familyi={Y\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=7db9734625313817ac47e51b122f6d6c}{%
+           family={{Du}},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b813bde724fed9a8815bd0658237f2ed}{%
+           family={{Chen}},
+           familyi={C\bibinitperiod},
+           given={Q.},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca6e5d67d5ef2abfa1fc6599e33ca9dd}
+      \strng{fullhash}{ca3040707b5401817609878caf026ce0}
+      \strng{bibnamehash}{ca6e5d67d5ef2abfa1fc6599e33ca9dd}
+      \strng{authorbibnamehash}{ca6e5d67d5ef2abfa1fc6599e33ca9dd}
+      \strng{authornamehash}{ca6e5d67d5ef2abfa1fc6599e33ca9dd}
+      \strng{authorfullhash}{ca3040707b5401817609878caf026ce0}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{Monocular Visual Odometry Scale Recovery Using Geometrical Constraint}
+      \field{year}{2018}
+      \field{pages}{988\bibrangedash 995}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICRA.2018.8462902
+      \endverb
+    \endentry
+    \entry{tof}{online}{}
+      \field{sortinit}{w}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labeltitlesource}{title}
+      \field{title}{wikiwand}
+      \verb{urlraw}
+      \verb https://www.wikiwand.com/en/Time-of-flight_camera
+      \endverb
+      \verb{url}
+      \verb https://www.wikiwand.com/en/Time-of-flight_camera
+      \endverb
     \endentry
     \entry{yang20d3vo}{inproceedings}{}
       \name{author}{4}{}{%
@@ -601,7 +3146,201 @@
       \verb 1705.04300
       \endverb
     \endentry
+    \entry{Yang2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d063132f441798ef9f4d438c5d299f61}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Shichao},
+           giveni={S\bibinitperiod}}}%
+        {{hash=843c7f8110f7bed0880c1cc4bd93ac35}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=da701266dff9b3f01fdc8e0d18e5f021}{%
+           family={Kaess},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ad26bf16eeaee427e8e36bea35587822}{%
+           family={Scherer},
+           familyi={S\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a59f26db512831317179bf5e8435bc2}
+      \strng{fullhash}{4e5bf3f660c381a0a688c27cdc0b6ad4}
+      \strng{bibnamehash}{6a59f26db512831317179bf5e8435bc2}
+      \strng{authorbibnamehash}{6a59f26db512831317179bf5e8435bc2}
+      \strng{authornamehash}{6a59f26db512831317179bf5e8435bc2}
+      \strng{authorfullhash}{4e5bf3f660c381a0a688c27cdc0b6ad4}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{--- Existing simultaneous localization and mapping (SLAM) algorithm is not robust in challenging low-texture environments because of few salient features. The resulting sparse or semi-dense map also conveys little information for motion planning. Though some work utilize plane or scene layout for dense map regularization, they require decent state estimation from other sources. In this paper, we propose a real-time monocular plane SLAM to demonstrate that scene understanding could improve both state estimation and dense mapping especially in low-texture environments. The plane measurements come from the pop-up 3D plane model from each single image. We also combine planes with point based SLAM to solve the ill-constrained problems. On a public TUM dataset, our algorithm generates dense semantic 3D model with pixel depth error of 6.2 cm while existing SLAM fails. On a 60 m long dataset with loops, our method creates a much better 3D model with state estimation error of 0.67 {\%}.}
+      \field{eprinttype}{arXiv}
+      \field{isbn}{9781509037629}
+      \field{issn}{21530866}
+      \field{journaltitle}{IEEE Int. Conf. Intell. Robot. Syst.}
+      \field{title}{{Pop-up SLAM: Semantic monocular plane SLAM for low-texture environments}}
+      \field{volume}{2016-Novem}
+      \field{year}{2016}
+      \field{pages}{1222\bibrangedash 1229}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IROS.2016.7759204
+      \endverb
+      \verb{eprint}
+      \verb 1703.07334
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Pop-up SLAM$\backslash$: Semantic Monocular Plane SLAM for Low-texture Environments.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Zhang2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f83176d7990e7bd6ad17dee08c194d1c}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ji},
+           giveni={J\bibinitperiod}}}%
+        {{hash=495200d014eb282f882493a67e925f57}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Sanjiv},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5774afd7a28afdf2d812435aa5734314}
+      \strng{fullhash}{5774afd7a28afdf2d812435aa5734314}
+      \strng{bibnamehash}{5774afd7a28afdf2d812435aa5734314}
+      \strng{authorbibnamehash}{5774afd7a28afdf2d812435aa5734314}
+      \strng{authornamehash}{5774afd7a28afdf2d812435aa5734314}
+      \strng{authorfullhash}{5774afd7a28afdf2d812435aa5734314}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{--- Here, we present a general framework for com-bining visual odometry and lidar odometry in a fundamental and first principle method. The method shows improvements in performance over the state of the art, particularly in robustness to aggressive motion and temporary lack of visual features. The proposed on-line method starts with visual odometry to estimate the ego-motion and to register point clouds from a scanning lidar at a high frequency but low fidelity. Then, scan matching based lidar odometry refines the motion estimation and point cloud registration simultaneously. We show results with datasets collected in our own experiments as well as using the KITTI odometry benchmark. Our proposed method is ranked {\#}1 on the benchmark in terms of average translation and rotation errors, with a 0.75{\%} of relative position drift. In addition to comparison of the motion estimation accuracy, we evaluate robustness of the method when the sensor suite moves at a high speed and is subject to significant ambient lighting changes.}
+      \field{isbn}{9781479969227}
+      \field{issn}{10504729}
+      \field{journaltitle}{Proc. - IEEE Int. Conf. Robot. Autom.}
+      \field{number}{June}
+      \field{title}{{Visual-lidar odometry and mapping: Low-drift, robust, and fast}}
+      \field{volume}{2015-June}
+      \field{year}{2015}
+      \field{pages}{2174\bibrangedash 2181}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICRA.2015.7139486
+      \endverb
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Visual-lidar Odometry and Mapping$\backslash$: Low-drift, Robust, and Fast.pdf:pdf
+      \endverb
+    \endentry
+    \entry{zhangcalib}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7969b27c3036c48b4c828e3e7465cebb}{%
+           family={{Zhang}},
+           familyi={Z\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{7969b27c3036c48b4c828e3e7465cebb}
+      \strng{fullhash}{7969b27c3036c48b4c828e3e7465cebb}
+      \strng{bibnamehash}{7969b27c3036c48b4c828e3e7465cebb}
+      \strng{authorbibnamehash}{7969b27c3036c48b4c828e3e7465cebb}
+      \strng{authornamehash}{7969b27c3036c48b4c828e3e7465cebb}
+      \strng{authorfullhash}{7969b27c3036c48b4c828e3e7465cebb}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{number}{11}
+      \field{title}{A flexible new technique for camera calibration}
+      \field{volume}{22}
+      \field{year}{2000}
+      \field{pages}{1330\bibrangedash 1334}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/34.888718
+      \endverb
+    \endentry
+    \entry{ground}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=5e521b757bbfa0fcb5804e5d213d4a1f}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Dingfu},
+           giveni={D\bibinitperiod}}}%
+        {{hash=46e3a90300a599dc3588c3ceb79df78b}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Yuchao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bfb71cf26620b3b038faaa059c3341f7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hongdong},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{83ebd697751a3d5d6cf1a0acf5fb581e}
+      \strng{fullhash}{83ebd697751a3d5d6cf1a0acf5fb581e}
+      \strng{bibnamehash}{83ebd697751a3d5d6cf1a0acf5fb581e}
+      \strng{authorbibnamehash}{83ebd697751a3d5d6cf1a0acf5fb581e}
+      \strng{authornamehash}{83ebd697751a3d5d6cf1a0acf5fb581e}
+      \strng{authorfullhash}{83ebd697751a3d5d6cf1a0acf5fb581e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{Ground Plane based Absolute Scale Estimation for Monocular Visual Odometry}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1903.00912
+      \endverb
+    \endentry
+    \entry{Zhu2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c6bbb932527fe4ad13abdb30dcadfa83}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jianke},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6bbb932527fe4ad13abdb30dcadfa83}
+      \strng{fullhash}{c6bbb932527fe4ad13abdb30dcadfa83}
+      \strng{bibnamehash}{c6bbb932527fe4ad13abdb30dcadfa83}
+      \strng{authorbibnamehash}{c6bbb932527fe4ad13abdb30dcadfa83}
+      \strng{authornamehash}{c6bbb932527fe4ad13abdb30dcadfa83}
+      \strng{authorfullhash}{c6bbb932527fe4ad13abdb30dcadfa83}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Visual odometry is an important research prob- lem for computer vision and robotics. In general, the feature-based visual odometry methods heavily rely on the accurate correspondences between lo- cal salient points, while the direct approaches could make full use of whole image and perform dense 3D reconstruction simultaneously. However, the di- rect visual odometry usually suffers from the draw- back of getting stuck at local optimum especially with large displacement, which may lead to the in- ferior results. To tackle this critical problem, we propose a novel scheme for stereo odometry in this paper, which is able to improve the convergence with more accurate pose. The key of our approach is a dual Jacobian optimization that is fused into a multi-scale pyramid scheme. Moreover, we intro- duce a gradient-based feature representation, which enjoys the merit of being robust to illumination changes. Furthermore, a joint direct odometry ap- proach is proposed to incorporate the information from the last frame and previous keyframes. We have conducted the experimental evaluation on the challenging KITTI odometry benchmark, whose promising results show that the proposed algorithm is very effective for stereo visual odometry. 1}
+      \field{journaltitle}{Int. Jt. Conf. Artif. Intell.}
+      \field{title}{{Image Gradient-based Joint Direct Visual Odometry for Stereo Camera}}
+      \field{year}{2017}
+      \field{pages}{4558\bibrangedash 4564}
+      \range{pages}{7}
+      \verb{file}
+      \verb :home/chris/Documents/Mendeley Desktop/Image Gradient-based Joint Direct Visual Odometry for Stereo Camera.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ijcai.org/proceedings/2017/0636.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ijcai.org/proceedings/2017/0636.pdf
+      \endverb
+      \keyw{Robotics and Vision: Robotics and Vision,Robotics and Vision: Vision and Perception}
+    \endentry
   \enddatalist
+  \missing{engel2016photometrically}
 \endrefsection
 \endinput
 
