@@ -19,11 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{Online}{misc}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \field{howpublished}{\url{www.jpl.nasa.gov}}
-    \endentry
     \entry{fast}{misc}{}
       \field{sortinit}{}
       \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
@@ -252,20 +247,6 @@
       \endverb
       \keyw{Mapping and Localization,Image,Radar,Lidar Signal}
     \endentry
-    \entry{opencvcalib}{online}{}
-      \field{sortinit}{c}
-      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
-      \field{labeltitlesource}{title}
-      \field{month}{9}
-      \field{title}{calibration opencv}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb https://medium.com/@elifozcakiir/camera-calibration-with-opencv-9fb104fdf879
-      \endverb
-      \verb{url}
-      \verb https://medium.com/@elifozcakiir/camera-calibration-with-opencv-9fb104fdf879
-      \endverb
-    \endentry
     \entry{calibio}{online}{}
       \field{sortinit}{c}
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
@@ -279,6 +260,48 @@
       \verb{url}
       \verb https://calib.io/blogs/knowledge-base/calibration-patterns-explained
       \endverb
+    \endentry
+    \entry{ORBSLAM3}{article}{}
+      \name{author}{5}{}{%
+        {{hash=6cdacf84be87337589747b5b4820bfba}{%
+           family={Campos},
+           familyi={C\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=45619e807fa5241f5da5135ce7992309}{%
+           family={Elvira},
+           familyi={E\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8d5584f65bb2de20b5584e766a152ef3}{%
+           family={G\\textasciiacute{}omez},
+           familyi={G\bibinitperiod},
+           given={Juan\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d7d048c6b498f2b17a46751238940840}{%
+           family={Montiel},
+           familyi={M\bibinitperiod},
+           given={Jos\'{e}\bibnamedelimb M.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=dc52fed03299bfee885aa06d2345ceba}{%
+           family={Tard\'{o}s},
+           familyi={T\bibinitperiod},
+           given={Juan\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b5f61bd95eca9030bea99344bcf2557}
+      \strng{fullhash}{ac735108304782c0a5fde3563a07ece9}
+      \strng{bibnamehash}{4b5f61bd95eca9030bea99344bcf2557}
+      \strng{authorbibnamehash}{4b5f61bd95eca9030bea99344bcf2557}
+      \strng{authornamehash}{4b5f61bd95eca9030bea99344bcf2557}
+      \strng{authorfullhash}{ac735108304782c0a5fde3563a07ece9}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2007.11898}
+      \field{title}{{ORB-SLAM3}: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map {SLAM}}
+      \field{year}{2020}
     \endentry
     \entry{Concha2015b}{article}{}
       \name{author}{2}{}{%
@@ -748,6 +771,18 @@
       \verb 1607.02555
       \endverb
     \endentry
+    \entry{Fbow}{online}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labeltitlesource}{title}
+      \field{title}{Fast Bag of Words (FBoW)}
+      \verb{urlraw}
+      \verb https://github.com/rmsalinas/fbow
+      \endverb
+      \verb{url}
+      \verb https://github.com/rmsalinas/fbow
+      \endverb
+    \endentry
     \entry{7782863}{article}{}
       \name{author}{5}{}{%
         {{hash=8bd41eae090481c6f617d62b201b7394}{%
@@ -941,6 +976,19 @@
       \field{title}{LDSO: Direct Sparse Odometry with Loop Closure}
       \field{year}{2018}
       \keyw{dso,ldso}
+    \endentry
+    \entry{genius}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labeltitlesource}{title}
+      \field{title}{Genius widecam F100}
+      \verb{urlraw}
+      \verb https://global.geniusnet.com/product/widecam-f100/
+      \endverb
+      \verb{url}
+      \verb https://global.geniusnet.com/product/widecam-f100/
+      \endverb
+      \warn{\item Entry 'genius' (references.bib): Invalid format 'date' of date field 'date' - ignoring}
     \endentry
     \entry{vignette}{inproceedings}{}
       \name{author}{2}{}{%
@@ -1834,6 +1882,19 @@
       \verb 10.1186/s40064-016-3573-7
       \endverb
     \endentry
+    \entry{lecture}{online}{}
+      \field{sortinit}{m}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labeltitlesource}{title}
+      \field{title}{multi-view geometry lecture notes by Prof. Dr. Davide Scaramuzza}
+      \verb{urlraw}
+      \verb rpg.ifi.uzh.ch/docs/teaching/2020/08_multiple_view_geometry_2.pdf
+      \endverb
+      \verb{url}
+      \verb rpg.ifi.uzh.ch/docs/teaching/2020/08_multiple_view_geometry_2.pdf
+      \endverb
+      \warn{\item Entry 'lecture' (references.bib): Invalid format '19th december 2020' of date field 'date' - ignoring}
+    \endentry
     \entry{orbslam}{article}{}
       \name{author}{3}{}{%
         {{hash=97e889e4a152086a749293c55b93beed}{%
@@ -1987,6 +2048,19 @@
       \verb{file}
       \verb :home/chris/Documents/Mendeley Desktop/2014{\_}IEEE{\_}ICRA{\_}Mur{\_}Tardos.pdf:pdf
       \endverb
+    \endentry
+    \entry{nasa}{online}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labeltitlesource}{title}
+      \field{title}{NASA mars rover}
+      \verb{urlraw}
+      \verb https://mars.nasa.gov/resources/3512/mars-rover-curiosity-in-artists-concept-wide/
+      \endverb
+      \verb{url}
+      \verb https://mars.nasa.gov/resources/3512/mars-rover-curiosity-in-artists-concept-wide/
+      \endverb
+      \warn{\item Entry 'nasa' (references.bib): Invalid format '10 dec 2020' of date field 'date' - ignoring}
     \endentry
     \entry{Nerurkar2014}{article}{}
       \name{author}{3}{}{%
@@ -2182,6 +2256,19 @@
       \verb{file}
       \verb :home/chris/Documents/Mendeley Desktop/AprilTag$\backslash$: A robust and flexible visual fiducial system.pdf:pdf
       \endverb
+    \endentry
+    \entry{opencvcalib}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labeltitlesource}{title}
+      \field{title}{Opencv Camera Calibration and 3D reconstruction}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/master/d9/d0c/group__calib3d.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/master/d9/d0c/group__calib3d.html
+      \endverb
+      \warn{\item Entry 'opencvcalib' (references.bib): Invalid format 'date' of date field 'date' - ignoring}
     \endentry
     \entry{Pascoe2017}{article}{}
       \name{author}{5}{}{%
@@ -2739,6 +2826,32 @@
       \field{year}{2011}
       \field{pages}{80\bibrangedash 92}
       \range{pages}{13}
+    \endentry
+    \entry{picocam}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{SICK 2D machine Vision picocam}
+      \verb{urlraw}
+      \verb https://www.sick.com/ag/en/machine-vision/2d-machine-vision/picocam/c/g386351
+      \endverb
+      \verb{url}
+      \verb https://www.sick.com/ag/en/machine-vision/2d-machine-vision/picocam/c/g386351
+      \endverb
+      \warn{\item Entry 'picocam' (references.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{sick}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{SICK Sensor Intelligence}
+      \verb{urlraw}
+      \verb https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/tim5xx/tim571-2050101/p/p412444
+      \endverb
+      \verb{url}
+      \verb https://www.sick.com/us/en/detection-and-ranging-solutions/2d-lidar-sensors/tim5xx/tim571-2050101/p/p412444
+      \endverb
+      \warn{\item Entry 'sick' (references.bib): Invalid format 'date' of date field 'date' - ignoring}
     \endentry
     \entry{zed}{online}{}
       \field{sortinit}{s}
@@ -3340,7 +3453,6 @@
       \keyw{Robotics and Vision: Robotics and Vision,Robotics and Vision: Vision and Perception}
     \endentry
   \enddatalist
-  \missing{engel2016photometrically}
 \endrefsection
 \endinput
 

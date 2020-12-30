@@ -4,41 +4,53 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
 \BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Thesis Structure}{chapter.1}% 6
-\BOOKMARK [0][-]{chapter.2}{Visual Odometry \(VO\)}{}% 7
+\BOOKMARK [0][-]{chapter.2}{Visual Odometry}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Basics}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.1.1}{What is Visual Odometry ?}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.2}{VO Pipeline}{section.2.1}% 10
-\BOOKMARK [2][-]{subsection.2.1.3}{Types of VO}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.2.1.4}{State of the Art}{section.2.1}% 12
-\BOOKMARK [2][-]{subsection.2.1.5}{ORB-SLAM}{section.2.1}% 13
-\BOOKMARK [2][-]{subsection.2.1.6}{Direct Sparse Odometry}{section.2.1}% 14
-\BOOKMARK [2][-]{subsection.2.1.7}{Semi-direct Visual Odometry}{section.2.1}% 15
-\BOOKMARK [0][-]{chapter.3}{Camera}{}% 16
-\BOOKMARK [1][-]{section.3.1}{Classification of Camera}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.2}{Important Properties}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.3}{Camera Selection}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.4}{Camera Calibration}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.4.1}{Pinhole Camera Model}{section.3.4}% 21
-\BOOKMARK [2][-]{subsection.3.4.2}{Calibration Procedure}{section.3.4}% 22
-\BOOKMARK [2][-]{subsection.3.4.3}{Recommendations for good calibration}{section.3.4}% 23
-\BOOKMARK [2][-]{subsection.3.4.4}{Calibration result}{section.3.4}% 24
-\BOOKMARK [0][-]{chapter.4}{Experiment}{}% 25
-\BOOKMARK [1][-]{section.4.1}{Setup}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.1.1}{Base frame transformation}{section.4.1}% 27
-\BOOKMARK [2][-]{subsection.4.1.2}{Implementation}{section.4.1}% 28
-\BOOKMARK [2][-]{subsection.4.1.3}{Data acquisition}{section.4.1}% 29
-\BOOKMARK [1][-]{section.4.2}{Modifications and changes in implementation}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.3}{results}{chapter.4}% 31
-\BOOKMARK [0][-]{chapter.5}{Evaluation}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Evaluation}{chapter.5}% 33
-\BOOKMARK [2][-]{subsection.5.1.1}{Evaluation criteria}{section.5.1}% 34
-\BOOKMARK [2][-]{subsection.5.1.2}{Comparison}{section.5.1}% 35
-\BOOKMARK [2][-]{subsection.5.1.3}{Observations}{section.5.1}% 36
-\BOOKMARK [2][-]{subsection.5.1.4}{suggestions}{section.5.1}% 37
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 38
-\BOOKMARK [0][-]{chapter*.43}{References}{}% 39
-\BOOKMARK [0][-]{chapter*.43}{References}{}% 40
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 41
-\BOOKMARK [1][-]{section.A.1}{List of vo/v-slam Algorithms}{appendix.A}% 42
-\BOOKMARK [1][-]{section.A.2}{Camera calibration result}{appendix.A}% 43
-\BOOKMARK [1][-]{section.A.3}{Base frame transformations}{appendix.A}% 44
+\BOOKMARK [2][-]{subsection.2.1.1}{Visual Odometry Pipeline}{section.2.1}% 9
+\BOOKMARK [1][-]{section.2.2}{Types of Visual Odometry}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{Indirect Approach}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{Direct Approach}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.3}{Hybrid Approach}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.4}{Monocular vs Stereo}{section.2.2}% 14
+\BOOKMARK [1][-]{section.2.3}{State of the Art}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.3.1}{ORB-SLAM}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.2}{Direct Sparse Odometry}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.3}{Semi-direct Visual Odometry}{section.2.3}% 18
+\BOOKMARK [0][-]{chapter.3}{Camera}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Classification of Camera}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{Important Properties}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.3}{Camera Selection}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.4}{Camera Calibration}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.4.1}{Pinhole Camera Model}{section.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.4.2}{Calibration Procedure}{section.3.4}% 25
+\BOOKMARK [2][-]{subsection.3.4.3}{Recommendations for good calibration}{section.3.4}% 26
+\BOOKMARK [2][-]{subsection.3.4.4}{Calibration result}{section.3.4}% 27
+\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Setup}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.1.1}{Base frame transformation}{section.4.1}% 30
+\BOOKMARK [1][-]{section.4.2}{Software Implementation}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.3}{Data Acquisition}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.4}{Improvements}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.1}{orb-slam}{section.4.4}% 34
+\BOOKMARK [2][-]{subsection.4.4.2}{ldso}{section.4.4}% 35
+\BOOKMARK [0][-]{chapter.5}{Evaluation}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Evaluation Criteria}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{Experiment}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{Straight Path}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.2}{Rectangle Path}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.3}{Repeated Path}{section.5.2}% 41
+\BOOKMARK [2][-]{subsection.5.2.4}{Multi-loop Path}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.5}{Figure Eight Path}{section.5.2}% 43
+\BOOKMARK [1][-]{section.5.3}{Comparison}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.4}{Observations}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.4.1}{svo}{section.5.4}% 46
+\BOOKMARK [2][-]{subsection.5.4.2}{ldso}{section.5.4}% 47
+\BOOKMARK [2][-]{subsection.5.4.3}{orb-slam}{section.5.4}% 48
+\BOOKMARK [1][-]{section.5.5}{Suggestions}{chapter.5}% 49
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 50
+\BOOKMARK [0][-]{chapter*.67}{References}{}% 51
+\BOOKMARK [0][-]{chapter*.67}{References}{}% 52
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 53
+\BOOKMARK [1][-]{section.A.1}{List of vo/v-slam Algorithms}{appendix.A}% 54
+\BOOKMARK [1][-]{section.A.2}{Camera calibration result}{appendix.A}% 55
+\BOOKMARK [1][-]{section.A.3}{Base frame transformations}{appendix.A}% 56

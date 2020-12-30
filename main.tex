@@ -16,7 +16,7 @@
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}   %allows to change margins and distances within the page's frame. Be careful with this tool. Remember to delete the frame!!!!
 
 %\usepackage{showframe}
-%\usepackage[english]{babel}    %the package babel is not necessary as long as you write your thesis in English.
+\usepackage[german,english]{babel}    %the package babel is not necessary as long as you write your thesis in English.
 %\usepackage{csquotes}
 \usepackage{graphicx}   %loads the graphics package, necessary for pictures
 \usepackage{url}
@@ -34,6 +34,9 @@
 \usepackage{hyperref}
 \usepackage[UKenglish]{isodate} %Provides the format for the date on the title page. Read the package documentation for all the possible date formats.
 \usepackage{csquotes}
+\usepackage{subcaption}
+\usepackage{float}
+
 
 \usepackage{array}
 
@@ -147,13 +150,13 @@
     \setcounter{page}{1}
     \input{chapters/chapter01}
 
-\chapter{Visual Odometry (VO)}
+\chapter{Visual Odometry}
     \input{chapters/chapter02}
     
 \chapter{Camera}
     \input{chapters/chapter03}
 
-\chapter{Experiment}
+\chapter{Implementation}
      \input{chapters/chapter04}
         
 \chapter{Evaluation}    

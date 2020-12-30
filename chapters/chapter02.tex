@@ -1,33 +1,28 @@
-This Chapter gives an overview of visual odometry, its working, different types of approaches and state-of-the-art.   
-
-\section{Basics}
-Localization of a robot is a fundamental challenge and one of the most important tasks. For autonomous navigation, motion tracking, and obstacle detection and avoidance, a robot must know of its position in real time. Vision-based Odometry is a novel and robust solution utilized for this purpose.\cite{Aqel-et-al-2016} It allows a robot to localize itself accurately by using only a stream of images captured by a camera attached to the vehicle.
+Robot localization a major problem in mobile robotics. Robot must know its location in an environment for real time applications. The challenge is that robot determines its pose from some internal sensors like wheel encoders, laser scanner, \acrshort{gps}, \acrshort{imu}, camera etc. which always consists some noise. An accurate robot positioning is a fundamental challenge. Camera based Odometry is a novel technique which allows a robot to localize accurately by using sequential images captured by a camera attached to the it. This section serves basics of Visual Odometry, different \acrshort{vo} approaches and state of the art \acrshort{vo} methods.\\
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{where_am_i}
-	\caption{NASA Path finder robot\cite{Online}}
+	\includegraphics[width=0.9\textwidth]{where_am_i}
+	\caption{NASA Path finder robot\cite{nasa}}
 \end{figure}
-\subsection{What is Visual Odometry ?}
-\acrshort{vo} is defined as the process of estimating the egomotion (translation and rotation with respect to a reference frame) of an agent(e.g. vehicle, human and robot) by observing a sequence of images using single or multiple cameras attached to it\cite{KhalidYousif-et-al-2015}. VO is a particular case of a technique known as Structure From Motion(SFM) in computer vision that tackles the problem of 3D reconstruction of environment and camera poses from set of images\cite{ScaramuzzaVO}. \acrshort{vo} mainly focuses on 3-D motion of the camera sequentially in real time (sequential \acrshort{sfm}).\acrshort{vo} mainly differs with \acrshort{slam} in terms of global mapping. \acrshort{vo} focuses on local consistency and incrementally estimate the path of camera/robot pose, and some local optimization whereas \acrshort{slam} performs both localization and global mapping.
+\section{Basics}
+According to Khalid Yousif et al.\cite{KhalidYousif-et-al-2015} \acrshort{vo} is defined as " the process of estimating the egomotion (translation and rotation with respect to a reference frame) of an agent(e.g. vehicle, human and robot) by observing a sequence of images using single or multiple cameras attached to it". Structure From Motion (SFM) is a method in computer vision which produces 3D reconstruction of environment and camera poses from set of images \cite{ScaramuzzaVO}. \acrshort{vo} focuses on 3D motion of the camera sequentially in real time which is also known as Sequential \acrshort{sfm} in computer vision. \acrshort{vo} focuses on local mapping and incrementally estimate the camera trajectory and performs local optimization whereas \acrshort{slam} performs localization and global mapping simultaneously.
 
-\subsection{VO Pipeline}
-The VO pipeline is summarized in Figure \ref{fig:flow}. For every new image I(or image pair for stereo case), the first two steps consist of detecting and matching 2-D features with those from the previous frames. 2-D features that are the reprojection of the same 3-D feature across different frames are called image correspondences. The feature detection consists of detecting features independently in all the images. Feature matching will find the same features in sequence of images and then tracks them using a local search technique, such as correlation. The next step consists of computing the relative motion(translation and rotation) between the two consecutive time instants. There are three different approaches for motion estimation depending on the correspondences specified in 3-D or 2-D. Current camera pose is then computed by concatenation of the previous pose. Finally, an iterative local optimization known as \acrshort{ba} can be done over the last m frames to obtain a more accurate estimate of the local trajectory. Each steps are discussed further in next section.
-
+\subsection{Visual Odometry Pipeline}
+\acrshort{vo} pipeline is summarized in Figure \ref{fig:flow}. For every image frame (or image pair for stereo case) 2D features are detected. Feature detection finds 2D features like corners, edges, blobs etc. Next comes feature matching, it will find same features in previous images and reprojects on those images. The matched features are known as image correspondences which are tracked using local search methods, such as correlation. The next step consists of computing relative motion between two images in particular time. There are three different approaches for motion estimation depending on the correspondences specified in 3D or 2D. Global camera pose is determined by concatenation of the previous camera pose. Finally, an iterative local optimization known as \acrshort{ba} can be done over some previous image frames to obtain a more accurate estimate of the local trajectory.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\textwidth]{vo_pipeline}
 	\caption{Visual Odometry Pipeline}
 	\label{fig:flow}
 \end{figure}
-\subsection{Types of VO}
+\section{Types of Visual Odometry}
 \label{section:vo_types}
-\acrshort{vo} mainly classified based on types of camera used for such as stereo, monocular, omnidirectional, and RGB-D cameras (Fig.). Monocular \acrshort{vo} suffers from scale ambiguity because of unknown depth information of images. Stereo \acrshort{vo} solves this scaling problem by retrieving depth information using two cameras at little on distance known as baseline. Stereo case can be degraded to monocular if the baseline is much smaller than distances to scene from the camera.\\
+\acrshort{vo} is mainly classified based on types of camera used for such as stereo, monocular, omnidirectional, and RGB-D cameras. Monocular \acrshort{vo} suffers from scale ambiguity because of unknown depth information of images. Stereo \acrshort{vo} solves this scaling problem by retrieving depth information using two cameras at little on distance known as baseline. Stereo case can be degraded to monocular if the baseline (distance between two image sensors) is much smaller than distances to scene from the camera.\\
 \newline
-These methods are then further classified according to their approach as Indirect (Feature based), Direct (Appearance based) and Hybrid Approach (mixture of both approaches).
+These methods are further classified according to their approach as Indirect (Feature based), Direct (Appearance based) and Hybrid Approach (mixture of both approaches).
 
-\subsubsection{Indirect Approach}
-This is a classical approach for \acrshort{vo} and \acrshort{sfm}. The Indirect or Feature-based method involves extraction of some features such as corners, edges etc. from the images frames. See Figure\ref{fig:feature} These features are then matched and tracked among two consecutive image frames. Based on the feature tracking motion of camera is estimated. This approach can typically divided into two steps 1.Feature detection and matching, 2.Geometric optimization on the computed point correspondences. In first step an image is matched with a previous one by comparing each feature in both images and calculating the Euclidean distance of feature vectors to find the candidate matching features.\cite{Aqel-et-al-2016} In second step using these match correspondences the camera motion and surrounding 3D geometry can be estimated. In case of stereo \acrshort{vo} the features are first compared with each image pair and thus depth information of feature can be estimated. In this approach the reprojection error is minimized using Bundle Adjustment because keypoints positions(geometric quantities) are used to compute camera pose. The Bundle adjustment problem is described as below. 
-
+\subsection{Indirect Approach}
+This is a classical approach for \acrshort{vo} and \acrshort{sfm}. Indirect or Feature-based method involves extraction of some features such as corners, edges etc. from image frames as seen in figure \ref{fig:feature}. These features are then matched and tracked in two consecutive image frames. Based on the feature tracking motion of camera is estimated. This approach can typically divided into two steps 1. Feature detection and matching, 2. Geometric optimization on the computed point correspondences. In first step an image is matched with a previous image by comparing each feature in both images and calculating euclidean distance of feature vectors to find candidate matching features\cite{Aqel-et-al-2016}. In second step using these match correspondences the camera motion and surrounding 3D geometry can be estimated. In case of stereo \acrshort{vo} the features are first compared with each image pair and thus depth information of feature can be estimated. In this approach the reprojection error is minimized using Bundle Adjustment because keypoints positions (geometric quantities) are used to determine camera pose. Bundle adjustment problem is described as below. 
 \begin{equation*}
 	T_{k,k-1} = arg min_{T} \sum_{i} \| u^{'}_{i}- u_{i}\|^{2}_{\Sigma}
 \end{equation*}
@@ -36,52 +31,52 @@ where   $u^{'}_{i} = \pi (P_{i},T_{k,k-1})$ , $ u_{i} $ is $ i^{th} $  pixel 2D 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{indirect}
-	\caption{Indirect method Optimizes Reprojection Error}
+	\caption{Indirect method Optimizes Reprojection Error \cite{lecture}}
 	\label{fig:feature}
 \end{figure}
 \\
-The disadvantage of feature-based approaches is their low speed due to feature extraction and matching at every frame, the necessity for robust estimation techniques that deal with erroneous correspondences (e.g. \acrshort{ransac}) and the fact that most feature detectors are optimized for speed rather than precision.\cite{7782863}
+The disadvantage of feature-based approaches is their low speed due to feature extraction and matching at every frame, the necessity for robust estimation techniques that deal with erroneous correspondences (e.g. \acrshort{ransac}) and the fact that most feature detectors are optimized for speed rather than precision \cite{7782863}.
 
-\subsubsection{Direct Approach}
+\subsection{Direct Approach}
 \label{direct}
-Direct method uses directly the pixel intensity as an information instead of extracting features and tracking them for motion estimation. Direct methods are based on assumption that Brightness remains constant in all image frames.\cite{Irani-et-al-1999} Direct methods are also known as Appearance based approach as it monitors the appearance of image in consecutive frames. The camera motion then can be estimated by Optical-flow algorithms which determines the displacement of brightness patterns of a group of pixels using intensity values from one image to another.\cite{Aqel-et-al-2016} There are two types of such algorithms based on selection of number of image pixels for calculation called as Dense and Sparse Optical-flow methods. Dense algorithms are less robust to noise as compared to Sparse based. Sparse algorithms select only those features which have more variance than others in particular image region. One of the most used sparse based algorithms for tracking is Lucas-Kanade method.\cite{Lucas81} As there is no feature extraction step is involved direct approach minimizes directly the photometric error formulated as below. 
+Direct methods use pixel intensity as an information instead of extracting features and tracking them for motion estimation. Direct methods are based on assumption that brightness remains constant in all image frames \cite{Irani-et-al-1999}. Direct methods are also known as Appearance based methods as they monitor intensity of image pixels in consecutive images. Camera pose is estimated by optical-flow algorithms which determine the displacement of brightness in a group of pixels using intensity values from one image to another \cite{Aqel-et-al-2016}. Two types of such algorithms exist known as Dense and Sparse optical-flow methods. Dense approach is less robust to noise as compared to other. Sparse methods use only those features which have more variance than others in \acrshort{roi}. One of the most used sparse based algorithm for tracking is Lucas-Kanade method \cite{Lucas81}. As there is no feature extraction step is involved direct approach minimizes directly the photometric error as seen in figure \ref{fig:direct}. The mathematical problem can be formulated as below. 
 \begin{equation*}
 	T_{k,k-1} = arg min_{T} \sum_{i} \| I_{k}(u^{'}_{i})- I_{k-1}(u_{i})\|^{2}_{\sigma}
 \end{equation*}
-where   $u^{'}_{i} = \pi (P_{i},T_{k,k-1})$ and $I_{k} $ is  $k_{th}$ image. see Figure \ref{fig:direct}
+where $u^{'}_{i} = \pi (P_{i},T_{k,k-1})$ and $I_{k} $ is  $k_{th}$ image.
 \newline
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{direct}
-	\caption{Direct Method Optimizes Photometric Error}
+	\caption{Direct Method Optimizes Photometric Error \cite{lecture}}
 	\label{fig:direct}
 \end{figure}
 \\ 
-Depending upon the number of feature selection for calculating 3D geometry Direct methods can be divided into three types such as Dense, Semi-dense and Sparse methods.A graphical Overview of these methods can be seen in Figure \ref{fig:dense_sparse}. Dense approaches use every pixel in the image, where as semi-dense use just the pixels with high intensity gradient, and the proposed and sparse approach uses selected pixels at corners or along intensity gradient edges.\cite{engel14eccv}
+Depending upon the number of feature selection for calculating 3D geometry Direct methods can be divided into three types such as Dense, Semi-dense and Sparse methods. A graphical overview of these methods can be seen in figure \ref{fig:dense_sparse}. Dense approaches use every pixel in the image, where as semi-dense use just the pixels with high intensity gradient and sparse approach uses selected pixels at corners or along intensity gradient edges \cite{engel14eccv}.
 \newline
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.6]{dense_sparse}
 	\caption{Image-to-model alignment (marked in green for corners and magenta for
-		edgelets) for sparse, semi-dense, and dense methods. \cite{7782863} }
+		edgelets) for sparse, semi-dense, and dense methods \cite{7782863}.}
 	\label{fig:dense_sparse}
 \end{figure}
 \\
-As Direct methods minimize the photometric error (intensity difference) for tracking between two images they require a well calibrated camera as compared to Indirect methods because they minimize the image pixel positions on images. A simple process comparison is described in the Figure.\ref{fig:direct_indirect}. Indirect methods have been very popular for a long time but recent advances in direct methods have shown better accuracy and robustness, especially when the images do not contain enough explicit corner features.\cite{Engel-et-al-pami2018} The robustness in the direct approach comes from the joint estimation of motion and correspondences as well as the ability to also use non-corner pixels, corresponding to edges, or even smooth image regions.\cite{gao2018ldso}
+As Direct methods minimize the photometric error (intensity difference) for tracking between two images they require a well calibrated camera as compared to Indirect methods because they minimize the image pixel positions on images. A simple process comparison is described in the Figure.\ref{fig:direct_indirect}. Indirect methods have been very popular for a long time but recent advances in direct methods have shown better accuracy and robustness, especially when the images do not contain enough explicit corner features \cite{Engel-et-al-pami2018}. The robustness in direct approach comes from the joint estimation of motion and correspondences as well as the ability to also use non-corner pixels, corresponding to edges or even smooth image regions\cite{gao2018ldso}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{direct_indirect}
-	\caption{Process comparison between Direct and Indirect methods {source:\cite{engel14eccv}}}
+	\caption{Process comparison between Direct and Indirect methods \cite{engel14eccv}.}
 	\label{fig:direct_indirect}
 \end{figure}
-\subsubsection{Hybrid Approach}
-The indirect approach fails to deal with texture-less or low-textured environments of a single pattern such as sandy soil, asphalt, and concrete etc.. The less feature detection in these type of environments make this approach inefficient. While the direct approach is more robust and better than indirect approach in low-textured or single pattern environment but they are not much robust to image occlusions or inconsistencies in system (e.g rolling shutter). To have a advantages of both approaches the best solution is to use the combination of both approaches which combines tracking of salient features over frames and use the pixel intensity as an information\cite{Aqel-et-al-2016}. Forster et al.\cite{7782863} proposed a hybrid approach in which they use a 4x4 patch around features and estimate the camera pose by minimizing the photometric error of these patches. For pose and structure refinement, the reprojection error of every feature is calculated with respect to the nearest key-frame that has observed the feature at nearly the same angle.
+\subsection{Hybrid Approach}
+Indirect approach fails to deal with texture-less or low-textured environments of a single pattern such as sandy soil, asphalt, and concrete etc.. The less feature detection in these type of environments make this approach inefficient. The direct approaches are more robust and accurate than indirect approach in low-textured or symmetric environment but they are not much robust to image occlusions or inconsistencies in system (e.g rolling shutter). To have a advantages of both approaches the best solution is to use the combination of both approaches which combines tracking of salient features over frames and use the pixel intensity as an information \cite{Aqel-et-al-2016}. Forster et al.\cite{7782863} proposed a hybrid approach in which they use a 4x4 patch around features and estimate the camera pose by minimizing the photometric error of these patches. For pose and structure refinement, the reprojection error of every feature is calculated with respect to the nearest key-frame that has observed the feature at nearly the same angle.
 
-\subsubsection{Monocular vs Stereo}
-In Monocular \acrshort{vo} a single camera is used for the whole pipeline. In this case features need to be observed in subsequent frames in order to track motion properly. Features observed in the first frame are triangulated into 3D points with help of second frame, and then transformation can be calculated using third frame \cite{KhalidYousif-et-al-2015}. While in stereo case, 3D points can be reconstructed (by triangulation) only by observing the features in the left and right images of a single pair simultaneously. Motion is estimated by observing features in two successive frames (both in left and right). Stereo approach has advantage of depth information of environment because it can obtain the disparity in scene. Where as monocular cameras can measure motion using pixel information only with no knowledge of scene depth. When the distance between scene to stereo camera becomes very long compared to the baseline(distance between left and right camera), the stereo case can be degraded to monocular because its very erroneous to measure the depth for far scene. 
+\subsection{Monocular vs Stereo}
+In Monocular \acrshort{vo}, a single camera is used for the whole pipeline. In this case features need to be observed in subsequent frames in order to track motion properly. Features observed in the first frame are triangulated into 3D points with help of second frame, and then transformation can be calculated using third frame \cite{KhalidYousif-et-al-2015}. While in stereo case, 3D points can be reconstructed (by triangulation) only by observing the features in left and right images of a single pair simultaneously. Motion is estimated by observing features in two successive frames (both left and right). Stereo approach has an advantage of depth information of environment because it can obtain the disparity in scene. Where as monocular cameras can measure motion using pixel information only with no knowledge of scene depth. When the distance between scene to stereo camera becomes very long compared to the baseline (distance between left and right camera), the stereo case can be degraded to monocular because its very erroneous to measure the depth for far scene. 
 
-\subsection{State of the Art}
-\acrshort{vo} has been very active research topic in recent years. There has been many algorithms published based on the approaches discussed in section \ref{section:vo_types} and research is still ongoing. There are several papers which describes the current state of \acrshort{vo}. They are \cite{Aqel-et-al-2016}, \cite{KhalidYousif-et-al-2015} ,\cite{ScaramuzzaVO}. Currently research is focused based on the deep learning methods \cite{7989236}, \cite{yang20d3vo} which is not in the scope of this thesis. Though \acrshort{vo} and \acrshort{v-slam} are widely researched topics it is still difficult to get an overview of all the algorithms. A list of various \acrshort{vo} and \acrshort{v-slam} algorithms, references and code if available can be found at \ref{section:A.1}. This list has been referred from \cite{chris}. The list presents mostly all algorithms invented so far using cameras. Also, these algorithms can be classified according to their approaches. Considering these facts and other criteria such as
+\section{State of the Art}
+\acrshort{vo} has been very active research topic in recent years. There has been many algorithms published based on the approaches discussed in section \ref{section:vo_types} and research is still ongoing. There are several papers published on current state of \acrshort{vo}. They are \cite{Aqel-et-al-2016}, \cite{KhalidYousif-et-al-2015} ,\cite{ScaramuzzaVO}. Currently research is focused based on the deep learning methods \cite{7989236}, \cite{yang20d3vo} which is not in the scope of this thesis. Though \acrshort{vo} and \acrshort{v-slam} are widely researched topics it is still difficult to get an overview of all the algorithms. A list of various \acrshort{vo} and \acrshort{v-slam} algorithms, references and code if available can be found at \ref{section:A.1}. This list is referred from \cite{chris}. The list presents mostly all algorithms invented so far using cameras. Also, these algorithms can be classified according to their approaches. Considering these facts and other criteria such as
 \begin{enumerate}
 	\item runs on CPU 
 	\item open source availability 
@@ -89,7 +84,7 @@ In Monocular \acrshort{vo} a single camera is used for the whole pipeline. In th
 	\item works for monocular sensor
 	\item state of the art
 \end{enumerate}	
-three algorithms (one from each approach discussed in section \ref*{section:vo_types})
+three algorithms (one from each approach discussed in section \ref{section:vo_types})
 \begin{enumerate}
     \item \acrshort{orb} \acrshort{slam} \cite{Mur-Artal} 
     \item Direct Sparse Odometry with Loop closure (LDSO)\cite{gao2018ldso} 
@@ -114,27 +109,25 @@ are selected for implementation and later evaluation. In the next section these 
 	\item Local mapping
 	\item Loop closing
 \end{enumerate}	
-To understand working of each module, \acrshort{orb} \acrshort{slam}'s code is described in \ref{section:A.1}. Which is taken as reference from thesis work by Chris Kahlefendt \cite{chris}.
 
 \subsubsection{Feature Extraction}
-The feature extraction module takes every image as input. Images are first blurred and then used to create a layer of an image pyramid with pre-defined scale factor (e.g, 1.2) up to 8 levels and added on top of the image. As \acrshort{orb} \acrshort{slam} uses the Features from Accelerated Segment Test (\acrshort{fast}) for feature extraction, it might lose some features at only one scale level. A working principle of \acrshort{fast} detector is shown in figure \ref{fig:fast}.
-Then according to image resolution \acrshort{fast} corners are extracted for initial detector threshold of 20. If number of corners are not enough then threshold further reduced to 7 and again corners are detected. To have a homogeneous distribution images is divided into equal size fo grids until each grid has a pre-defined minimum number of corners (e.g. 5). After this step only the corner with highest score in each grid are kept and other are discarded. \\
+The feature extraction module takes every image as input. Images are first blurred and then used to create a layer of an image pyramid with pre-defined scale factor (e.g, 1.2) up to 8 levels and added on top of the image. As \acrshort{orb} \acrshort{slam} uses the Features from Accelerated Segment Test (\acrshort{fast}) for feature extraction, it might lose some features at only one scale level. A working principle of \acrshort{fast} detector is shown in figure \ref{fig:fast}. Then according to image resolution \acrshort{fast} corners are extracted for initial detector threshold of 20. If number of corners are not enough then threshold further reduced to 7 and again corners are detected. To have a homogeneous distribution images is divided into equal size fo grids until each grid has a pre-defined minimum number of corners (e.g. 5). After this step only the corner with highest score in each grid are kept and other are discarded. \\
 \linebreak
-Next step is to compute the Oriented Fast and Rotated Brief \acrshort{orb} feature descriptor, an extension and combined of \acrshort{fast} and \acrshort{brief}. The working of it explained here \cite{ORB}. The All features are undistorted using already provided camera calibration data from setting file. An example of such a file is given in \ref{section:A.1}. These \acrshort{orb} descriptors are further used in the feature matching step.
+Next step is to compute the Oriented Fast and Rotated Brief \acrshort{orb} feature descriptor, an extension and combined of \acrshort{fast} and \acrshort{brief}. The working of it explained here \cite{ORB}. The All features are undistorted using already provided camera calibration data from setting file. These \acrshort{orb} descriptors are further used in the feature matching step.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fast}
 	\caption{\acrshort{fast} corner detection principle. For every pixel {p} a circle with
-		a radius of three pixels around it considered. A corner is detected if at minimum nine neighboring pixels in circle are either brighter or darker than {p}. source:\cite{fast}.}
+		a radius of three pixels around it considered. A corner is detected if at minimum nine neighboring pixels in circle are either brighter or darker than {p} \cite{fast}.}
 	\label{fig:fast}
 \end{figure}
 
 \subsubsection{Initialization}
 \acrshort{orb} \acrshort{slam} requires strong initialization because the features tracked in this module are also used to initialize 3D map. Number of feature extracted from two frames should be at least 100 to start this module. After initialization the current frame is used to match the features with initial frame. In this module feature matching is done by comparing the descriptor distance and orientation of 2D features of current frame with that of initial frame.\\
 \linebreak
-For every feature in initial frame a small region (e.g 200 x 200 pixels) around this feature is selected in current frame. Every image is divided into sufficient amount of grid cell according the image resolution. For example the image resolution of one of the camera used in this thesis is 1024 x 1024. And the grid is divided into cells with 64 columns and 64 rows. Then distance to the feature with all features in that cell of current frame is computed. If distance is less than 50 and the shortest distance is 0.9 of second shortest distance then it passed to the orientation check. For orientation test all matches are sorted into 12 equally angled bins. If the orientation is with in limit of the one neighboring bin from each side then it is considered as a match. For further processing minimum number of matches should be found (authors have set default as 100 but it can be vary according to the scene). \\
+For every feature in first frame a small region (e.g 200 x 200 pixels) around this feature is selected in current frame. Every image is divided into sufficient amount of grid cell according the image resolution. For example the image resolution of one of the camera used in this thesis is 1024 x 1024. And the grid is divided into cells with 64 columns and 64 rows. Then distance to the feature with all features in that cell of current frame is computed. If distance is less than 50 and the shortest distance is 0.9 of second shortest distance then it passed to the orientation check. For orientation test all matches are sorted into 12 equally angled bins. If the orientation is with in limit of the one neighboring bin from each side then it is considered as a match. For further processing minimum number of matches should be found. Authors have set default as 100 in code but it can be vary according to the scene). \\
 \linebreak
-After successful matching, It computes possibility of homography and fundamental matrix in parallel threads. Homography relates the mapping of two projection of a planer scene. The concept is shown in figure \ref{fig:h} The mathematical formula for homography is:
+After successful matching, tt computes possibility of homography and fundamental matrix in parallel threads. Homography relates the mapping of two projection of a planer scene. The concept is shown in figure \ref{fig:h} The mathematical formula for homography is:
 \begin{equation*}
     x^{'}_{i} = Hx_{i}    
 \end{equation*}    
@@ -145,7 +138,7 @@ After successful matching, It computes possibility of homography and fundamental
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Homo}
-	\caption{Homography matrix H maps image points of a scene plane seen from one coordinate frame system $ O_{L} $ to the corresponding system $ O_{R} $.  source:\cite{multiview}}
+	\caption{Homography matrix H maps image points of a scene plane seen from one coordinate frame system $ O_{L} $ to the corresponding system $ O_{R} $ \cite{multiview}.}
 	\label{fig:h}
 \end{figure}
 \\
@@ -158,7 +151,7 @@ x^{'T}_{i}Fx_{i} = 0
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Funda}
-	\caption{The Epipolar geometry has constraint that given a projection $ x_{L} $ in one image the corresponding point $ x_{R} $ in the other image has to lie on the line $ Fx_{i} $ source:\cite{multiview}}
+	\caption{The Epipolar geometry has constraint that given a projection $ x_{L} $ in one image the corresponding point $ x_{R} $ in the other image has to lie on the line $ Fx_{i} $ \cite{multiview}.}
 	\label{fig:F}
 \end{figure}
 \\
@@ -212,7 +205,7 @@ The last part of tracking is whether to mark the current frame as keyframe or no
 	\item The current frame tracks minimum 50 points.
 	\item The current frame tracks less than 90\% of the points than reference keyframe (last keyframe).
 \end{enumerate}
-These conditions ensure good relocalization, stopping local \acrshort{ba} ,good tracking and minimum visual change respectively. With this tracking module ends. 
+These conditions ensure good relocalization, stopping local \acrshort{ba}, good tracking and minimum visual change respectively. With this tracking module ends. 
 
 \subsubsection{Local Mapping} 
 Local mapping is independent thread running in its own when new map points and keyframe is inserted. This module takes care of all local map points and keyframes and keeps them up to date by constantly pose optimizing. The module run in loop where it gets updated ever 3 ms whether there is any new keyframe is inserted in local map. After getting key frames it follows the below steps: 
@@ -273,7 +266,7 @@ This section explains the working of Bundle Adjustment. \acrshort{ba} is well-kn
 \begin{equation*}
  x_{i}^{j} = P^{i}X^{j}
 \end{equation*} 
-With simultaneously minimizing the reprojection error between reprojected point and the corresponding image point for every frame it is visible in \cite{multiview_geometry}. \acrshort{ba} assumes te noise to be Gaussian noise. The \acrshort{ba} minimizes the reprojection error:
+With simultaneously minimizing the reprojection error between reprojected point and the corresponding image point for every frame it is visible in \cite{multiview_geometry}. \acrshort{ba} assumes the noise to be Gaussian. The \acrshort{ba} minimizes reprojection error:
 \begin{equation*}
  min_{P^{i},X_{j}} \sum_{ij} d(P^{i}X_{j},x_{j}^{i})^{2}
 \end{equation*} 
@@ -284,7 +277,7 @@ As number of unknowns increase it becomes difficult to solve. For example, with 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{ba}
-	\caption{An illustration of \acrshort{ba} with multiple cameras seeing same scene. source:\cite{sfm}}
+	\caption{An illustration of \acrshort{ba} with multiple cameras seeing same scene \cite{sfm}.}
 	\label{fig:ba}
 \end{figure}
 

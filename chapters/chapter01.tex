@@ -1,17 +1,20 @@
 \section{Motivation}
-In industrial automation, the market needs reliable and scalable solutions for autonomous transportation in production and logistic processes. To address this need, SICK AG e.g. offers reliable LiDaR localization solutions and a big portfolio of LiDaR sensors. However, the increased usage of small autonomous guided carts (AGC) introduces additional requirements compared to historically bigger autonomous vehicles: The cost factor regarding number and type of used sensor systems increases, the performance of the hardware is limited
-and the environment changes. The main target of this work is the investigation, adaption and evaluation of camera based visual Odometry algorithms for warehouse application in autonomous guided carts (AGC).
+Autonomous mobile robots (AMR) are in trend nowadays particularly in manufacturing, assembly and warehouse applications. Autonomous navigation is the key for these applications. In mobile robotics, Simultaneous Localization and Mapping also known as SLAM, has been always most researched topic which helps to localize a robot in unknown environment. In indoor applications, the environment is known most of the time means map is available. Now the only problem remains is accurate robot positioning. Many internal sensors can be used for this purpose such as wheel encoders, \acrshort{imu}, laser scanner, beacons etc. None of them are accurate enough due to inherent noise. \acrshort{lidar} is most accurate sensor among all but it is expensive and relatively bigger in size.\\
+\newline
+Currently, research is focused more on camera based localization thanks to computer vision advancement. Camera based localization is known as Visual Odometry or Vision-based odometry. Camera offers reliable solutions together with more than one tasks in parallel such as object detection, collision avoidance etc. Cameras are also cheaper compared to \acrshort{lidar}. Many state of the art \acrshort{vo} methods are invented so far.\\
+\newline
+The goal of this thesis is to analyse the performance of camera with \acrshort{lidar} and to find out suitable \acrshort{vo} methods, their implementation and evaluation with each other and with \acrshort{lidar} odometry and to select the best performing method for future work.
 
 \section{Thesis Structure}
 
-The thesis is structured into six chapters. The Chapter 1 which serves as an introduction.
-
-Chapter 2 covers the basics of Visual Odometry (VO). It explains the different methods of VO. Furthermore it describes state of the art and explains in depth the selected  algorithms namely ORB-SLAM, Direct Sparse Odometry(DSO), Semi-direct Visual Odometry (SVO).  
-
-Chapter 3 provides some information about types of camera used in Visual Odometry, important characteristics and the selection of cameras used in the implementation. It also includes an important task of calibration which affects the result of Visual Odometry.
-
-Chapter 4 describes the experimental setup, data collection and proposed implementation. All algorithms are then implemented. Some improvements are explained and the results are then discussed.
-
-Chapter 5 evaluates the algorithms based on evaluation criteria. They are compared with LiDaR odometry and the best performed algorithm is selected for future implementation.
-
-Chapter 6 concludes the thesis by summarizing the results and suggestions for future works.
+The thesis is structured into six chapters. Chapter 1 serves as an introduction.\\
+\newline 
+Chapter 2 covers the basics of Visual Odometry. It explains \acrshort{vo} pipeline. Furthermore, it describes state of the art and in depth selected algorithms namely ORB-SLAM, Direct Sparse Odometry with loop closure (LDSO), Semi-direct Visual Odometry (SVO).\\  
+\newline 
+Chapter 3 provides information about common types of cameras used for \acrshort{vo}, important characteristics and the selection of cameras used in the implementation. It also includes an important task of camera calibration which affects the result of \acrshort{vo}\\
+\newline 
+Chapter 4 describes experimental setup, data collection and proposed implementation. Some improvements are explained.\\
+\newline
+Chapter 5 evaluates algorithms based on evaluation criteria. The results are discussed for each experiment and then compared with \acrshort{lidar} odometry. Furthermore it gives some ideas for further improvement and real-time implementation for future work.\\
+\newline
+Chapter 6 concludes the thesis by summarizing the results.
