@@ -169,13 +169,7 @@ Tangential distortion generally occurs due to non-parallel lens and sensor. It d
 \end{figure}
 
 \subsection{Calibration Procedure}
-This section covers the calibration procedure in brief. Different types of calibration patterns can be used such as chessboard, AR tags, data matrix, symmetric and asymmetric circular grid as shown in figure \ref{fig:pattern}. In this thesis work a symmetric circular grid pattern is used for picocam and chessboard pattern is used for genius widecam. The size of circular pattern is relatively larger than that of chessboard due to higher resolution of picocam.\\
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=1.0\textwidth]{pattern}
-	\caption{Types of calibration pattern used for camera calibration. such as AR tags, chessboard, circles grid \cite{calibio}}
-	\label{fig:pattern}
-\end{figure}
+This section covers the calibration procedure in brief. Different types of calibration patterns can be used such as Chessboard, AR tags, Data matrix, symmetric and asymmetric Circular grid as shown in figure \ref{fig:pattern}. In this thesis work a symmetric circular grid pattern is used for Picocam and chessboard pattern is used for Genius Widecam. The size of circular pattern is larger than that of chessboard due to higher resolution of Picocam.\\
 \newline
 The general steps are as follows \cite{cameracalib}:
 \begin{enumerate}
@@ -183,13 +177,20 @@ The general steps are as follows \cite{cameracalib}:
 	\item Grab some images of the pattern in different orientation and positions by moving either the target or camera.
 	\item Detect the all corners or features of the pattern in all images.
 	\item Compute the intrinsic and extrinsic parameters.
-	\item Estimate the distortion coefficient.
+	\item Estimate the distortion coefficients.
 	\item Refine all parameters and project the 3D object points using computed parameters.
 	\item Compute the reprojection error, accept the result if error is with in limit otherwise repeat the procedure by taking more number of images until error is in limit.
 \end{enumerate}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{pattern}
+	\caption{Types of calibration pattern used for camera calibration such as AR tags, chessboard, circular grid \cite{calibio}}
+	\label{fig:pattern}
+\end{figure}
 
 \subsection{Recommendations for good calibration}
-Accurate intrinsic calibration is one of the most important factor for \acrshort{vo} algorithms regardless of its approach. This section describes some of the best practices to achieve higher accuracy. They are:
+Accurate intrinsic calibration is one of the most important factor for \acrshort{vo} algorithms regardless of its approach. This section describes some of the best practices to achieve higher accuracy. \\
+\newline They are listed as follows:
 \begin{enumerate}
 	\item Target pattern should be of right size. Optimal should be nearly half of the total area seen in front of camera. Calibration accuracy also depends on target print quality.
 	\item Camera and lens should be focused on target. The setting should remains unchanged during \acrshort{vo} experiment also. 
@@ -198,36 +199,32 @@ Accurate intrinsic calibration is one of the most important factor for \acrshort
 	\item The number of images should be enough including all possible camera poses.
 	\item Either target or camera should be mount rigidly during whole process. Camera should not move while image capturing.
 	\item If there is any bad images which consist higher reprojection error then it should be removed.
-	\item Lower reprojection error doesn't mean that the camera calibration is accurate. It might be case of overfitting. Every reprojection error should be analyse and images with higher error should be removed and recalibration should be done until satisfactory results has arrived.
+	\item Lower reprojection error doesn't mean that the camera calibration is accurate. It might be case of overfitting. \item Every reprojection error should be analyses and images with higher error should be removed and recalibration should be done until satisfactory results has arrived.
 \end{enumerate}
 
 \subsection{Calibration result}
-As discussed two cameras are selected in this scope of work. First picocam is calibrated using chessboard as shown in figure \ref{fig:chessboard} but the results found not accurate which lead to bigger calibration target which is circular grid pattern. Picocam is calibrated using symmetric circular grid as shown in figure \ref{fig:circular_grid}. While Genius widecam is calibrated with help of 8 x 8 size chessboard as shown in figure \ref{fig:chessboard}. More than 150 images were taken for both cameras. Resolution for Picocam is 1024 x 1024 and for Genius Widecam it is 1080 x 720 pixels. Calibration results for both cameras can be found in \ref{section:A.2}. Figure \ref{fig:pattern_view} shows Picocam poses taken in all possible locations with respect to the pattern. Average reprojection error estimated for picocam is below 0.010 pixels which can be seen in figure \ref{fig:reproj}.\\
-\begin{figure}[h!]
-	\begin{subfigure}{0.5\textwidth}
-		\centering
-		\includegraphics[width=1.0\textwidth]{circular_grid}
-		\caption{Symmetric circular pattern used for Picocam}
-		\label{fig:circular_grid}
-	\end{subfigure}%
-	\begin{subfigure}{0.5\textwidth}
-		\centering
-		\includegraphics[width=0.7\textwidth]{chessboard}
-		\caption{Chessboard pattern of size 8 x 8 used for Genius Widecam}
-		\label{fig:chessboard}
-	\end{subfigure}
-	\caption{Different patterns used for camera calibration}
-	\label{fig:patterns}
+As discussed two cameras are selected in this scope of work. Picocam is calibrated using chessboard as shown in figure \ref{fig:chessboard} but the results found inaccurate. Therefore a bigger calibration target which is circular grid pattern is used. Picocam is calibrated using symmetric circular grid as shown in figure \ref{fig:circular_grid}. While Genius Widecam is calibrated with help of 8 x 8 size chessboard as shown in figure \ref{fig:chessboard} because Genius Widecam has poor image resolution which restricts it to use bigger target such as one used for Picocam. More than 150 images were taken for both cameras. Image resolution for Picocam is 1024 x 1024 and for Genius Widecam it is 1080 x 720 pixels. Calibration results for both cameras can be found in \ref{section:A.2}. The results show that Genius Widecam has image center deflected than actual center while for Picocam it is nearly the same as it should be. It shows the superiority of Picocam over Genius Widecam. Figure \ref{fig:pattern_view} shows Picocam poses taken in all possible locations with respect to the pattern. Average reprojection error estimated for picocam is below 0.010 pixels which can be seen in figure \ref{fig:reproj}.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{circular_grid}
+	\caption{Symmetric circular pattern used for Picocam}
+	\label{fig:circular_grid}
+\end{figure}%
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{chessboard}
+	\caption{Chessboard pattern of size 8 x 8 used for Genius Widecam}
+	\label{fig:chessboard}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1.0\textwidth]{pattern_view}
+	\includegraphics[width=0.9\textwidth]{pattern_view}
 	\caption{Pattern centric view with rectangle as pattern and pentagons as camera}
 	\label{fig:pattern_view}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1.0\textwidth]{reproj_error}
-	\caption{Reprojection error plot for Picocam}
+	\includegraphics[width=1.5\textwidth,angle = 90]{reproj_error}
+	\caption{Reprojection error plot for Picocam calibration}
 	\label{fig:reproj}
 \end{figure}

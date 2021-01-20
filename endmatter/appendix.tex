@@ -2,8 +2,7 @@
 \label{section:A.1}
 	{\footnotesize
 		\begin{longtable}{l|l|l|l|l}
-			\caption{List of SLAM / VO algorithms source :\cite{chris}}\\[2mm]
-			\label{tab:list_found_slam_algorithms}
+			\caption{List of SLAM / VO algorithms \cite{chris}}\\[2mm]
 			\textbf{Name}            & \textbf{Reference}                     & \textbf{Code}                                                      & \textbf{Camera type}  & \textbf{Notes}\\
 			\hline
 			&                                   &                                                                    &                       &\\
@@ -12,17 +11,17 @@
 			\textbf{ARM SLAM}      & \cite{Klingensmith2016} (2016)    & -                                                                  & RGB-D                 & Estimation of robot joint angles\\
 			&                                   &                                                                    &                       &\\
 			\textbf{CD SLAM}       & \cite{Pirker2011} (2011)          & -                                                                  & Monocular             & Focus on dynamic environments\\
-			& \cite{Pirker2010} (2010)          &                                                                    &                       & Custom descriptor\\
+			& \cite{Pirker2010} (2010)          &                                                                    &                       & Efficient keyframe management for large scale environment\\
 			&                                   &                                                                    &                       &\\
 			\textbf{C-KLAM}        & \cite{Nerurkar2014} (2014)        & -                                                                  & Monocular,            & Usage of inter-keyframe information\\
 			&                                   &                                                                    & IMU                   &\\
 			&                                   &                                                                    &                       &\\
-			\textbf{CNN SLAM}      & \cite{Tateno2017} (2017)          & -                                                                  & Monocular             & Deepl learning approach for Depth prediction\\
+			\textbf{CNN SLAM}      & \cite{Tateno2017} (2017)          & -                                                                  & Monocular             & Deep learning approach for Depth prediction\\
 			&                                   &                                                                    &                       &\\
 			\textbf{DPPTAM}        & \cite{Concha2015b} (2015)         & {\href{https://github.com/alejocb/dpptam}{Link}}                   & Monocular             & Dense, estimates planar areas\\
 			&                                   &                                                                    &                       &\\
-			\textbf{DSO}           & \cite{Engel-et-al-pami2018} (2016)           & {\href{https://github.com/JakobEngel/dso}{Link}}                   & Monocular             & Semi-dense odometry\\
-			&                                   &                                                                    &                       & Estimates camera parameters\\
+			\textbf{DSO}           & \cite{Engel-et-al-pami2018} (2016)           & {\href{https://github.com/JakobEngel/dso}{Link}}                   & Monocular             & Sparse and Direct approach\\
+			&                                   &                                                                    &                       & Estimates camera parameters using pixels intensity\\
 			&                                   &                                                                    &                       &\\
 			\textbf{DT SLAM}       & \cite{Daniel2014} (2014)          & {\href{https://github.com/plumonito/dtslam}{Link}}                 & Monocular             & Tracks 2D and 3D features (indirect)\\
 			&                                   &                                                                    &                       & Creates combinable submaps\\
@@ -34,10 +33,9 @@
 			\textbf{DVO}           & \cite{Kerl2013} (2013)            & {\href{https://github.com/tum-vision/dvo_slam}{Link}}              & RGB-D                 & Entropy based method for loops\\
 			&                                   &                                                                    &                       &\\
 			&                                   &                                                                    &                       &\\
-			\textbf{FrameSLAM}     & \cite{Konolige2008} (2008)        & -                                                                  & Stereo                & CenSure features\\
+			\textbf{FrameSLAM}     & \cite{Konolige2008} (2008)        & -                                                                  & Stereo                & Use large number of features\\
 			&                                   &                                                                    &                       &\\
 			\textbf{GDVO}          & \cite{Zhu2017} (2017)             & {\href{https://github.com/syywh/gdvo}{Link}}                       & Stereo                & Dense\\
-			&                                   &                                                                    &                       & Dual Jacobian scheme\\
 			&                                   &                                                                    &                       &\\
 			\textbf{GPSLAM}        & \cite{Pirker2011a} (2011)         & -                                                                  & RGB-D                 & Sparse map, dense occupancy grid\\
 			&                                   &                                                                    &                       &\\
@@ -78,7 +76,7 @@
 			\textbf{REMODE}        & \cite{Pizzoli2014} (2014)         & {\href{https://github.com/uzh-rpg/rpg_open_remode}{Link}}          & Monocular             & Dense\\
 			&                                   &                                                                    &                       & GPU reliant\\
 			&                                   &                                                                    &                       &\\
-			\textbf{RGB-D SLAM}    & \cite{Endres2012} (2012)          & {\href{https://github.com/felixendres/rgbdslam_v2}{Link}}          & RGB-D                 & uses the monocular depth depth camera \\
+			\textbf{RGB-D SLAM}    & \cite{Endres2012} (2012)          & {\href{https://github.com/felixendres/rgbdslam_v2}{Link}}          & RGB-D                 & Uses the monocular depth depth camera \\
 			& \cite{Endres2012a} (2012)         &                                                                    &                       &\\
 			&                                   &                                                                    &                       &\\
 			\textbf{RKSLAM}        & \cite{Liu2016} (2016)             & {\href{https://zjucvg.net/rkslam/rkslam.html}{Link}}               & Monocular,            & Robust to fast motion and rotation\\
@@ -111,10 +109,11 @@
 	
 \section{Camera calibration result}
 \label{section:A.2}
-The unit is in pixels
-\subsubsection{Picocam}
+The units are in pixels
+\subsection{Picocam}
 
 \begin{itemize}
+	\setlength\itemsep{1em}
 	\item Resolution : 1024 x 1024
 	\item Camera matrix : 
 	      \begin{equation*}     
@@ -130,10 +129,11 @@ The unit is in pixels
 	 \end{bmatrix} $ 
 	\item Average reprojection error : 0.09574
 \end{itemize}
-
-\subsubsection{Genius Widecam F100}
+\vspace{10mm}
+\subsection{Genius Widecam F100}
 
 \begin{itemize}
+	\setlength\itemsep{1em}
 	\item Resolution : 1280 x 720
 	\item Camera matrix : 
 	\begin{equation*}     
@@ -150,28 +150,29 @@ The unit is in pixels
 	\item Average reprojection error : 0.17257
 \end{itemize}
 \newpage
+
 \section{Base frame transformations}
 \label{section:A.3}
-The unit is in millimeters
+The units are in millimeters
 
-\subsubsection{Picocam to \acrshort{lidar} :} 
-
+\subsection{Picocam to \acrshort{lidar} :} 
+\vspace{15mm}
 \begin{equation*}     
 	\begin{bmatrix}
 	 & 1	 & &    -0.008	& &  -0.09   	& &  5.92  & & \\ 
-	& 0.008	& &       1	    & &   0.008	   & &   131.157 & & \\
+	& 0.008	& &       1	    & &   0.008	   & &   101.157 & & \\
 	& 0.07	& &     0.007	& &    1	  & &    161.481 & & \\
 	& 0  	    & &       0	    & &    0	 & &      1     & &   \\
 	\end{bmatrix}
 \end{equation*}
 \\
-\subsubsection{Genius widecam to \acrshort{lidar} :}
-
+\subsection{Genius Widecam to \acrshort{lidar} :}
+\vspace{15mm}
 \begin{equation*}     
 	\begin{bmatrix}
  & 1	  & &    -0.01	& &   -0.01	   	& &  12.05  & & \\ 
 & 0.01   & &       1	 & &    0.12	 & &  43.08 & & \\
-& 0.01	& &     0.125	& &    1	   & &    135.09 & & \\
+& 0.01	& &     0.125	& &    1	   & &    155.09 & & \\
 & 0    & &       0	    & &    0	  & &      1     & &   \\
 	\end{bmatrix}
 \end{equation*}

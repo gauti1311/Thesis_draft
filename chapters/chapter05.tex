@@ -4,7 +4,7 @@ Evaluating \acrshort{vo} is an important task. This section serves an overview o
 Evaluation can be of two types namely qualitative and quantitative. Quantitative evaluation requires ground truth. It generally measures accuracy of \acrshort{vo} and it uses matrices like \acrfull{ate} or \acrfull{rpe} \cite{7782863}. \acrshort{ate} refers to the \acrshort{rmse} between estimated trajectory and ground truth where as \acrshort{rpe} calculates error between all sub-trajectories of \acrshort{vo} and ground truth. Both matrices have their pros and cons like complexity, reliability etc. The qualitative approach includes Robustness of \acrshort{vo} in some conditions like motion blur, low texture (less features) scene, dynamic environment, scene brightness etc. Robustness defines the ability to recover the track (or finding loop closure in case of \acrshort{v-slam}) after loosing localization due to environment. Another approach includes efficiency factors like computation power, memory usage, processing speed etc. Not all criteria need to be fulfill and also not every \acrshort{vo} method can satisfy them rather it depends on application or use-cases that which criteria to use. Figure \ref{fig:matrices} shows how each evaluation criteria are different from each other for \acrshort{vo} methods.     
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth]{matrices}
+	\includegraphics[width=.8\textwidth]{matrices}
 	\caption{Different matrices for \acrshort{vo} evaluation \cite{lecture}}
 	\label{fig:matrices}
 \end{figure}
@@ -31,13 +31,13 @@ This measurement is taken nearly on the straight path consisting no rotations. R
 \begin{figure}[H]
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.4\linewidth]{orb_pico1}
+		\includegraphics[width=0.5\linewidth]{orb_pico1}
 		\caption{\acrshort{orb}-\acrshort{slam} trajectory}
 		\label{fig:orb_pico1}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.5\linewidth]{ldso_pico1}
+		\includegraphics[width=0.5\linewidth]{ldso_pico1}
 		\caption{\acrshort{ldso} trajectory}
 		\label{fig:ldso_pico1}
 	\end{subfigure}
@@ -47,13 +47,13 @@ This measurement is taken nearly on the straight path consisting no rotations. R
 \begin{figure}[H]
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.3\linewidth]{orb_web1}
+		\includegraphics[width=.5\linewidth]{orb_web1}
 		\caption{\acrshort{orb}-\acrshort{slam} trajectory}
 		\label{fig:orb_web1}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.3\linewidth]{ldso_web1}
+		\includegraphics[width=.5\linewidth]{ldso_web1}
 		\caption{\acrshort{ldso} trajectory}
 		\label{fig:ldso_web1}
 	\end{subfigure}
@@ -80,13 +80,13 @@ This recording is taken to analyse the drift in all methods without using loop c
 \begin{figure}[H]
 	\begin{subfigure}{.6\textwidth}
 		\centering
-		\includegraphics[width=.7\linewidth]{orb_pico2}
+		\includegraphics[width=1.0\linewidth]{orb_pico2}
 		\caption{\acrshort{orb}-\acrshort{slam} trajectory}
 		\label{fig:orb_pico2}
 	\end{subfigure}
 	\begin{subfigure}{.4\textwidth}
 		\centering
-		\includegraphics[width=.5\linewidth]{ldso_pico2}
+		\includegraphics[width=0.8\linewidth]{ldso_pico2}
 		\caption{\acrshort{ldso} trajectory}
 		\label{fig:ldso_pico2}
 	\end{subfigure}
@@ -96,13 +96,13 @@ This recording is taken to analyse the drift in all methods without using loop c
 \begin{figure}[H]
 	\begin{subfigure}{.6\textwidth}
 		\centering
-		\includegraphics[width=.7\linewidth]{orb_web2}
+		\includegraphics[width=1.0\linewidth]{orb_web2}
 		\caption{\acrshort{orb}-\acrshort{slam} trajectory}
 		\label{fig:orb_web2}
 	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{.4\textwidth}
 		\centering
-		\includegraphics[width=.5\linewidth]{ldso_web2}
+		\includegraphics[width=.9\linewidth]{ldso_web2}
 		\caption{\acrshort{ldso} trajectory}
 		\label{fig:ldso_web2}
 	\end{subfigure}
@@ -111,7 +111,7 @@ This recording is taken to analyse the drift in all methods without using loop c
 \end{figure}
 
 \subsection{Repeated Path}
-This measurement consist one loop with same path. The frames details can be seen in \ref{table:repeated}. Here also the combination of \acrshort{orb}-\acrshort{slam} and Picocam is clear winner as seen in figures \ref{fig:Pico3} and \ref{fig:Web3}. \acrshort{ldso} can also detect multiple loops (four) in both cameras and even performs better in case of Genius Widecam than that of Picocam but cannot outperform \acrshort{orb}-\acrshort{slam}.  
+This measurement consist one loop with same path. The frames details can be seen in \ref{table:repeated}. Here also the combination of \acrshort{orb}-\acrshort{slam} and Picocam is clear winner as seen in figures \ref{fig:Pico3} and \ref{fig:Web3}. \acrshort{ldso} can also detect multiple loops (four) in both cameras and even performs better in case of Genius Widecam than that of Picocam but cannot outperform \acrshort{orb}-\acrshort{slam}. A main reason is that this experiment has many rotations which is not so good for \acrshort{ldso}. It starts drifting as more rotations come in to picture.\\
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.5}
@@ -126,17 +126,16 @@ This measurement consist one loop with same path. The frames details can be seen
 	\caption{Image frame details of Repeated path}
 	\label{table:repeated}
 \end{table}
-
 \begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
+	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.7\linewidth]{orb_pico3}
+		\includegraphics[width=1.0\linewidth]{orb_pico3}
 		\caption{\acrshort{orb}-\acrshort{slam} trajectory}
 		\label{fig:orb_pico3}
 	\end{subfigure}
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.7\linewidth]{ldso_pico3}
+		\includegraphics[width=0.8\linewidth]{ldso_pico3}
 		\caption{\acrshort{ldso} trajectory}
 		\label{fig:ldso_pico3}
 	\end{subfigure}
@@ -144,15 +143,15 @@ This measurement consist one loop with same path. The frames details can be seen
 	\label{fig:Pico3}
 \end{figure}
 \begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
+	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.7\linewidth]{orb_web3}
+		\includegraphics[width=1.0\linewidth]{orb_web3}
 		\caption{\acrshort{orb}-\acrshort{slam} trajectory}
 		\label{fig:orb_web3}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.7\linewidth]{ldso_web3}
+		\includegraphics[width=1.0\linewidth]{ldso_web3}
 		\caption{\acrshort{ldso} trajectory}
 		\label{fig:ldso_web3}
 	\end{subfigure}
@@ -161,7 +160,7 @@ This measurement consist one loop with same path. The frames details can be seen
 \end{figure}
 
 \subsection{Multi-loop Path}
-This recording is longest in all experiments and contains multi-loops. \acrshort{ldso} cannot handle of this length of measurement due to high memory consumption and on Ubuntu PC-18.04 with 16 GB memory was not sufficient for it. Only \acrshort{orb}-\acrshort{slam} with Picocam can performed well for this data set as seen in figure \ref{fig:orb_pico4}. Total 6 times a loop is detected. Number of keyframes tracked compared to total frames can be seen in table \ref{table:multi-loop}. 
+This recording is longest in all experiments and contains multi-loops. \acrshort{ldso} cannot handle of this length of measurement due to high memory consumption and on Ubuntu PC-18.04 with 16 GB memory was not sufficient for it. Only \acrshort{orb}-\acrshort{slam} with Picocam can performed well for this data set as seen in figure \ref{fig:orb_pico4}. Total 6 times loops are detected. Number of keyframes tracked compared to total frames can be seen in table \ref{table:multi-loop}. It shows superiority of \acrshort{orb}-\acrshort{slam} than other \acrshort{vo} methods. At some location track is lost but as soon as a loop is detected the camera relocalizes and further improves pose optimization. 
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.5}
@@ -179,13 +178,13 @@ This recording is longest in all experiments and contains multi-loops. \acrshort
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\linewidth]{orb_pico4}
+	\includegraphics[width=1.0\linewidth]{orb_pico4}
 	\caption{\acrshort{orb}-\acrshort{slam} trajectory}
 	\label{fig:orb_pico4}
 \end{figure}
 
 \subsection{Figure Eight Path}
-This data set contains many rotations and is used to evaluate the performance of \acrshort{vo} methods in this condition. As expected \acrshort{orb}-\acrshort{slam} performs very well in this case detecting many loops. Though \acrshort{ldso} detects many loops and takes more keyframes as seen in table \ref{table:eight} than \acrshort{orb}-\acrshort{slam} it has not ability to recover the motion after some rotations. This situation can be seen in figure \ref{fig:Pico5}. 
+This data set contains many rotations and is used to evaluate the performance of \acrshort{vo} methods in this condition. As expected \acrshort{orb}-\acrshort{slam} performs very well in this case detecting many loops. Though \acrshort{ldso} detects many loops and takes more keyframes as shown in table \ref{table:eight} than \acrshort{orb}-\acrshort{slam} it has not ability to recover the motion after some rotations. This situation can be seen in figure \ref{fig:Pico5}. In case of Genius Widecam \acrshort{orb}-\acrshort{slam} starts drifting after starting rotation and which creates some motion blur and it relocalizes again when a loop is detected but it looses track at same location every time (see figure \ref{fig:orb_web5}). While in case of \acrshort{ldso} it works for a while but pose graph optimization does not work accurately and a symmetric pattern in figure eight can be obtained as in case of \acrshort{orb}-\acrshort{slam}.\\
 \begin{table}[H]
 	\centering
 	\renewcommand{\arraystretch}{1.5}
@@ -202,15 +201,15 @@ This data set contains many rotations and is used to evaluate the performance of
 \end{table}
 
 \begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
+	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.7\linewidth]{orb_pico5}
+		\includegraphics[width=1.0\linewidth]{orb_pico5}
 		\caption{\acrshort{orb}-\acrshort{slam} trajectory}
 		\label{fig:orb_pico5}
 	\end{subfigure}
-	\begin{subfigure}{.6\textwidth}
+	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.8\linewidth]{ldso_pico5}
+		\includegraphics[width=1.0\linewidth]{ldso_pico5}
 		\caption{\acrshort{ldso} trajectory}
 		\label{fig:ldso_pico5}
 	\end{subfigure}
@@ -218,15 +217,15 @@ This data set contains many rotations and is used to evaluate the performance of
 	\label{fig:Pico5}
 \end{figure}
 \begin{figure}[H]
-	\begin{subfigure}{.6\textwidth}
+	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.7\textwidth]{orb_web5}
+		\includegraphics[width=1.0\textwidth]{orb_web5}
 		\caption{\acrshort{orb}-\acrshort{slam} trajectory}
 		\label{fig:orb_web5}
 	\end{subfigure}%
-	\begin{subfigure}{.6\textwidth}
+	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=.7\linewidth]{ldso_web5}
+		\includegraphics[width=1.0\linewidth]{ldso_web5}
 		\caption{\acrshort{ldso} trajectory}
 		\label{fig:ldso_web5}
 	\end{subfigure}
@@ -289,5 +288,5 @@ This section covers some observations all \acrshort{vo} which are found during i
 \section{Suggestions}
 This section outlines some ideas which can be implemented to improve the performance of and real-time applications \acrshort{orb}-\acrshort{slam}.\\
 \newline As already mentioned that \acrshort{orb}-\acrshort{slam} has many hard-coded parameters which vary based on applications and camera used. There are still many parameters which can be tweaked to improve accuracy and efficiency both. An extra sensor can be integrated to provide absolute scale information such as \acrshort{imu}, \acrshort{lidar} etc. As proposed by \acrshort{orb}-\acrshort{slam} authors \cite{orbslam} that \acrshort{imu} overcomes the drifting of scale and it can also be used in false loop detection which makes it more preferable to use on real-time applications. During this thesis work a successor of \acrshort{orb}-\acrshort{slam} (version 3) is released which features \acrshort{imu} integration \cite{ORBSLAM3}. \\
-\newline To improve speed of \acrshort{orb}-\acrshort{slam} a camera with lower resolution can be used also a custom \acrshort{bow} library is also proven to be faster like one used here \cite{Fbow}. During this thesis lot of work has been done on hardware. There are some camera properties which play an important role in robustness e.g higher \acrshort{fps}, wide \acrshort{fov}, image resolution, exposure time etc. Mobile robot used in this thesis has observed some problems during offline tests when all three sensors (Picocam , Genius Widecam and \acrshort{lidar}) are used together. Genius Widecam can be removed due to its poor performance which will solve the issue and saving much time (which was a big issue during experiment). \\
+\newline To improve speed of \acrshort{orb}-\acrshort{slam} a camera with lower resolution can be used also a custom \acrshort{bow} library is also proven to be faster like one used here \cite{Fbow}. During this thesis lot of work has been done on hardware. There are some camera properties which play an important role in robustness e.g higher \acrshort{fps}, wide \acrshort{fov}, image resolution, exposure time etc. Mobile robot used in this thesis has observed some problems during offline tests when all three sensors (Picocam, Genius Widecam and \acrshort{lidar}) are used together. Genius Widecam can be removed due to its poor performance which will solve the issue (big problem during experiment). \\
 \newline A proper ground truth can be prepared for quantitative evaluation. Possible solutions are range finder, an already prepared map of environment, overhead camera tracking a marker on mobile robot. Note that these are possible only in indoor and limited environment.  

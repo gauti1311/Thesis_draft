@@ -30,7 +30,7 @@
 \BOOKMARK [2][-]{subsection.4.1.1}{Base frame transformation}{section.4.1}% 30
 \BOOKMARK [1][-]{section.4.2}{Software Implementation}{chapter.4}% 31
 \BOOKMARK [1][-]{section.4.3}{Data Acquisition}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.4}{Improvements}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.4}{Adaptations}{chapter.4}% 33
 \BOOKMARK [2][-]{subsection.4.4.1}{orb-slam}{section.4.4}% 34
 \BOOKMARK [2][-]{subsection.4.4.2}{ldso}{section.4.4}% 35
 \BOOKMARK [0][-]{chapter.5}{Evaluation}{}% 36
@@ -48,9 +48,13 @@
 \BOOKMARK [2][-]{subsection.5.4.3}{orb-slam}{section.5.4}% 48
 \BOOKMARK [1][-]{section.5.5}{Suggestions}{chapter.5}% 49
 \BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 50
-\BOOKMARK [0][-]{chapter*.79}{References}{}% 51
-\BOOKMARK [0][-]{chapter*.79}{References}{}% 52
+\BOOKMARK [0][-]{chapter*.84}{References}{}% 51
+\BOOKMARK [0][-]{chapter*.84}{References}{}% 52
 \BOOKMARK [0][-]{appendix.A}{Appendix}{}% 53
 \BOOKMARK [1][-]{section.A.1}{List of vo/v-slam Algorithms}{appendix.A}% 54
 \BOOKMARK [1][-]{section.A.2}{Camera calibration result}{appendix.A}% 55
-\BOOKMARK [1][-]{section.A.3}{Base frame transformations}{appendix.A}% 56
+\BOOKMARK [2][-]{subsection.A.2.1}{Picocam}{section.A.2}% 56
+\BOOKMARK [2][-]{subsection.A.2.2}{Genius Widecam F100}{section.A.2}% 57
+\BOOKMARK [1][-]{section.A.3}{Base frame transformations}{appendix.A}% 58
+\BOOKMARK [2][-]{subsection.A.3.1}{Picocam to lidar :}{section.A.3}% 59
+\BOOKMARK [2][-]{subsection.A.3.2}{Genius Widecam to lidar :}{section.A.3}% 60

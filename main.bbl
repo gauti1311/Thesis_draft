@@ -2226,6 +2226,35 @@
       \endverb
       \keyw{AR,Dense Reconstruction,Depth Cameras,GPU,Real-Time,SLAM,Tracking,Volumetric Representation}
     \endentry
+    \entry{Nister}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4c3e5f1985619513f8a6c931dbb69d9c}{%
+           family={{Nister}},
+           familyi={N\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c3e5f1985619513f8a6c931dbb69d9c}
+      \strng{fullhash}{4c3e5f1985619513f8a6c931dbb69d9c}
+      \strng{bibnamehash}{4c3e5f1985619513f8a6c931dbb69d9c}
+      \strng{authorbibnamehash}{4c3e5f1985619513f8a6c931dbb69d9c}
+      \strng{authornamehash}{4c3e5f1985619513f8a6c931dbb69d9c}
+      \strng{authorfullhash}{4c3e5f1985619513f8a6c931dbb69d9c}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{number}{6}
+      \field{title}{An efficient solution to the five-point relative pose problem}
+      \field{volume}{26}
+      \field{year}{2004}
+      \field{pages}{756\bibrangedash 770}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2004.17
+      \endverb
+    \endentry
     \entry{Olson2011}{article}{}
       \name{author}{1}{}{%
         {{hash=8f743eebb2f64f75592e54ba06f94320}{%

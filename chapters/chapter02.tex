@@ -70,7 +70,7 @@ As Direct methods minimize the photometric error (intensity difference) for trac
 	\label{fig:direct_indirect}
 \end{figure}
 \subsection{Hybrid Approach}
-Indirect approach fails to deal with texture-less or low-textured environments of a single pattern such as sandy soil, asphalt and concrete. The less feature detection in these type of environments make this approach inefficient. The direct approaches are more robust and accurate than indirect approach in low-textured or symmetric environment but they are not much robust to image occlusions or inconsistencies in system (e.g rolling shutter). To have a advantages of both approaches the best solution is to use the combination of both approaches which combines tracking of salient features over frames and use the pixel intensity as an information \cite{Aqel-et-al-2016}. Forster et al.\cite{7782863} proposed a hybrid approach in which they use a 4x4 patch around features and estimate the camera pose by minimizing the photometric error of these patches. For pose and structure refinement, the reprojection error of every feature is calculated with respect to the nearest key-frame that has observed the feature at nearly the same angle.
+Indirect approach fails to deal with texture-less or low-textured environments of a single pattern such as sandy soil, asphalt and concrete. Lesser number of features detected in these types of environments make this approach inefficient. The direct approaches are more robust and accurate than indirect approach in low-textured or symmetric environment but they are not much robust to image occlusions or inconsistencies in system (e.g rolling shutter). To have a advantages of both approaches the best solution is to use the combination of both approaches which combines tracking of salient features over frames and use the pixel intensity as an information \cite{Aqel-et-al-2016}. Forster et al.\cite{7782863} proposed a hybrid approach in which they use a 4x4 patch around features and estimate the camera pose by minimizing the photometric error of these patches. For pose and structure refinement, the reprojection error of every feature is calculated with respect to the nearest key-frame that has observed the feature at nearly the same angle.
 
 \subsection{Monocular vs Stereo}
 In Monocular \acrshort{vo}, a single camera is used for the whole pipeline. In this case features need to be observed in subsequent frames in order to track motion properly. Features observed in the first frame are triangulated into 3D points with help of second frame, and then transformation can be calculated using third frame \cite{KhalidYousif-et-al-2015}. While in stereo case, 3D points can be reconstructed (by triangulation) only by observing the features in left and right images of a single pair simultaneously. Motion is estimated by observing features in two successive frames (both left and right). Stereo approach has an advantage of depth information of environment because it can obtain the disparity in scene. Where as monocular cameras can measure motion using pixel information only with no knowledge of scene depth. When the distance between scene to stereo camera becomes very long compared to the baseline (distance between left and right camera), the stereo case can be degraded to monocular because its very erroneous to measure the depth for far scene. 
@@ -356,33 +356,37 @@ Working of loop closing is illustrated in figure \ref{fig:ldso}. First \acrshort
 \end{figure}
 
 \subsection{Semi-direct Visual Odometry}
-Forster et.al developed first hybrid approach which uses both direct and indirect approaches at different points in the algorithm. They named it as Semi-direct Visual Odometry (SVO). \acrshort{svo} has similarity with \acrshort{ptam} in terms of process as explained in \cite{4538852}. The only difference is that \acrshort{ptam} is fully indirect approach and meant for rather smaller environment while \acrshort{svo} is semi-direct method. The process overview of \acrshort{svo} is illustrated in figure \ref{fig:svo}. It basically has two parallel threads as follows: 
+Forster et.al developed first hybrid approach which uses both direct and indirect approaches at different points in the algorithm. They named it as Semi-direct Visual Odometry (SVO). \acrshort{svo} has similarity with \acrshort{ptam} in terms of process as explained in \cite{4538852}. The only difference is that \acrshort{ptam} is fully indirect approach and meant for rather smaller environment while \acrshort{svo} is semi-direct method. The process overview of \acrshort{svo} is illustrated in figure \ref{fig:svo}. It basically has two parallel threads namely Motion Estimation and Mapping. \acrshort{svo} can be divided in main four modules as follows 
 \begin{enumerate}
-	\item Motion Estimation thread
-	\item Mapping thread
+	\item Initialization
+	\item Sparse Image Alignment
+	\item Feature Alignment
+	\item Mapping
 \end{enumerate}
+\subsubsection{Initialization}
+Motion estimation thread starts initialization by creating number of image pyramid using some constant scale factor. First two image frames are considered as keyframes by default. The initial camera pose and initial map is obtained using Nister's five point algorithm \cite{Nister} which is based on planer homography.\\
+\subsubsection{Sparse Image Alignment}
+Forster et al. proposed a sparse model-based image alignment directly using image intensities. From third image frame, sparse image alignment is done which minimizes photometric reprojection error for motion estimation. A small patch of 4 x 4 pixels is made surrounding every feature point. For every patch an intensity residual is calculated by back-projecting the 2D point from previous image to current image frame. These residuals are used for optimizing the relative camera pose by minimizing the photometric error \cite{Forster2014ICRA}. The figure \ref{fig:sparse_img_1} illustrates sparse image alignment. This problem can be formulated as per follows:
+\begin{equation*}
+T_{k,k-1} = arg \min\limits_{T_{k,k-1}} \frac{1}{2} \sum\limits_{i \in R} || \delta I (T_{k,k-1}, u_{i})||^{2}
+\label{eq:sparse_img}
+\end{equation*}
+\noindent where $T_{k,k-1}, \delta I, u_{i} $ are relative camera pose with respect to previous frame, intensity residual and image patch respectively. The equation \ref{eq:sparse_img} can be solved by Gauss-Newton optimization. \\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{svo}
 	\caption{\acrshort{svo} process overview \cite{Forster2014ICRA}}
 	\label{fig:svo}
 \end{figure}
-
-\subsubsection{Motion Estimation}
-Motion estimation starts with creating number of image pyramid using some constant scale factor. First two image frames are considered as keyframes by default and the camera pose is calculated using homography estimation considering matched \acrshort{fast} corners. For next frames, proposed sparse model-based image alignment is done which minimizes photometric reprojection error for motion estimation. A small patch of 4 x 4 pixels is made surrounding every feature point. For every patch an intensity residual is calculated by back-projecting the 2D point from previous image to current image frame. These residuals are used for optimizing the relative camera pose by minimizing the photometric error \cite{Forster2014ICRA}. The figure \ref{fig:sparse_img_1} illustrates sparse image alignment. This problem can be formulated as per follows:
-\begin{equation*}
-T_{k,k-1} = arg \min\limits_{T_{k,k-1}} \frac{1}{2} \sum\limits_{i \in R} || \delta I (T_{k,k-1}, u_{i})||^{2}
-\label{eq:sparse_img}
-\end{equation*}
-\noindent where $T_{k,k-1}, \delta I, u_{i} $ are relative camera pose with respect to previous frame, intensity residual and image patch respectively. The equation \ref{eq:sparse_img} can be solved by Gauss-Newton optimization.
-\begin{figure}[H]
+\noindent Sparse image alignment estimates the camera pose with respect to previous frame. It always consist some drift which gets accumulated for every next image. Therefore before processing further this relative pose needs to be aligned with respect to 3D map points to reduce the continuous drift. This is further done in feature alignment.
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\textwidth]{sparse_img_1}
 	\caption{Sparse image alignment minimizes photometric intensity residuals between two image patch (blue squares) corresponding to the same 3D point denoted as $ p_{i}$ \cite{Forster2014ICRA}}
 	\label{fig:sparse_img_1}
 \end{figure}
-\noindent Sparse image alignment estimates the camera pose with respect to previous frame. It always consist some drift which gets accumulated for every next image. Therefore before processing further this relative pose needs to be aligned with respect to 3D map points to reduce the continuous drift. This is further done in feature alignment step. \\
-\newline In feature alignment step closest keyframes with respect to current frame are found by checking visibility of 3D keypoints pf that keyframe into current frame. Now, all 3D keypoints from the closest keyframes are projected into the image. For every reprojected points a corresponding 2D point with closest observation angle is found. Then finally it optimizes all 2D points by minimizing photometric error. This problem can be solved using traditional feature tracking method like Lucas-Kanade method \cite{Lucas81}. This step is necessary to reduce drift in camera pose estimated during sparse image alignment. Figure \ref{fig:sparse_img_2}  shows how the 3D map points generated from different keyframes are used to minimize 2D feature point patches in new image.\\
+\subsubsection{Feature Alignment}
+In feature alignment, closest keyframes with respect to current frame are found by checking visibility of 3D keypoints pf that keyframe into current frame. Now, all 3D keypoints from the closest keyframes are projected into the image. For every reprojected points a corresponding 2D point with closest observation angle is found. Then finally it optimizes all 2D points by minimizing photometric error. This problem can be solved using traditional feature tracking method like Lucas-Kanade method \cite{Lucas81}. This step is necessary to reduce drift in camera pose estimated during sparse image alignment. Figure \ref{fig:sparse_img_2}  shows how the 3D map points generated from different keyframes are used to minimize 2D feature point patches in new image.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{sparse_img_2}
@@ -392,5 +396,15 @@ T_{k,k-1} = arg \min\limits_{T_{k,k-1}} \frac{1}{2} \sum\limits_{i \in R} || \de
 \noindent Last step in motion estimation thread is pose and structure refinement. Forster et al. found that the reprojection residual is around 0.3 pixels in feature alignment step \cite{Forster2014ICRA}. The final step minimizes this reprojection residuals famously known as motion \acrshort{ba}. It can be solved using Gauss-Newton method which jointly optimizes the camera poses and 3D points in map. \\
 
 \subsubsection{Mapping}
-
+Mapping is an independent thread which estimates the depths of all 2D features from all past frames whose 3D corresponding are unknown. Forster et al. used an slightly different approach than all other methods. They used a probabilistic Bayesian model to update the depth of feature. The Bayesian framework applied in this method is illustrated in figure \ref{fig:depth_filter}. It can be seen that the corresponding point in new frame is always lie on the epipolar line of the frame. The depth can be converted into a 3D point if the variance of distribution is very small. 3D point can be generated using depth and camera intrinsic parameters. \\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{depth_filter}
+	\caption{Probabilistic depth estimate $ d_{i} $ for feature i in the reference frame r. $u_{i} $ is pixels patch surrounding 2D feature \cite{Forster2014ICRA} }
+	\label{fig:depth_filter}
+\end{figure}
+\noindent \acrshort{svo} also uses conditions to consider a frame as keyframe like other \acrshort{vo} methods but in different ways. The one condition is that if camera travels minimum 12\% of average scene depth and if the view is changed 20\% of average scene depth than only a new keyframe is selected. For newly created keyframe, \acrshort{fast} corners are extracted and a depth filter with maximum variance is initiated. The image is divided in cells with fixed size of 30 x 30 pixels and from each cell the corners with highest Shi-Thomasi score are extracted which results in even distribution. These corners are extracted at each level of image pyramid to find best possible corners \cite{Forster2014ICRA}. \\
+\newline While for non-keyframes the depth filter associated with reference keyframe is updated by adding the frame and its points(seeds). There is an optional local \acrshort{ba} before adding the frame to depth filter which optimizes all keyframes and its map.\\
+\newline After this step old keyframes with farthest distance to the current frame is removed from the map and depth filter simultaneously. On the other hand points with insufficient visibility are removed from depth filter and the points for which epipolar constraint is satisfied with given variance are updated and if converged then its depth is calculated and a new 3D map point is added to the current map which further used in motion estimation thread. Furthermore the converged points (seeds) are removed from depth filter. This mark the end of mapping thread.\\
+\newline The depth filter used here has important role in increased speed and accuracy of motion estimation because it generates much less outlier 3D points. It avoids the use of \acrshort{ransac} and further improves the speed. 
 
