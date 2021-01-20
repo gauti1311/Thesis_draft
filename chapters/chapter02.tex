@@ -1,11 +1,11 @@
-Robot localization a major problem in mobile robotics. Robot must know its location in an environment for real time applications. The challenge is that robot determines its pose from some internal sensors like wheel encoders, laser scanner, \acrshort{gps}, \acrshort{imu}, camera etc. which always consists some noise. An accurate robot positioning is a fundamental challenge. Camera based Odometry is a novel technique which allows a robot to localize accurately by using sequential images captured by a camera attached to the it. This section serves basics of Visual Odometry, different \acrshort{vo} approaches and state of the art \acrshort{vo} methods.\\
+Robot localization a major problem in mobile robotics. Robot must know its location in an environment for real time applications. The challenge is that robot determines its pose from some internal sensors like wheel encoders, \acrshort{lidar}, \acrshort{gps}, \acrshort{imu}, camera. which always consists some noise. An accurate robot positioning is a fundamental challenge. Camera based Odometry is a novel technique which allows a robot to localize accurately by using sequential images captured by a camera attached to it. This section serves basics of Visual Odometry, different \acrshort{vo} approaches and state of the art \acrshort{vo} methods.\\
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{where_am_i}
 	\caption{NASA Path finder robot\cite{nasa}}
 \end{figure}
 \section{Basics}
-According to Khalid Yousif et al.\cite{KhalidYousif-et-al-2015} \acrshort{vo} is defined as " the process of estimating the egomotion (translation and rotation with respect to a reference frame) of an agent(e.g. vehicle, human and robot) by observing a sequence of images using single or multiple cameras attached to it". Structure From Motion (SFM) is a method in computer vision which produces 3D reconstruction of environment and camera poses from set of images \cite{ScaramuzzaVO}. \acrshort{vo} focuses on 3D motion of the camera sequentially in real time which is also known as Sequential \acrshort{sfm} in computer vision. \acrshort{vo} focuses on local mapping and incrementally estimate the camera trajectory and performs local optimization whereas \acrshort{slam} performs localization and global mapping simultaneously.
+According to Khalid Yousif et al.\cite{KhalidYousif-et-al-2015} \acrshort{vo} is defined as "the process of estimating the egomotion (translation and rotation with respect to a reference frame) of an agent(e.g. vehicle, human and robot) by observing a sequence of images using single or multiple cameras attached to it". Structure From Motion (SFM) is a method in computer vision which produces 3D reconstruction of environment and camera poses from set of images \cite{ScaramuzzaVO}. \acrshort{vo} focuses on 3D motion of the camera sequentially in real time which is also known as Sequential \acrshort{sfm} in computer vision. \acrshort{vo} focuses on local mapping and incrementally estimate the camera trajectory and performs local optimization whereas \acrshort{slam} performs localization and global mapping simultaneously.
 
 \subsection{Visual Odometry Pipeline}
 \acrshort{vo} pipeline is summarized in Figure \ref{fig:flow}. For every image frame (or image pair for stereo case) 2D features are detected. Feature detection finds 2D features like corners, edges, blobs etc. Next comes feature matching, it will find same features in previous images and reprojects on those images. The matched features are known as image correspondences which are tracked using local search methods, such as correlation. The next step consists of computing relative motion between two images in particular time. There are three different approaches for motion estimation depending on the correspondences specified in 3D or 2D. Global camera pose is determined by concatenation of the previous camera pose. Finally, an iterative local optimization known as \acrshort{ba} can be done over some previous image frames to obtain a more accurate estimate of the local trajectory.
@@ -30,7 +30,7 @@ where   $u^{'}_{i} = \pi (P_{i},T_{k,k-1})$ , $ u_{i} $ is $ i^{th} $  pixel 2D 
 \newline
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{indirect}
+	\includegraphics[width=0.8\textwidth]{indirect}
 	\caption{Indirect method Optimizes Reprojection Error \cite{lecture}}
 	\label{fig:feature}
 \end{figure}
@@ -47,7 +47,7 @@ where $u^{'}_{i} = \pi (P_{i},T_{k,k-1})$ and $I_{k} $ is  $k_{th}$ image.
 \newline
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\textwidth]{direct}
+	\includegraphics[width=0.8\textwidth]{direct}
 	\caption{Direct Method Optimizes Photometric Error \cite{lecture}}
 	\label{fig:direct}
 \end{figure}
@@ -65,12 +65,12 @@ Depending upon the number of feature selection for calculating 3D geometry Direc
 As Direct methods minimize the photometric error (intensity difference) for tracking between two images they require a well calibrated camera as compared to Indirect methods because they minimize the image pixel positions on images. A simple process comparison is described in the Figure.\ref{fig:direct_indirect}. Indirect methods have been very popular for a long time but recent advances in direct methods have shown better accuracy and robustness, especially when the images do not contain enough explicit corner features \cite{Engel-et-al-pami2018}. The robustness in direct approach comes from the joint estimation of motion and correspondences as well as the ability to also use non-corner pixels, corresponding to edges or even smooth image regions\cite{gao2018ldso}.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{direct_indirect}
+	\includegraphics[width=1.0\textwidth]{direct_indirect}
 	\caption{Process comparison between Direct and Indirect methods \cite{engel14eccv}.}
 	\label{fig:direct_indirect}
 \end{figure}
 \subsection{Hybrid Approach}
-Indirect approach fails to deal with texture-less or low-textured environments of a single pattern such as sandy soil, asphalt, and concrete etc.. The less feature detection in these type of environments make this approach inefficient. The direct approaches are more robust and accurate than indirect approach in low-textured or symmetric environment but they are not much robust to image occlusions or inconsistencies in system (e.g rolling shutter). To have a advantages of both approaches the best solution is to use the combination of both approaches which combines tracking of salient features over frames and use the pixel intensity as an information \cite{Aqel-et-al-2016}. Forster et al.\cite{7782863} proposed a hybrid approach in which they use a 4x4 patch around features and estimate the camera pose by minimizing the photometric error of these patches. For pose and structure refinement, the reprojection error of every feature is calculated with respect to the nearest key-frame that has observed the feature at nearly the same angle.
+Indirect approach fails to deal with texture-less or low-textured environments of a single pattern such as sandy soil, asphalt and concrete. The less feature detection in these type of environments make this approach inefficient. The direct approaches are more robust and accurate than indirect approach in low-textured or symmetric environment but they are not much robust to image occlusions or inconsistencies in system (e.g rolling shutter). To have a advantages of both approaches the best solution is to use the combination of both approaches which combines tracking of salient features over frames and use the pixel intensity as an information \cite{Aqel-et-al-2016}. Forster et al.\cite{7782863} proposed a hybrid approach in which they use a 4x4 patch around features and estimate the camera pose by minimizing the photometric error of these patches. For pose and structure refinement, the reprojection error of every feature is calculated with respect to the nearest key-frame that has observed the feature at nearly the same angle.
 
 \subsection{Monocular vs Stereo}
 In Monocular \acrshort{vo}, a single camera is used for the whole pipeline. In this case features need to be observed in subsequent frames in order to track motion properly. Features observed in the first frame are triangulated into 3D points with help of second frame, and then transformation can be calculated using third frame \cite{KhalidYousif-et-al-2015}. While in stereo case, 3D points can be reconstructed (by triangulation) only by observing the features in left and right images of a single pair simultaneously. Motion is estimated by observing features in two successive frames (both left and right). Stereo approach has an advantage of depth information of environment because it can obtain the disparity in scene. Where as monocular cameras can measure motion using pixel information only with no knowledge of scene depth. When the distance between scene to stereo camera becomes very long compared to the baseline (distance between left and right camera), the stereo case can be degraded to monocular because its very erroneous to measure the depth for far scene. 
@@ -96,7 +96,7 @@ are selected for implementation and later evaluation. In the next section these 
 \acrshort{orb} \acrshort{slam} is a very popular feature(Indirect) based visual \acrshort{slam} approach. It uses an open-source \acrshort{orb} feature descriptors as feature extraction and matching, which was developed by Rublee et al.\cite{ORB}. These \acrshort{orb} features are robust to rotation, scale and also provides good invariance to auto-exposure and illumination changes. Further more they are fast to extract and match which makes them suitable for real-time applications\cite{Mur-Artal}. Mur-Artal et al. \cite{Mur-Artal} used an approach of parallel threads for \acrshort{orb}\acrshort{slam} similar to that of used in \acrshort{ptam} \cite{4538852}. It has mainly three parallel threads 1.Tracking, 2.Local Mapping and 3.Loop Closing. Loop closing is the thread of performing Global \acrshort{ba}. This section describes the working of all modules. A detailed approach is given in the figure \ref{fig:orbslam}.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{orbslam}
+	\includegraphics[width=1.0\textwidth]{orbslam}
 	\caption{A process overview of ORB-SLAM \cite{Mur-Artal}}
 	\label{fig:orbslam}
 \end{figure}
@@ -232,14 +232,7 @@ Loop detection behaves like local mapping that it triggers when a new keyframe i
 For every keyframes it will compute the score as per equation \ref{norm}. If there is minimum 10 keyframes in the map and last loop closing has done before 10 keyframes ago then it will pose a query to keyframe database and check for at least one bag of word with current keyframe with the highest score of than minimum of calculated those of all. All keyframes are then added to the loop closing candidates. An explanation can be found in \cite{chris}.\\
 \newline
 After having enough loop candidates, the last keyframe from candidates id used to check whether it can be considered as a loop. \acrshort{orb} \acrshort{slam} uses the same method that was used in tracking module for track without motion model. However, instead to matching between 2D and 3D points here it will look for matching between 3D map points seen in current keyframe directly to that of in candidate frame by means of \acrshort{orb} descriptors. Confirmation requires at least 20 matches. However due to drift accumulation these match map points are not likely be close to the each others. An example of this illustrated in the figure \ref{fig:loop}.\\
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.9\textwidth]{loop}
-	\caption{\acrshort{orb} \acrshort{slam} mapping result showing of one of the sequences in this thesis work. left and right images show the camera trajectory just before finding loop and after loop closing respectively.}
-	\label{fig:loop}
-\end{figure}
-\\
-In general, localization has six degree of freedom (3-rotational and 3-translational) which accumulate the drift. However, monocular case suffers from scale-drift in addition to those six. Single camera can not sense the depth of scene much like humans when try to see with one eye only. It can not differentiate between an real size structure and its 3D miniature.
+\newline In general, localization has six degree of freedom (3-rotational and 3-translational) which accumulate the drift. However, monocular case suffers from scale-drift in addition to those six. Single camera can not sense the depth of scene much like humans when try to see with one eye only. It can not differentiate between an real size structure and its 3D miniature.
 This situation is further discussed in later section. \acrshort{orb} \acrshort{slam} can recover the scale drift up tom some level by estimating the similarity transformation between current and candidate keyframe. A similarity transformation can be structure as follows:
 \begin{equation*}
 S = 
@@ -253,9 +246,14 @@ with,\\
 $ S \in Sim(3)$  \ \ Similarity transformation \\
 $ s \in \mathbb{R}$ \ \ \ \ \ \ \ \ \ \ Scale factor \\
 $ R \in SO(3) $  \ \ \   Rotation matrix \\
-$ t \in \mathbb{R^{3}} $ \ \ \ \ \ \ \ \ \ Translation vector\\
-\newline
-equation \ref{similarity} is solved by method of Horn described in. Using this transformation it will again search for more matches of 3D points to further optimize the transformation S. If at least 20 matches found then last check for candidate frame is to search for more matches by projecting map points found in all connected keyframes. Minimum 40 matches required to finally accept the candidate and perform the last step(loop refinement) of this module. \\
+$ t \in \mathbb{R^{3}} $ \ \ \ \ \ \ \ \ \ Translation vector
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{loop}
+	\caption{\acrshort{orb} \acrshort{slam} mapping result showing of one of the sequences in this thesis work. left and right images show the camera trajectory just before finding loop and after loop closing respectively.}
+	\label{fig:loop}
+\end{figure}
+\noindent Equation \ref{similarity} is solved by method of Horn described in. Using this transformation it will again search for more matches of 3D points to further optimize the transformation S. If at least 20 matches found then last check for candidate frame is to search for more matches by projecting map points found in all connected keyframes. Minimum 40 matches required to finally accept the candidate and perform the last step(loop refinement) of this module. \\
 \newline 
 Once loop is accepted the last step is to refine the loop. During this step the local mapping is interrupted and pose optimization stops. In covisibility graph current keyframe is connected to those which are around to the candidate keyframe. Then it collects all keyframes and corrects their pose along with map points using the calculated similarity transformation which will move the all keyframes and map points connected to current keyframe. At this point covisibility graph get updated with those connections. After this step the keyframes not connected to current keyframe needs to be corrected. Also, there will be some duplicate map points in connected keyframes which can be found by projecting them into 2D image coordinates and matching with features. If match is found with already linked map point then that will be removed due to duplication \\
 \newline 
@@ -281,10 +279,118 @@ As number of unknowns increase it becomes difficult to solve. For example, with 
 	\label{fig:ba}
 \end{figure}
 
-\subsection{Direct Sparse Odometry}
+\subsection{Direct Sparse Odometry with Loop Closure (LDSO)}
+DSO (Direct Sparse Odometry) is one of the few \acrshort{vo} which uses fully Direct approach. It is developed by Dr. Jakob Engel in 2016 at Cremer's lab, Technical University of Munich.
+\acrshort{dso} is not a complete \acrshort{slam} system while an extended version of \acrshort{dso} which is known as \acrshort{ldso} \cite{gao2018ldso} comprises of loop closure. 
+A main advantage of direct method is that it doesn't require any matched point for motion tracking instead it can make use of any information even plain texture-less surface. In \acrshort{dso} 3D point is derived from the host frame and is multiplied by the depth value and reprojected to all active frames and creates reprojection residuals. A process overview of \acrshort{ldso} can be seen in figure \ref{fig:ldso}. \acrshort{ldso} consists three main modules 
+\begin{enumerate}
+	\item Tracking(front-end)
+	\item Optimization(back-end)
+	\item Loop Closure
+\end{enumerate}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{ldso}
+	\caption{Process overview of \acrshort{ldso}}
+	\label{fig:ldso}
+\end{figure}
+\subsubsection{Tracking}
+Tracking is main module in \acrshort{dso} which acts as a front-end pipeline. It includes various sub-tasks such as initialization, keyframe creation and marginalization, creation of residuals and points activation. It starts with initialization where all active points are projected onto a new keyframe and creates a semi-dense depth map. Further next frames are tracked with respect to this keyframe using two frame direct image alignment. A multi-scale image pyramid is created for initialization. If \acrshort{rmse} for a frame is more than twice that of the previous frame then direct image alignment is failed and initialization is done using 27 different small rotations in all possible directions. Once initialization is succeed next comes tracking. Frame is A new keyframe is created satisfying following conditions    
+\begin{enumerate}
+	\item If field of view is changed from last keyframe to current frame then a new keyframe is created. Which can be measure by mean square optical flow (f).
+	\item If camera has enough translation creating occlusions of points in frame then a new keyframe is created. It is measured by mean optical flow without considering rotation ($f_{t}$).
+	\item If camera exposure time changes above limit then a new keyframe is inserted. Change in exposure time can be measured by relative brightness factor between two frames ($f_{a}$).
+\end{enumerate}
+Finally, some weighting factors are multiplied with all three criteria and the sum of them is calculated as follows: 
+\begin{equation*}
+  w_{f} f + w_{ft} f_{t} + w_{fa} f_{a} > T_{kf}
+\end{equation*} 
+where $w_{f}, w_{ft}, w_{fa} $ are relative weighting factors and $ T_{kf} = 1. $ \\
+\newline
+After a keyframe is created it is used as host frame and all frames are tracked with respect to it by projecting all immature points onto the host frame. If points have less \acrshort{rmse} then they are converged and inverse depth is estimated for al these points. Next step is to flag keyframes for marginalization. \acrshort{dso} uses sliding window of keyframes for local optimization as show in figure \ref{fig:dso_sliding}. For that it needs to remove older keyframes and others which are not necessary. Marginalization strategy is as follows: 
+\begin{enumerate}
+	\item Latest two keyframes are always included into sliding window.
+	\item Keyframes with less than 5\% of their points visible in latest keyframe are flag as marginalized.  
+	\item If active keyframes are more than required then the frames which have more euclidean distance with latest keyframes are marginalized. By doing this more keyframes remains close to the latest frame. 
+\end{enumerate}
+After flagging keyframes, all active points in the sliding window are projected into a newly created keyframes and new residuals are created using those points. These active points are first selected from all over area of active image frames. The image is divided into 32 x 32 grid.
+From every cell, pixels with largest intensity gradient are selected as immature points for further processing. These points are tracked in next frames using discrete search along epipolar line. For a best match depth and associated variance is calculated. Along with this old points are marginalized replacing new candidate points. The number of active points are kept as fixed (e.g. 2000) and distributed equally across all active frames in sliding window. At this points newly created keyframe is optimized using the residuals and the active frames. A batch \acrshort{ba} is used for optimization.  
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{dso_sliding}
+	\caption{Concept of sliding windowed and global pose graph optimization \cite{gao2018ldso}}
+	\label{fig:dso_sliding}
+\end{figure}
+After local optimization next step is outlier removal from the local map. The points which are not tracked along epipolar line and for which photometric error is more than threshold are marked as outliers. For bad frames threshold value is set as higher to avoid all points marked as outliers. After outlier removal new immature points are created using feature detector. These points are used for residual creation. All active frames which are flagged before are marginalized. First all points from respective frame are removed from sliding window and then the frame is marginalized. At this point front-end of \acrshort{dso} is over and further loop closing module starts which is adopted in \acrshort{ldso}.
+
+\subsubsection{Optimization}
+Back-end of \acrshort{dso} is very complex module and hard to understand its code. \acrshort{dso} uses Gauss-Newton or Levenberg-Marquardts method for optimization of sliding window \cite{Engel-et-al-pami2018}. The parameters are keyframes and residuals of map points generates the optimization problem. All these terms create a larger linear equation as follow: 
+\begin{equation*}
+J^{T}WJ\delta x= -J^{T}Wr
+\end{equation*} 
+Where J ,W,r are Jacobians, weights and residuals respectively, and $ \delta x $ is the overall optimized update. The left side is also known as Hessian matrix (H). This optimization is different that one used in \acrshort{orb}-\acrshort{slam} where it always rebuild the whole optimization problem, solves it and then deconstruct it again. While in \acrshort{dso} this problem is taken as subsequential and the optimization is used as prior for next optimization without destructing it. Hessian matrix has arrow-like famous shape as shown in figure \ref{fig:hessiain}. The sparse structure is advantageous for faster solution of the problem. As geometry in left image is on diagonal it can be solved very efficiently using Schur complement \cite{Engel-et-al-pami2018}. While it becomes harder to solve problem when geometry prior has geometry correlations (right image).   
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\textwidth]{hessian}
+	\caption{Hessian matrix shape in batch \acrshort{ba} \cite{Engel-et-al-pami2018}}
+	\label{fig:hessiain}
+\end{figure}
+\acrshort{dso} \acrshort{ba} is not same as traditional \acrshort{ba} because upper left part is not diagonal matrix rather added by prior camera movement which can be estimated by previous motion status. The priori is generated between the co-visible frames of point when the point is marged and when the frame is marged. \\
+\newline
+The marginalization is same as discussed in front-end of \acrshort{dso}. A point and frame is marginalized if :
+\begin{enumerate}
+	\item A point is no longer in field of view of the camera.
+	\item Number of keyframes in sliding window exceeded than threshold.  
+	\item A frame is marginalized, the map points which use it as host frame will also marginalized.
+\end{enumerate}
+
+\subsubsection{Loop Closure}
+\acrshort{dso} is pure monocular \acrshort{vo} without global mapping and loop closing functionality. Xinag Gao et al. proposed a loop closing system in \acrshort{dso} \cite{gao2018ldso}. The proposed loop closing is based on pose graph optimization unlike global \acrshort{ba} in \acrshort{orb}-\acrshort{slam}. The figure \ref{fig:dso_sliding} show that while \acrshort{dso} sliding window is working a global pose graph is getting generated using all keyframes including marginalized ones. Reason for \acrshort{ba} would not work for loop closing in \acrshort{dso} is that number of points selected. For this amount of points a photometric \acrshort{ba} is infeasible. One more modification is done in \acrshort{ldso} is that point selection. \acrshort{ldso} along with high gradient pixels corners are also used as features which shows higher repeatability than those high gradient pixels.\\
+\newline
+Working of loop closing is illustrated in figure \ref{fig:ldso}. First \acrshort{orb} descriptors are computed for each keyframe. A \acrshort{bow} database is built using DBoW \cite{DboW}. All keyframes \acrshort{bow} are stored in a query keyframe database. For every candidate frame its \acrshort{orb} features are matched against the current keyframe. If a loop is detected then the loop correction is started. During this time global map is sate as idle. In loop correction \acrshort{ransac} \acrshort{pnp} is performed to compute an initial SE(3) transformation and if enough number of inliers are found then Sim(3) Pose is calculated using Gauss-Newton by minimizing 3D and 2D geometric constraints \cite{gao2018ldso}. After enough correct local map points pose-graph optimization is done using g2o solver \cite{g2o}. Now the last step in loop closing is fuse the global pose graph with sliding window. In order not to disturb sliding window optimization \acrshort{ldso} update only old poses in the trajectory during loop fusing leaving the current pose as it is. An example of loop closing in \acrshort{ldso} is shown in figure \ref{fig:ldso_loop}. Here the red and yellow lines shows the camera trajectory before and after loop closing. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{ldso_loop}
+	\caption{Loop closing effect in ldso}
+	\label{fig:ldso_loop}
+\end{figure}
 
 \subsection{Semi-direct Visual Odometry}
+Forster et.al developed first hybrid approach which uses both direct and indirect approaches at different points in the algorithm. They named it as Semi-direct Visual Odometry (SVO). \acrshort{svo} has similarity with \acrshort{ptam} in terms of process as explained in \cite{4538852}. The only difference is that \acrshort{ptam} is fully indirect approach and meant for rather smaller environment while \acrshort{svo} is semi-direct method. The process overview of \acrshort{svo} is illustrated in figure \ref{fig:svo}. It basically has two parallel threads as follows: 
+\begin{enumerate}
+	\item Motion Estimation thread
+	\item Mapping thread
+\end{enumerate}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{svo}
+	\caption{\acrshort{svo} process overview \cite{Forster2014ICRA}}
+	\label{fig:svo}
+\end{figure}
 
+\subsubsection{Motion Estimation}
+Motion estimation starts with creating number of image pyramid using some constant scale factor. First two image frames are considered as keyframes by default and the camera pose is calculated using homography estimation considering matched \acrshort{fast} corners. For next frames, proposed sparse model-based image alignment is done which minimizes photometric reprojection error for motion estimation. A small patch of 4 x 4 pixels is made surrounding every feature point. For every patch an intensity residual is calculated by back-projecting the 2D point from previous image to current image frame. These residuals are used for optimizing the relative camera pose by minimizing the photometric error \cite{Forster2014ICRA}. The figure \ref{fig:sparse_img_1} illustrates sparse image alignment. This problem can be formulated as per follows:
+\begin{equation*}
+T_{k,k-1} = arg \min\limits_{T_{k,k-1}} \frac{1}{2} \sum\limits_{i \in R} || \delta I (T_{k,k-1}, u_{i})||^{2}
+\label{eq:sparse_img}
+\end{equation*}
+\noindent where $T_{k,k-1}, \delta I, u_{i} $ are relative camera pose with respect to previous frame, intensity residual and image patch respectively. The equation \ref{eq:sparse_img} can be solved by Gauss-Newton optimization.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{sparse_img_1}
+	\caption{Sparse image alignment minimizes photometric intensity residuals between two image patch (blue squares) corresponding to the same 3D point denoted as $ p_{i}$ \cite{Forster2014ICRA}}
+	\label{fig:sparse_img_1}
+\end{figure}
+\noindent Sparse image alignment estimates the camera pose with respect to previous frame. It always consist some drift which gets accumulated for every next image. Therefore before processing further this relative pose needs to be aligned with respect to 3D map points to reduce the continuous drift. This is further done in feature alignment step. \\
+\newline In feature alignment step closest keyframes with respect to current frame are found by checking visibility of 3D keypoints pf that keyframe into current frame. Now, all 3D keypoints from the closest keyframes are projected into the image. For every reprojected points a corresponding 2D point with closest observation angle is found. Then finally it optimizes all 2D points by minimizing photometric error. This problem can be solved using traditional feature tracking method like Lucas-Kanade method \cite{Lucas81}. This step is necessary to reduce drift in camera pose estimated during sparse image alignment. Figure \ref{fig:sparse_img_2}  shows how the 3D map points generated from different keyframes are used to minimize 2D feature point patches in new image.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{sparse_img_2}
+	\caption{Feature alignment step optimizes corresponding 2D feature patches visible in keyframes $ r_{i} $ and current frame by minimizing photometric error \cite{Forster2014ICRA}.}
+	\label{fig:sparse_img_2}
+\end{figure}
+\noindent Last step in motion estimation thread is pose and structure refinement. Forster et al. found that the reprojection residual is around 0.3 pixels in feature alignment step \cite{Forster2014ICRA}. The final step minimizes this reprojection residuals famously known as motion \acrshort{ba}. It can be solved using Gauss-Newton method which jointly optimizes the camera poses and 3D points in map. \\
 
+\subsubsection{Mapping}
 
 

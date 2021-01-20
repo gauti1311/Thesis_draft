@@ -14,7 +14,7 @@
 \BOOKMARK [2][-]{subsection.2.2.4}{Monocular vs Stereo}{section.2.2}% 14
 \BOOKMARK [1][-]{section.2.3}{State of the Art}{chapter.2}% 15
 \BOOKMARK [2][-]{subsection.2.3.1}{ORB-SLAM}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.2}{Direct Sparse Odometry}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.2}{Direct Sparse Odometry with Loop Closure \(LDSO\)}{section.2.3}% 17
 \BOOKMARK [2][-]{subsection.2.3.3}{Semi-direct Visual Odometry}{section.2.3}% 18
 \BOOKMARK [0][-]{chapter.3}{Camera}{}% 19
 \BOOKMARK [1][-]{section.3.1}{Classification of Camera}{chapter.3}% 20
@@ -48,8 +48,8 @@
 \BOOKMARK [2][-]{subsection.5.4.3}{orb-slam}{section.5.4}% 48
 \BOOKMARK [1][-]{section.5.5}{Suggestions}{chapter.5}% 49
 \BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 50
-\BOOKMARK [0][-]{chapter*.67}{References}{}% 51
-\BOOKMARK [0][-]{chapter*.67}{References}{}% 52
+\BOOKMARK [0][-]{chapter*.79}{References}{}% 51
+\BOOKMARK [0][-]{chapter*.79}{References}{}% 52
 \BOOKMARK [0][-]{appendix.A}{Appendix}{}% 53
 \BOOKMARK [1][-]{section.A.1}{List of vo/v-slam Algorithms}{appendix.A}% 54
 \BOOKMARK [1][-]{section.A.2}{Camera calibration result}{appendix.A}% 55

@@ -18,7 +18,7 @@ Cameras can be classified mainly into two types :
 Passive cameras are mostly used in \acrshort{vo} experiments. Some common types are shown in the figure \ref{fig:cameras}.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{cameras}
+	\includegraphics[width=1.0\textwidth]{cameras}
 	\caption{Different types of cameras used in \acrshort{vo} \cite{ids},\cite{kinect},\cite{zed}, \cite{omni},\cite{tof}}
 	\label{fig:cameras}
 \end{figure}
@@ -70,7 +70,8 @@ A combination of both the types discussed above is called as RGB-D camera. It co
 	\label{table:cameracomp}  
 \end{table}
 \newline
-Based on discussion of camera properties above monocular camera are selected due to their simplicity. The two different types of monocular cameras are selected based on availability namely SICK-Picocam of model number -I2D304C-RCA11 (figure ) and a rolling shutter Genius widecam (F100) in order to compare the different technology. Best performing camera will be selected for the adaptation and further research. Table \ref{table:camera_prop} illustrate the properties of these cameras in comparison with IDS UI-3241LE which is used in TUM- benchmark dataset \cite{photometrically}.
+Based on discussion of camera properties above monocular camera are selected due to their simplicity. The two different types of monocular cameras are selected based on availability namely SICK-Picocam of model number -I2D304C-RCA11 and a rolling shutter Genius widecam (F100)
+(figure \ref{fig:cameras_used}) in order to compare the different technology. Best performing camera will be selected for the adaptation and further research. Table \ref{table:camera_prop} illustrate the properties of these cameras in comparison with IDS UI-3241LE which is used in TUM- benchmark dataset \cite{photometrically}.
 \begin{figure}[h!]
 	\begin{subfigure}{.5\textwidth}
 		\centering
@@ -143,7 +144,7 @@ r_{31} & r_{32} & r_{33} & t_{3} \\
 s is scale factor. K is known as camera intrinsic matrix with $ (u_{0},v_{0}) $ being a principal point, $ (f_{x},f_{y}) $ being the focal length in pixels in x and y direction and $ \gamma $ is the skew between both image axis. T is the 3x4 transformation matrix with R and t being rotation and translation from world to camera frame also known as extrinsic parameters.\\
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{pinhole}
+	\includegraphics[width=1.0\textwidth]{pinhole}
 	\caption{Pinhole camera model. C is camera center, m is 2D image point corresponding to 3D object point M, R and t are rotation and translation resp \cite{cameracalib}.}
 	\label{fig:pinhole}
 \end{figure}
@@ -162,7 +163,7 @@ where $ k_{1},k_{2},k_{3} $ are known as radial distortion coefficients.\\
 Tangential distortion generally occurs due to non-parallel lens and sensor. It depends on mounting and manufacturing of camera. There are only two coefficients which needs to corrected known as $p_{1} $ and $ p_{2} $. In simple camera calibration there are five distortion parameters and 5 intrinsic parameters needs to be estimated. There are some open-source software tools are already available with code. such as Matlab, OpenCV etc. OpenCV camera calibration module has been used in this scope \cite{opencvcalib}. 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{distortion}
+	\includegraphics[width=1.0\textwidth]{distortion}
 	\caption{Radial distortion created by camera lens \cite{opencvcalib}}
 	\label{fig:distortion}
 \end{figure}
@@ -171,7 +172,7 @@ Tangential distortion generally occurs due to non-parallel lens and sensor. It d
 This section covers the calibration procedure in brief. Different types of calibration patterns can be used such as chessboard, AR tags, data matrix, symmetric and asymmetric circular grid as shown in figure \ref{fig:pattern}. In this thesis work a symmetric circular grid pattern is used for picocam and chessboard pattern is used for genius widecam. The size of circular pattern is relatively larger than that of chessboard due to higher resolution of picocam.\\
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{pattern}
+	\includegraphics[width=1.0\textwidth]{pattern}
 	\caption{Types of calibration pattern used for camera calibration. such as AR tags, chessboard, circles grid \cite{calibio}}
 	\label{fig:pattern}
 \end{figure}
@@ -212,7 +213,7 @@ As discussed two cameras are selected in this scope of work. First picocam is ca
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.7\textwidth]{chessboard}
-		\caption{Chessboard pattern of size 8 x 8 used for Genius widecam}
+		\caption{Chessboard pattern of size 8 x 8 used for Genius Widecam}
 		\label{fig:chessboard}
 	\end{subfigure}
 	\caption{Different patterns used for camera calibration}
@@ -220,13 +221,13 @@ As discussed two cameras are selected in this scope of work. First picocam is ca
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\textwidth]{pattern_view}
+	\includegraphics[width=1.0\textwidth]{pattern_view}
 	\caption{Pattern centric view with rectangle as pattern and pentagons as camera}
 	\label{fig:pattern_view}
 \end{figure}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\textwidth]{reproj_error}
-	\caption{Reprojection error plot for picocam}
+	\caption{Reprojection error plot for Picocam}
 	\label{fig:reproj}
 \end{figure}

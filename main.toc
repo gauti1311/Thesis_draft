@@ -26,7 +26,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Direct Approach}{5}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Hybrid Approach}{7}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Hybrid Approach}{8}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}Monocular vs Stereo}{8}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
@@ -38,102 +38,112 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Initialization}{10}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Tracking}{12}{section*.20}
+\contentsline {subsubsection}{\nonumberline Tracking}{13}{section*.20}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Local Mapping}{14}{section*.21}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Loop Closing}{15}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Bundle Adjustment}{16}{section*.24}
+\contentsline {subsubsection}{\nonumberline Bundle Adjustment}{17}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Direct Sparse Odometry}{17}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Direct Sparse Odometry with Loop Closure (LDSO)}{18}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.3}Semi-direct Visual Odometry}{17}{subsection.2.3.3}
+\contentsline {subsubsection}{\nonumberline Tracking}{18}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Camera}{18}{chapter.3}
+\contentsline {subsubsection}{\nonumberline Optimization}{20}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Classification of Camera}{18}{section.3.1}
+\contentsline {subsubsection}{\nonumberline Loop Closure}{22}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Important Properties}{18}{section.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Semi-direct Visual Odometry}{23}{subsection.2.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Camera Selection}{19}{section.3.3}
+\contentsline {subsubsection}{\nonumberline Motion Estimation}{24}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Camera Calibration}{20}{section.3.4}
+\contentsline {subsubsection}{\nonumberline Mapping}{25}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Pinhole Camera Model}{21}{subsection.3.4.1}
+\contentsline {chapter}{\numberline {3}Camera}{26}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Calibration Procedure}{23}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.1}Classification of Camera}{26}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Recommendations for good calibration}{24}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.2}Important Properties}{26}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.4}Calibration result}{25}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.3}Camera Selection}{27}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Implementation}{27}{chapter.4}
+\contentsline {section}{\numberline {3.4}Camera Calibration}{29}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Setup}{27}{section.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Pinhole Camera Model}{30}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Base frame transformation}{27}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {3.4.2}Calibration Procedure}{31}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Software Implementation}{29}{section.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Recommendations for good calibration}{32}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Data Acquisition}{30}{section.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Calibration result}{33}{subsection.3.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Improvements}{31}{section.4.4}
+\contentsline {chapter}{\numberline {4}Implementation}{37}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}\acrshort {orb}-\acrshort {slam}}{31}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.1}Setup}{37}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Initialization}{31}{section*.43}
+\contentsline {subsection}{\numberline {4.1.1}Base frame transformation}{37}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Scale Estimation}{31}{section*.44}
+\contentsline {section}{\numberline {4.2}Software Implementation}{39}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}\acrshort {ldso}}{34}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.3}Data Acquisition}{40}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluation}{35}{chapter.5}
+\contentsline {section}{\numberline {4.4}Improvements}{41}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Evaluation Criteria}{35}{section.5.1}
+\contentsline {subsection}{\numberline {4.4.1}\acrshort {orb}-\acrshort {slam}}{41}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Experiment}{36}{section.5.2}
+\contentsline {subsubsection}{\nonumberline Initialization}{41}{section*.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Straight Path}{36}{subsection.5.2.1}
+\contentsline {subsubsection}{\nonumberline Scale Estimation}{42}{section*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Rectangle Path}{37}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {4.4.2}\acrshort {ldso}}{44}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Repeated Path}{38}{subsection.5.2.3}
+\contentsline {chapter}{\numberline {5}Evaluation}{45}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}Multi-loop Path}{40}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.1}Evaluation Criteria}{45}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.5}Figure Eight Path}{40}{subsection.5.2.5}
+\contentsline {section}{\numberline {5.2}Experiment}{46}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Comparison}{42}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.1}Straight Path}{46}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Observations}{43}{section.5.4}
+\contentsline {subsection}{\numberline {5.2.2}Rectangle Path}{47}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}\acrshort {svo}}{43}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.2.3}Repeated Path}{48}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}\acrshort {ldso}}{43}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.2.4}Multi-loop Path}{50}{subsection.5.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}\acrshort {orb}-\acrshort {slam}}{44}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.2.5}Figure Eight Path}{50}{subsection.5.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Suggestions}{44}{section.5.5}
+\contentsline {section}{\numberline {5.3}Comparison}{52}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{46}{chapter.6}
+\contentsline {section}{\numberline {5.4}Observations}{53}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline References}{47}{chapter*.67}
+\contentsline {subsection}{\numberline {5.4.1}\acrshort {svo}}{53}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{53}{chapter*.67}
+\contentsline {subsection}{\numberline {5.4.2}\acrshort {ldso}}{53}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix}{54}{appendix.A}
+\contentsline {subsection}{\numberline {5.4.3}\acrshort {orb}-\acrshort {slam}}{54}{subsection.5.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}List of \acrshort {vo}/\acrshort {v-slam} Algorithms}{54}{section.A.1}
+\contentsline {section}{\numberline {5.5}Suggestions}{54}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Camera calibration result}{56}{section.A.2}
+\contentsline {chapter}{\numberline {6}Conclusion}{56}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Picocam}{56}{section*.68}
+\contentsline {chapter}{\nonumberline References}{57}{chapter*.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Genius Widecam F100}{56}{section*.69}
+\contentsline {chapter}{References}{63}{chapter*.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Base frame transformations}{57}{section.A.3}
+\contentsline {chapter}{\numberline {A}Appendix}{64}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Picocam to \acrshort {lidar} :}{57}{section*.70}
+\contentsline {section}{\numberline {A.1}List of \acrshort {vo}/\acrshort {v-slam} Algorithms}{64}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Genius widecam to \acrshort {lidar} :}{57}{section*.71}
+\contentsline {section}{\numberline {A.2}Camera calibration result}{66}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Picocam}{66}{section*.80}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Genius Widecam F100}{66}{section*.81}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Base frame transformations}{67}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Picocam to \acrshort {lidar} :}{67}{section*.82}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Genius widecam to \acrshort {lidar} :}{67}{section*.83}

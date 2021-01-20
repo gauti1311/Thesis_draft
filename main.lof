@@ -26,77 +26,91 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.10}{\ignorespaces The Epipolar geometry has constraint that given a projection $ x_{L} $ in one image the corresponding point $ x_{R} $ in the other image has to lie on the line $ Fx_{i} $ \cite {multiview}.\relax }}{12}{figure.caption.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces \acrshort {orb} \acrshort {slam} mapping result showing of one of the sequences in this thesis work. left and right images show the camera trajectory just before finding loop and after loop closing respectively.\relax }}{15}{figure.caption.23}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces \acrshort {orb} \acrshort {slam} mapping result showing of one of the sequences in this thesis work. left and right images show the camera trajectory just before finding loop and after loop closing respectively.\relax }}{16}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.12}{\ignorespaces An illustration of \acrshort {ba} with multiple cameras seeing same scene \cite {sfm}.\relax }}{17}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Process overview of \acrshort {ldso}\relax }}{18}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Different types of cameras used in \acrshort {vo} \cite {ids},\cite {kinect},\cite {zed}, \cite {omni},\cite {tof}\relax }}{19}{figure.caption.26}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Concept of sliding windowed and global pose graph optimization \cite {gao2018ldso}\relax }}{20}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Two cameras used for \acrshort {vo} experiments\relax }}{21}{figure.caption.28}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Hessian matrix shape in batch \acrshort {ba} \cite {Engel-et-al-pami2018}\relax }}{21}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Pinhole camera model. C is camera center, m is 2D image point corresponding to 3D object point M, R and t are rotation and translation resp \cite {cameracalib}.\relax }}{22}{figure.caption.30}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Loop closing effect in ldso\relax }}{22}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Radial distortion created by camera lens \cite {opencvcalib}\relax }}{23}{figure.caption.31}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces \acrshort {svo} process overview \cite {Forster2014ICRA}\relax }}{23}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Types of calibration pattern used for camera calibration. such as AR tags, chessboard, circles grid \cite {calibio}\relax }}{24}{figure.caption.32}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Sparse image alignment minimizes photometric intensity residuals between two image patch (blue squares) corresponding to the same 3D point denoted as $ p_{i}$ \cite {Forster2014ICRA}\relax }}{24}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Different patterns used for camera calibration\relax }}{25}{figure.caption.33}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Pattern centric view with rectangle as pattern and pentagons as camera\relax }}{26}{figure.caption.34}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Reprojection error plot for picocam\relax }}{26}{figure.caption.35}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Feature alignment step optimizes corresponding 2D feature patches visible in keyframes $ r_{i} $ and current frame by minimizing photometric error \cite {Forster2014ICRA}.\relax }}{25}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Turtlebot equipped with \acrshort {lidar}, picocam, genius widecam\relax }}{27}{figure.caption.36}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Different types of cameras used in \acrshort {vo} \cite {ids},\cite {kinect},\cite {zed}, \cite {omni},\cite {tof}\relax }}{27}{figure.caption.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Setup to compute base-frame transformation\relax }}{28}{figure.caption.37}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Two cameras used for \acrshort {vo} experiments\relax }}{29}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Distance measured between \acrshort {lidar} and target using SICK mapping tool\relax }}{28}{figure.caption.38}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Pinhole camera model. C is camera center, m is 2D image point corresponding to 3D object point M, R and t are rotation and translation resp \cite {cameracalib}.\relax }}{30}{figure.caption.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Front view of dimensional drawing of \acrshort {lidar} TIM571 used in this thesis \cite {sick}\relax }}{29}{figure.caption.39}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Radial distortion created by camera lens \cite {opencvcalib}\relax }}{31}{figure.caption.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Software implementation structure of \acrshort {vo} algorithms for the purpose of comparison\relax }}{29}{figure.caption.40}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Types of calibration pattern used for camera calibration. such as AR tags, chessboard, circles grid \cite {calibio}\relax }}{32}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces A warehouse scenario used in \acrshort {vo} experiment\relax }}{30}{figure.caption.41}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Different patterns used for camera calibration\relax }}{34}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Camera attached at fixed height showing ground \cite {ground}\relax }}{32}{figure.caption.45}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Pattern centric view with rectangle as pattern and pentagons as camera\relax }}{35}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Scale comparison of \acrshort {orb}-\acrshort {slam} and \acrshort {ldso} with \acrshort {lidar} odometry\relax }}{32}{figure.caption.46}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Ground points (blue rectangles) seen in one of the measurement\relax }}{33}{figure.caption.47}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Absolute scale estimation procedure using camera height approach \cite {ground}\relax }}{33}{figure.caption.48}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Different scale comparison of \acrshort {orb}-\acrshort {slam} and \acrshort {lidar} odometry \relax }}{34}{figure.caption.49}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Reprojection error plot for Picocam\relax }}{36}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Different matrices for \acrshort {vo} evaluation \cite {lecture}\relax }}{35}{figure.caption.50}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Turtlebot equipped with \acrshort {lidar}, picocam, genius widecam\relax }}{37}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Picocam trajectories of straight path\relax }}{37}{figure.caption.52}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Setup to compute base-frame transformation\relax }}{38}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Genius Widecam F100 trajectories of straight path\relax }}{37}{figure.caption.53}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Distance measured between \acrshort {lidar} and target using SICK mapping tool\relax }}{38}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Picocam trajectories of rectangle path\relax }}{38}{figure.caption.55}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Front view of dimensional drawing of \acrshort {lidar} TIM571 used in this thesis \cite {sick}\relax }}{39}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Genius Widecam F100 trajectories of rectangle path\relax }}{38}{figure.caption.56}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Software structure of all three \acrshort {vo} algorithms for the purpose of evaluation\relax }}{40}{figure.caption.52}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Picocam trajectories of repeated path\relax }}{39}{figure.caption.58}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A warehouse scenario used in \acrshort {vo} experiment\relax }}{40}{figure.caption.53}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Genius Widecam F100 trajectories of repeated path\relax }}{39}{figure.caption.59}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Camera attached at fixed height showing ground \cite {ground}\relax }}{42}{figure.caption.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces \acrshort {orb}-\acrshort {slam} trajectory\relax }}{40}{figure.caption.61}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Scale comparison of \acrshort {orb}-\acrshort {slam} and \acrshort {ldso} with \acrshort {lidar} odometry\relax }}{43}{figure.caption.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Picocam trajectories of figure eight path\relax }}{41}{figure.caption.63}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Ground points (blue rectangles) seen in one of the measurement\relax }}{43}{figure.caption.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Genius Widecam F100 trajectories of figure eight path\relax }}{41}{figure.caption.64}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Absolute scale estimation procedure using camera height approach \cite {ground}\relax }}{44}{figure.caption.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Trajectory plots of straight path\relax }}{42}{figure.caption.65}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Different scale comparison of \acrshort {orb}-\acrshort {slam} and \acrshort {lidar} odometry \relax }}{44}{figure.caption.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Trajectory plots of rectangle path\relax }}{42}{figure.caption.66}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Different matrices for \acrshort {vo} evaluation \cite {lecture}\relax }}{45}{figure.caption.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Picocam trajectories of straight path\relax }}{47}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Genius Widecam F100 trajectories of straight path\relax }}{47}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Picocam trajectories of rectangle path\relax }}{48}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Genius Widecam F100 trajectories of rectangle path\relax }}{48}{figure.caption.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Picocam trajectories of repeated path\relax }}{49}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Genius Widecam F100 trajectories of repeated path\relax }}{49}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces \acrshort {orb}-\acrshort {slam} trajectory\relax }}{50}{figure.caption.73}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Picocam trajectories of figure eight path\relax }}{51}{figure.caption.75}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Genius Widecam F100 trajectories of figure eight path\relax }}{51}{figure.caption.76}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Trajectory plots of straight path\relax }}{52}{figure.caption.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Trajectory plots of rectangle path\relax }}{52}{figure.caption.78}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

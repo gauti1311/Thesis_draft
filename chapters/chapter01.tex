@@ -1,7 +1,7 @@
 \section{Motivation}
 Autonomous mobile robots (AMR) are in trend nowadays particularly in manufacturing, assembly and warehouse applications. Autonomous navigation is the key for these applications. In mobile robotics, Simultaneous Localization and Mapping also known as SLAM, has been always most researched topic which helps to localize a robot in unknown environment. In indoor applications, the environment is known most of the time means map is available. Now the only problem remains is accurate robot positioning. Many internal sensors can be used for this purpose such as wheel encoders, \acrshort{imu}, laser scanner, beacons etc. None of them are accurate enough due to inherent noise. \acrshort{lidar} is most accurate sensor among all but it is expensive and relatively bigger in size.\\
 \newline
-Currently, research is focused more on camera based localization thanks to computer vision advancement. Camera based localization is known as Visual Odometry or Vision-based odometry. Camera offers reliable solutions together with more than one tasks in parallel such as object detection, collision avoidance etc. Cameras are also cheaper compared to \acrshort{lidar}. Many state of the art \acrshort{vo} methods are invented so far.\\
+Currently, research is focused more on camera based localization thanks to computer vision advancement. Camera based localization is known as Visual Odometry or Vision-based odometry. Camera offers reliable solutions together with more than one task in parallel such as object detection, collision avoidance etc. Cameras are also cheaper compared to \acrshort{lidar}. Many state of the art \acrshort{vo} methods are invented so far.\\
 \newline
 The goal of this thesis is to analyse the performance of camera with \acrshort{lidar} and to find out suitable \acrshort{vo} methods, their implementation and evaluation with each other and with \acrshort{lidar} odometry and to select the best performing method for future work.
 
@@ -9,11 +9,11 @@ The goal of this thesis is to analyse the performance of camera with \acrshort{l
 
 The thesis is structured into six chapters. Chapter 1 serves as an introduction.\\
 \newline 
-Chapter 2 covers the basics of Visual Odometry. It explains \acrshort{vo} pipeline. Furthermore, it describes state of the art and in depth selected algorithms namely ORB-SLAM, Direct Sparse Odometry with loop closure (LDSO), Semi-direct Visual Odometry (SVO).\\  
+Chapter 2 covers the basics of Visual Odometry. It explains \acrshort{vo} pipeline. Furthermore, it describes state of the art and in depth selected algorithms namely ORB-SLAM, Direct Sparse Odometry with loop closure (LDSO) and Semi-direct Visual Odometry (SVO).\\  
 \newline 
-Chapter 3 provides information about common types of cameras used for \acrshort{vo}, important characteristics and the selection of cameras used in the implementation. It also includes an important task of camera calibration which affects the result of \acrshort{vo}\\
+Chapter 3 provides information about common types of cameras used for \acrshort{vo}, important characteristics and the selection of cameras used in the implementation. It also includes an important task of camera calibration which affects the result of \acrshort{vo}.\\
 \newline 
-Chapter 4 describes experimental setup, data collection and proposed implementation. Some improvements are explained.\\
+Chapter 4 describes experimental setup, data collection and implementation. Some improvements are explained.\\
 \newline
 Chapter 5 evaluates algorithms based on evaluation criteria. The results are discussed for each experiment and then compared with \acrshort{lidar} odometry. Furthermore it gives some ideas for further improvement and real-time implementation for future work.\\
 \newline
