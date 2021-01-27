@@ -7,7 +7,7 @@
 \BOOKMARK [0][-]{chapter.2}{Visual Odometry}{}% 7
 \BOOKMARK [1][-]{section.2.1}{Basics}{chapter.2}% 8
 \BOOKMARK [2][-]{subsection.2.1.1}{Visual Odometry Pipeline}{section.2.1}% 9
-\BOOKMARK [1][-]{section.2.2}{Types of Visual Odometry}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{Types of Visual Odometry Techniques}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.2.1}{Indirect Approach}{section.2.2}% 11
 \BOOKMARK [2][-]{subsection.2.2.2}{Direct Approach}{section.2.2}% 12
 \BOOKMARK [2][-]{subsection.2.2.3}{Hybrid Approach}{section.2.2}% 13
@@ -17,7 +17,7 @@
 \BOOKMARK [2][-]{subsection.2.3.2}{Direct Sparse Odometry with Loop Closure \(LDSO\)}{section.2.3}% 17
 \BOOKMARK [2][-]{subsection.2.3.3}{Semi-direct Visual Odometry}{section.2.3}% 18
 \BOOKMARK [0][-]{chapter.3}{Camera}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Classification of Camera}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.1}{Classification of Cameras}{chapter.3}% 20
 \BOOKMARK [1][-]{section.3.2}{Important Properties}{chapter.3}% 21
 \BOOKMARK [1][-]{section.3.3}{Camera Selection}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.4}{Camera Calibration}{chapter.3}% 23
@@ -49,12 +49,11 @@
 \BOOKMARK [1][-]{section.5.5}{Suggestions}{chapter.5}% 49
 \BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 50
 \BOOKMARK [0][-]{chapter*.84}{References}{}% 51
-\BOOKMARK [0][-]{chapter*.84}{References}{}% 52
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 53
-\BOOKMARK [1][-]{section.A.1}{List of vo/v-slam Algorithms}{appendix.A}% 54
-\BOOKMARK [1][-]{section.A.2}{Camera calibration result}{appendix.A}% 55
-\BOOKMARK [2][-]{subsection.A.2.1}{Picocam}{section.A.2}% 56
-\BOOKMARK [2][-]{subsection.A.2.2}{Genius Widecam F100}{section.A.2}% 57
-\BOOKMARK [1][-]{section.A.3}{Base frame transformations}{appendix.A}% 58
-\BOOKMARK [2][-]{subsection.A.3.1}{Picocam to lidar :}{section.A.3}% 59
-\BOOKMARK [2][-]{subsection.A.3.2}{Genius Widecam to lidar :}{section.A.3}% 60
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 52
+\BOOKMARK [1][-]{section.A.1}{List of vo/v-slam Algorithms}{appendix.A}% 53
+\BOOKMARK [1][-]{section.A.2}{Camera calibration result}{appendix.A}% 54
+\BOOKMARK [2][-]{subsection.A.2.1}{Picocam}{section.A.2}% 55
+\BOOKMARK [2][-]{subsection.A.2.2}{Genius Widecam F100}{section.A.2}% 56
+\BOOKMARK [1][-]{section.A.3}{Base frame transformations}{appendix.A}% 57
+\BOOKMARK [2][-]{subsection.A.3.1}{Picocam to lidar :}{section.A.3}% 58
+\BOOKMARK [2][-]{subsection.A.3.2}{Genius Widecam to lidar :}{section.A.3}% 59

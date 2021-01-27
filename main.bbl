@@ -19,16 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{fast}{misc}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \field{howpublished}{\url{https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_fast/py_fast.html}}
-    \endentry
-    \entry{multiview}{misc}{}
-      \field{sortinit}{}
-      \field{sortinithash}{495dc9894017a8b12cafa9c619d10c0c}
-      \field{howpublished}{\url{https://openmvg.readthedocs.io/en/latest/openMVG/multiview/multiview/}}
-    \endentry
     \entry{bergmann2017online}{misc}{}
       \name{author}{3}{}{%
         {{hash=a3eb3e20ba90926cc2bea3b942ebff5a}{%
@@ -114,18 +104,6 @@
       \verb :home/chris/Documents/Mendeley Desktop/Bloesch et al. - Unknown - Robust Visual Inertial Odometry Using a Direct EKF-Based Approach.pdf:pdf
       \endverb
       \keyw{Cameras,Estimation,Feature extraction,Robots,Technological innovation,Three-dimensional displays,Uncertainty}
-    \endentry
-    \entry{omni}{online}{}
-      \field{sortinit}{b}
-      \field{sortinithash}{276475738cc058478c1677046f857703}
-      \field{labeltitlesource}{title}
-      \field{title}{bublcam}
-      \verb{urlraw}
-      \verb https://phys.org/news/2013-11-bublcam-life-spherical-perspective.html
-      \endverb
-      \verb{url}
-      \verb https://phys.org/news/2013-11-bublcam-life-spherical-perspective.html
-      \endverb
     \endentry
     \entry{Buczko2016}{article}{}
       \name{author}{2}{}{%
@@ -248,11 +226,11 @@
       \keyw{Mapping and Localization,Image,Radar,Lidar Signal}
     \endentry
     \entry{calibio}{online}{}
-      \field{sortinit}{c}
+      \field{sortinit}{C}
       \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
       \field{labeltitlesource}{title}
       \field{month}{11}
-      \field{title}{calibration pattern}
+      \field{title}{Camera calibration pattern generation}
       \field{year}{2018}
       \verb{urlraw}
       \verb https://calib.io/blogs/knowledge-base/calibration-patterns-explained
@@ -1094,11 +1072,51 @@
       \field{title}{Multiple View Geometry in Computer Vision}
       \warn{\item Entry 'multiview_geometry' (references.bib): Invalid format 'March 2004' of date field 'date' - ignoring}
     \endentry
+    \entry{Horn}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dbc02519b4727ebb41f6ab2af8e2808d}{%
+           family={Horn},
+           familyi={H\bibinitperiod},
+           given={Berthold\bibnamedelimb K.\bibnamedelimi P.},
+           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {OSA}%
+      }
+      \strng{namehash}{dbc02519b4727ebb41f6ab2af8e2808d}
+      \strng{fullhash}{dbc02519b4727ebb41f6ab2af8e2808d}
+      \strng{bibnamehash}{dbc02519b4727ebb41f6ab2af8e2808d}
+      \strng{authorbibnamehash}{dbc02519b4727ebb41f6ab2af8e2808d}
+      \strng{authornamehash}{dbc02519b4727ebb41f6ab2af8e2808d}
+      \strng{authorfullhash}{dbc02519b4727ebb41f6ab2af8e2808d}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Opt. Soc. Am. A}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Closed-form solution of absolute orientation using unit quaternions}
+      \field{volume}{4}
+      \field{year}{1987}
+      \field{pages}{629\bibrangedash 642}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1364/JOSAA.4.000629
+      \endverb
+      \verb{urlraw}
+      \verb http://josaa.osa.org/abstract.cfm?URI=josaa-4-4-629
+      \endverb
+      \verb{url}
+      \verb http://josaa.osa.org/abstract.cfm?URI=josaa-4-4-629
+      \endverb
+      \keyw{Composite materials; Photogrammetry; Reflection}
+    \endentry
     \entry{ids}{online}{}
-      \field{sortinit}{i}
+      \field{sortinit}{I}
       \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
       \field{labeltitlesource}{title}
-      \field{title}{idsmono}
+      \field{title}{Ids cameras online source}
       \verb{urlraw}
       \verb https://en.ids-imaging.com/store/ui-5640se.html
       \endverb
@@ -1215,6 +1233,34 @@
       \endverb
       \keyw{3d,all or part of,ar,depth cameras,geometry-aware interactions,gpu,or hard copies of,permission to make digital,physics,research cambridge,research conducted at microsoft,surface reconstruction,this work for,tracking,uk}
     \endentry
+    \entry{Shi}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=c0ea7303533ed64a16941535aa7ac4cd}{%
+           family={{Jianbo Shi}},
+           familyi={J\bibinitperiod}}}%
+        {{hash=5191cb80e0dbd1a8b33888e2951636d2}{%
+           family={{Tomasi}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{08cb715fb299821aaac3378a8e475fe2}
+      \strng{fullhash}{08cb715fb299821aaac3378a8e475fe2}
+      \strng{bibnamehash}{08cb715fb299821aaac3378a8e475fe2}
+      \strng{authorbibnamehash}{08cb715fb299821aaac3378a8e475fe2}
+      \strng{authornamehash}{08cb715fb299821aaac3378a8e475fe2}
+      \strng{authorfullhash}{08cb715fb299821aaac3378a8e475fe2}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{1994 Proceedings of IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{title}{Good features to track}
+      \field{year}{1994}
+      \field{pages}{593\bibrangedash 600}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CVPR.1994.323794
+      \endverb
+    \endentry
     \entry{chris}{thesis}{}
       \name{author}{1}{}{%
         {{hash=479e5fd84bda24f87442ac90fb46b1d6}{%
@@ -1311,18 +1357,6 @@
       \range{pages}{23}
       \verb{doi}
       \verb 10.1007/s40903-015-0032-7
-      \endverb
-    \endentry
-    \entry{kinect}{online}{}
-      \field{sortinit}{K}
-      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
-      \field{labeltitlesource}{title}
-      \field{title}{Kinect}
-      \verb{urlraw}
-      \verb https://www.lib.ncsu.edu/devices/microsoft-xbox-kinect-3d-sensor
-      \endverb
-      \verb{url}
-      \verb https://www.lib.ncsu.edu/devices/microsoft-xbox-kinect-3d-sensor
       \endverb
     \endentry
     \entry{planer}{inproceedings}{}
@@ -1847,6 +1881,18 @@
       \endverb
       \keyw{Loop closing,SIFT,SLAM,Stereo,Tracking}
     \endentry
+    \entry{kinect}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labeltitlesource}{title}
+      \field{title}{Microsoft XBox for Kinect 3D sensor}
+      \verb{urlraw}
+      \verb https://www.lib.ncsu.edu/devices/microsoft-xbox-kinect-3d-sensor
+      \endverb
+      \verb{url}
+      \verb https://www.lib.ncsu.edu/devices/microsoft-xbox-kinect-3d-sensor
+      \endverb
+    \endentry
     \entry{Aqel-et-al-2016}{journal}{}
       \name{author}{2}{}{%
         {{hash=457af04b96ed26145e6b3d7d8d51dd52}{%
@@ -1883,10 +1929,10 @@
       \endverb
     \endentry
     \entry{lecture}{online}{}
-      \field{sortinit}{m}
+      \field{sortinit}{M}
       \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
       \field{labeltitlesource}{title}
-      \field{title}{multi-view geometry lecture notes by Prof. Dr. Davide Scaramuzza}
+      \field{title}{Multi-view geometry lecture notes by Prof. Dr. Davide Scaramuzza}
       \verb{urlraw}
       \verb rpg.ifi.uzh.ch/docs/teaching/2020/08_multiple_view_geometry_2.pdf
       \endverb
@@ -2053,7 +2099,7 @@
       \field{sortinit}{N}
       \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
       \field{labeltitlesource}{title}
-      \field{title}{NASA mars rover}
+      \field{title}{NASA Mars-rover}
       \verb{urlraw}
       \verb https://mars.nasa.gov/resources/3512/mars-rover-curiosity-in-artists-concept-wide/
       \endverb
@@ -2298,6 +2344,31 @@
       \verb https://docs.opencv.org/master/d9/d0c/group__calib3d.html
       \endverb
       \warn{\item Entry 'opencvcalib' (references.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{fast}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labeltitlesource}{title}
+      \field{title}{OpenCV Documentation of FAST Algorithm for Corner Detection}
+      \verb{urlraw}
+      \verb https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_fast/py_fast.html
+      \endverb
+      \verb{url}
+      \verb https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_fast/py_fast.html
+      \endverb
+      \warn{\item Entry 'fast' (references.bib): Invalid format 'date' of date field 'date' - ignoring}
+    \endentry
+    \entry{multiview}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labeltitlesource}{title}
+      \field{title}{OpenMVG -Multiple View Geometry Library}
+      \verb{urlraw}
+      \verb https://openmvg.readthedocs.io/en/latest/openMVG/multiview/multiview/
+      \endverb
+      \verb{url}
+      \verb https://openmvg.readthedocs.io/en/latest/openMVG/multiview/multiview/
+      \endverb
     \endentry
     \entry{Pascoe2017}{article}{}
       \name{author}{5}{}{%
@@ -2856,6 +2927,18 @@
       \field{pages}{80\bibrangedash 92}
       \range{pages}{13}
     \endentry
+    \entry{omni}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{Scientific Online Blogs and News}
+      \verb{urlraw}
+      \verb https://phys.org/news/2013-11-bublcam-life-spherical-perspective.html
+      \endverb
+      \verb{url}
+      \verb https://phys.org/news/2013-11-bublcam-life-spherical-perspective.html
+      \endverb
+    \endentry
     \entry{picocam}{online}{}
       \field{sortinit}{S}
       \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
@@ -2883,27 +2966,15 @@
       \warn{\item Entry 'sick' (references.bib): Invalid format 'date' of date field 'date' - ignoring}
     \endentry
     \entry{zed}{online}{}
-      \field{sortinit}{s}
-      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
-      \field{labeltitlesource}{title}
-      \field{title}{stereolabs}
-      \verb{urlraw}
-      \verb https://www.stereolabs.com/zed/
-      \endverb
-      \verb{url}
-      \verb https://www.stereolabs.com/zed/
-      \endverb
-    \endentry
-    \entry{sfm}{online}{}
       \field{sortinit}{S}
       \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{labeltitlesource}{title}
-      \field{title}{Structure from motion}
+      \field{title}{Stereolabs- online source for stereo cameras}
       \verb{urlraw}
-      \verb http://www.theia-sfm.org/sfm.html
+      \verb https://www.stereolabs.com/zed/
       \endverb
       \verb{url}
-      \verb http://www.theia-sfm.org/sfm.html
+      \verb https://www.stereolabs.com/zed/
       \endverb
     \endentry
     \entry{sturmcalib}{article}{}
@@ -3053,11 +3124,23 @@
       \verb http://arxiv.org/abs/1704.03489
       \endverb
     \endentry
-    \entry{turtlebot2}{online}{}
-      \field{sortinit}{t}
+    \entry{sfm}{online}{}
+      \field{sortinit}{T}
       \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
       \field{labeltitlesource}{title}
-      \field{title}{turtlebot2}
+      \field{title}{Theia Vision Library - A computer vision library}
+      \verb{urlraw}
+      \verb http://www.theia-sfm.org/sfm.html
+      \endverb
+      \verb{url}
+      \verb http://www.theia-sfm.org/sfm.html
+      \endverb
+    \endentry
+    \entry{turtlebot2}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labeltitlesource}{title}
+      \field{title}{Turtlebot2- official Website}
       \verb{urlraw}
       \verb https://www.turtlebot.com/turtlebot2/
       \endverb
@@ -3191,10 +3274,10 @@
       \endverb
     \endentry
     \entry{tof}{online}{}
-      \field{sortinit}{w}
+      \field{sortinit}{W}
       \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
       \field{labeltitlesource}{title}
-      \field{title}{wikiwand}
+      \field{title}{Wikiwand- online application for wikipedia readers}
       \verb{urlraw}
       \verb https://www.wikiwand.com/en/Time-of-flight_camera
       \endverb

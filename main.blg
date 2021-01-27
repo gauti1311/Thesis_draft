@@ -1,40 +1,42 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[21] biber:313> INFO - === Mi Jan 20, 2021, 15:47:22
-[38] Biber.pm:371> INFO - Reading 'main.bcf'
-[93] Biber.pm:857> INFO - Found 95 citekeys in bib section 0
-[104] Biber.pm:3981> INFO - Processing section 0
-[113] Biber.pm:4154> INFO - Looking for bibtex format file 'references.bib' for section 0
-[115] bibtex.pm:1468> INFO - LaTeX decoding ...
-[160] bibtex.pm:1294> INFO - Found BibTeX data source 'references.bib'
-[163] Utils.pm:169> WARN - Duplicate entry key: 'opencvcalib' in file 'references.bib', skipping ...
-[165] Utils.pm:169> WARN - Entry 'nasa' (references.bib): Invalid format '10 dec 2020' of date field 'date' - ignoring
-[176] Utils.pm:169> WARN - Entry 'lecture' (references.bib): Invalid format '19th december 2020' of date field 'date' - ignoring
-[196] Utils.pm:169> WARN - month field 'September' in entry 'engel14eccv' is not an integer - this will probably not sort properly.
-[208] Utils.pm:169> WARN - month field 'October' in entry 'gao2018ldso' is not an integer - this will probably not sort properly.
-[240] Utils.pm:169> WARN - Entry 'multiview_geometry' (references.bib): Invalid format 'March 2004' of date field 'date' - ignoring
-[281] Utils.pm:169> WARN - ISBN '076952334X01' in entry 'vignette' is invalid - run biber with '--validate_datamodel' for details.
-[321] Utils.pm:169> WARN - Entry 'picocam' (references.bib): Invalid format 'date' of date field 'date' - ignoring
-[322] Utils.pm:169> WARN - Entry 'genius' (references.bib): Invalid format 'date' of date field 'date' - ignoring
-[344] Utils.pm:169> WARN - Entry 'opencvcalib' (references.bib): Invalid format 'date' of date field 'date' - ignoring
-[344] Utils.pm:169> WARN - month field 'november' in entry 'calibio' is not an integer - this will probably not sort properly.
-[345] Utils.pm:169> WARN - Entry 'sick' (references.bib): Invalid format 'date' of date field 'date' - ignoring
-[357] Utils.pm:169> WARN - month field 'December' in entry 'engel2013iccv' is not an integer - this will probably not sort properly.
-[358] Biber.pm:4154> INFO - Looking for bibtex format file 'refs.bib' for section 0
-[393] bibtex.pm:1468> INFO - LaTeX decoding ...
-[785] bibtex.pm:1294> INFO - Found BibTeX data source 'refs.bib'
-[867] Utils.pm:169> WARN - ISBN '1552-3098' in entry 'Konolige2008' is invalid - run biber with '--validate_datamodel' for details.
-[936] Utils.pm:169> WARN - ISBN '0278-3649' in entry 'Leutenegger2015' is invalid - run biber with '--validate_datamodel' for details.
-[948] Utils.pm:169> WARN - ISBN '0278-3649' in entry 'Leutenegger2013' is invalid - run biber with '--validate_datamodel' for details.
-[948] Utils.pm:169> WARN - Range field 'pages' in entry 'Leutenegger2013' is malformed, falling back to literal
-[1018] Utils.pm:169> WARN - ISBN '0920-5691' in entry 'Mei2011' is invalid - run biber with '--validate_datamodel' for details.
-[1023] Utils.pm:169> WARN - Range field 'pages' in entry 'Cvisic2015' is malformed, falling back to literal
-[1043] Utils.pm:169> WARN - BibTeX subsystem: /tmp/qlJV9TZeM8/refs.bib_19480.utf8, line 6, warning: 173 characters of junk seen at toplevel
-[1121] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1121] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1121] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[1121] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
-[1195] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'ascii'
-[1195] bbl.pm:618> INFO - Converting UTF-8 to TeX macros on output to .bbl
-[1287] bbl.pm:720> INFO - Output to main.bbl
-[1287] Biber.pm:110> INFO - WARNINGS: 20
+[22] biber:313> INFO - === Di Jan 26, 2021, 21:53:59
+[40] Biber.pm:371> INFO - Reading 'main.bcf'
+[111] Biber.pm:857> INFO - Found 97 citekeys in bib section 0
+[129] Biber.pm:3981> INFO - Processing section 0
+[138] Biber.pm:4154> INFO - Looking for bibtex format file 'references.bib' for section 0
+[140] bibtex.pm:1468> INFO - LaTeX decoding ...
+[187] bibtex.pm:1294> INFO - Found BibTeX data source 'references.bib'
+[190] Utils.pm:169> WARN - Duplicate entry key: 'opencvcalib' in file 'references.bib', skipping ...
+[191] Utils.pm:169> WARN - Entry 'nasa' (references.bib): Invalid format '10 dec 2020' of date field 'date' - ignoring
+[204] Utils.pm:169> WARN - Entry 'lecture' (references.bib): Invalid format '19th december 2020' of date field 'date' - ignoring
+[229] Utils.pm:169> WARN - month field 'September' in entry 'engel14eccv' is not an integer - this will probably not sort properly.
+[242] Utils.pm:169> WARN - month field 'October' in entry 'gao2018ldso' is not an integer - this will probably not sort properly.
+[271] Utils.pm:169> WARN - Entry 'fast' (references.bib): Invalid format 'date' of date field 'date' - ignoring
+[275] Utils.pm:169> WARN - Entry 'multiview_geometry' (references.bib): Invalid format 'March 2004' of date field 'date' - ignoring
+[294] Utils.pm:169> WARN - month field 'Apr' in entry 'Horn' is not an integer - this will probably not sort properly.
+[324] Utils.pm:169> WARN - ISBN '076952334X01' in entry 'vignette' is invalid - run biber with '--validate_datamodel' for details.
+[369] Utils.pm:169> WARN - Entry 'picocam' (references.bib): Invalid format 'date' of date field 'date' - ignoring
+[370] Utils.pm:169> WARN - Entry 'genius' (references.bib): Invalid format 'date' of date field 'date' - ignoring
+[393] Utils.pm:169> WARN - Entry 'opencvcalib' (references.bib): Invalid format 'date' of date field 'date' - ignoring
+[393] Utils.pm:169> WARN - month field 'november' in entry 'calibio' is not an integer - this will probably not sort properly.
+[394] Utils.pm:169> WARN - Entry 'sick' (references.bib): Invalid format 'date' of date field 'date' - ignoring
+[407] Utils.pm:169> WARN - month field 'December' in entry 'engel2013iccv' is not an integer - this will probably not sort properly.
+[407] Biber.pm:4154> INFO - Looking for bibtex format file 'refs.bib' for section 0
+[442] bibtex.pm:1468> INFO - LaTeX decoding ...
+[828] bibtex.pm:1294> INFO - Found BibTeX data source 'refs.bib'
+[910] Utils.pm:169> WARN - ISBN '1552-3098' in entry 'Konolige2008' is invalid - run biber with '--validate_datamodel' for details.
+[979] Utils.pm:169> WARN - ISBN '0278-3649' in entry 'Leutenegger2015' is invalid - run biber with '--validate_datamodel' for details.
+[991] Utils.pm:169> WARN - ISBN '0278-3649' in entry 'Leutenegger2013' is invalid - run biber with '--validate_datamodel' for details.
+[991] Utils.pm:169> WARN - Range field 'pages' in entry 'Leutenegger2013' is malformed, falling back to literal
+[1061] Utils.pm:169> WARN - ISBN '0920-5691' in entry 'Mei2011' is invalid - run biber with '--validate_datamodel' for details.
+[1065] Utils.pm:169> WARN - Range field 'pages' in entry 'Cvisic2015' is malformed, falling back to literal
+[1086] Utils.pm:169> WARN - BibTeX subsystem: /tmp/NghiEKea70/refs.bib_16751.utf8, line 6, warning: 173 characters of junk seen at toplevel
+[1162] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1162] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1162] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1162] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[1237] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'ascii'
+[1237] bbl.pm:618> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[1329] bbl.pm:720> INFO - Output to main.bbl
+[1329] Biber.pm:110> INFO - WARNINGS: 22

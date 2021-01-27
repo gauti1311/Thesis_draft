@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.7.7)  20 JAN 2021 20:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.7.7)  27 JAN 2021 01:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1164,6 +1164,12 @@ t 'date' of date field 'date' - ignoring.
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'fast':
+(biblatex)                - Entry 'fast' (references.bib): Invalid format 'date
+' of date field 'date' - ignoring.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'picocam':
 (biblatex)                - Entry 'picocam' (references.bib): Invalid format 'd
 ate' of date field 'date' - ignoring.
@@ -1295,12 +1301,12 @@ l.153
 ] [2]
 chapter 2.
 (./chapters/chapter02.tex
-<images/where_am_i.png, id=786, 769.87625pt x 427.5975pt>
+<images/where_am_i.png, id=782, 769.87625pt x 427.5975pt>
 File: images/where_am_i.png Graphic file (type png)
 <use images/where_am_i.png>
 Package pdftex.def Info: images/where_am_i.png  used on input line 4.
 (pdftex.def)             Requested size: 384.10959pt x 213.34149pt.
-<images/vo_pipeline.png, id=800, 1442.38875pt x 578.16pt>
+<images/vo_pipeline.png, id=796, 1442.38875pt x 578.16pt>
 File: images/vo_pipeline.png Graphic file (type png)
 <use images/vo_pipeline.png>
 Package pdftex.def Info: images/vo_pipeline.png  used on input line 14.
@@ -1313,56 +1319,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--23
  []
 
 [4 <./images/vo_pipeline.png>]
-<images/indirect.png, id=820, 532.99126pt x 406.51875pt>
+<images/indirect.png, id=816, 532.99126pt x 406.51875pt>
 File: images/indirect.png Graphic file (type png)
 <use images/indirect.png>
 Package pdftex.def Info: images/indirect.png  used on input line 33.
 (pdftex.def)             Requested size: 341.43436pt x 260.42543pt.
  [5 <./images/indirect.png>]
-<images/direct.png, id=842, 424.58624pt x 378.41376pt>
+<images/direct.png, id=838, 424.58624pt x 378.41376pt>
 File: images/direct.png Graphic file (type png)
 <use images/direct.png>
 Package pdftex.def Info: images/direct.png  used on input line 50.
 (pdftex.def)             Requested size: 341.43436pt x 304.31929pt.
-<images/dense_sparse.png, id=847, 711.65875pt x 234.8775pt>
+<images/dense_sparse.png, id=843, 711.65875pt x 234.8775pt>
 File: images/dense_sparse.png Graphic file (type png)
 <use images/dense_sparse.png>
 Package pdftex.def Info: images/dense_sparse.png  used on input line 59.
 (pdftex.def)             Requested size: 426.99855pt x 140.92758pt.
-<images/direct_indirect.png, id=853, 675.52374pt x 511.9125pt>
+<images/direct_indirect.png, id=849, 816.04875pt x 606.265pt>
 File: images/direct_indirect.png Graphic file (type png)
 <use images/direct_indirect.png>
 Package pdftex.def Info: images/direct_indirect.png  used on input line 68.
-(pdftex.def)             Requested size: 426.79134pt x 323.4283pt.
+(pdftex.def)             Requested size: 426.79134pt x 317.07278pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6 <./images/direct.png>] [7 <./images/dense_sparse.png> <./images/direct_indir
-ect.png (PNG copy)>] [8]
-<images/orbslam.png, id=913, 832.10875pt x 549.05125pt>
+ect.png>] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+<images/orbslam.png, id=914, 832.10875pt x 549.05125pt>
 File: images/orbslam.png Graphic file (type png)
 <use images/orbslam.png>
-Package pdftex.def Info: images/orbslam.png  used on input line 99.
+Package pdftex.def Info: images/orbslam.png  used on input line 98.
 (pdftex.def)             Requested size: 426.79134pt x 281.6126pt.
- [9 <./images/orbslam.png>]
-<images/fast.jpg, id=941, 444.66125pt x 216.81pt>
+[9 <./images/orbslam.png>]
+<images/fast.jpg, id=942, 444.66125pt x 216.81pt>
 File: images/fast.jpg Graphic file (type jpg)
 <use images/fast.jpg>
-Package pdftex.def Info: images/fast.jpg  used on input line 119.
+Package pdftex.def Info: images/fast.jpg  used on input line 118.
 (pdftex.def)             Requested size: 341.43436pt x 166.47774pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--124
+Underfull \hbox (badness 10000) in paragraph at lines 113--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--131
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--131
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 
  []
 
@@ -1370,29 +1380,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--131
 <images/Homo.png, id=959, 320.69812pt x 207.02344pt>
 File: images/Homo.png Graphic file (type png)
 <use images/Homo.png>
-Package pdftex.def Info: images/Homo.png  used on input line 140.
+Package pdftex.def Info: images/Homo.png  used on input line 139.
 (pdftex.def)             Requested size: 298.75262pt x 192.86148pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--142
+
+ []
+
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--147
-
- []
-
 [11 <./images/Homo.png>]
-<images/Funda.png, id=968, 319.94531pt x 192.72pt>
+<images/Funda.png, id=969, 319.94531pt x 192.72pt>
 File: images/Funda.png Graphic file (type png)
 <use images/Funda.png>
-Package pdftex.def Info: images/Funda.png  used on input line 153.
+Package pdftex.def Info: images/Funda.png  used on input line 151.
 (pdftex.def)             Requested size: 298.75262pt x 179.95702pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--171
+Underfull \hbox (badness 10000) in paragraph at lines 147--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--171
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--165
 
  []
 
@@ -1403,189 +1423,174 @@ Missing character: There is no ³ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ³ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--182
+Underfull \hbox (badness 10000) in paragraph at lines 166--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--182
+Underfull \hbox (badness 10000) in paragraph at lines 166--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--182
+Underfull \hbox (badness 10000) in paragraph at lines 166--174
 
  []
 
 [12 <./images/Funda.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 186--191
+Underfull \hbox (badness 10000) in paragraph at lines 177--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--191
+Underfull \hbox (badness 10000) in paragraph at lines 177--182
 
  []
 
-Missing character: There is no Â in font cmr12!
-Missing character: There is no · in font cmr12!
-Missing character: There is no Â in font cmr12!
-Missing character: There is no ° in font cmr12!
+Missing character: There is no Â in font cmr8!
+Missing character: There is no ° in font cmr8!
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 199--202
+Underfull \hbox (badness 10000) in paragraph at lines 190--193
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 231--237
+Underfull \hbox (badness 10000) in paragraph at lines 222--226
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--237
-
- []
-
-<images/loop.png, id=1023, 673.51625pt x 336.25626pt>
+<images/loop.png, id=1026, 673.51625pt x 336.25626pt>
 File: images/loop.png Graphic file (type png)
 <use images/loop.png>
-Package pdftex.def Info: images/loop.png  used on input line 252.
+Package pdftex.def Info: images/loop.png  used on input line 241.
 (pdftex.def)             Requested size: 426.79134pt x 213.07909pt.
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 256--261
+Underfull \hbox (badness 10000) in paragraph at lines 245--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--261
+Underfull \hbox (badness 10000) in paragraph at lines 245--250
 
  []
 
 [16 <./images/loop.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 270--274
+Underfull \hbox (badness 10000) in paragraph at lines 259--263
 
  []
 
-<images/ba.png, id=1057, 697.60625pt x 517.935pt>
+<images/ba.png, id=1062, 697.60625pt x 517.935pt>
 File: images/ba.png Graphic file (type png)
 <use images/ba.png>
-Package pdftex.def Info: images/ba.png  used on input line 277.
+Package pdftex.def Info: images/ba.png  used on input line 266.
 (pdftex.def)             Requested size: 384.10959pt x 285.18124pt.
 [17 <./images/ba.png>]
-<images/ldso.png, id=1077, 1089.06876pt x 748.7975pt>
+<images/ldso.png, id=1082, 1089.06876pt x 748.7975pt>
 File: images/ldso.png Graphic file (type png)
 <use images/ldso.png>
-Package pdftex.def Info: images/ldso.png  used on input line 293.
+Package pdftex.def Info: images/ldso.png  used on input line 280.
 (pdftex.def)             Requested size: 426.79134pt x 293.43521pt.
  [18 <./images/ldso.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 307--311
+Underfull \hbox (badness 10000) in paragraph at lines 294--298
 
  []
 
-<images/dso_sliding.png, id=1094, 401.5pt x 450.68375pt>
+<images/dso_sliding.png, id=1100, 401.5pt x 450.68375pt>
 File: images/dso_sliding.png Graphic file (type png)
 <use images/dso_sliding.png>
-Package pdftex.def Info: images/dso_sliding.png  used on input line 320.
+Package pdftex.def Info: images/dso_sliding.png  used on input line 306.
 (pdftex.def)             Requested size: 426.79134pt x 479.10474pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20 <./images/dso_sliding.png>]
-<images/hessian.png, id=1123, 694.595pt x 390.45876pt>
+<images/hessian.png, id=1128, 694.595pt x 390.45876pt>
 File: images/hessian.png Graphic file (type png)
 <use images/hessian.png>
-Package pdftex.def Info: images/hessian.png  used on input line 334.
+Package pdftex.def Info: images/hessian.png  used on input line 320.
 (pdftex.def)             Requested size: 426.79134pt x 239.92516pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--341
+Underfull \hbox (badness 10000) in paragraph at lines 316--327
 
  []
 
+[21 <./images/hessian.png>]
 <images/ldso_loop.png, id=1159, 591.20876pt x 793.96625pt>
 File: images/ldso_loop.png Graphic file (type png)
 <use images/ldso_loop.png>
-Package pdftex.def Info: images/ldso_loop.png  used on input line 353.
+Package pdftex.def Info: images/ldso_loop.png  used on input line 337.
 (pdftex.def)             Requested size: 213.39566pt x 286.57875pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--357
+Underfull \hbox (badness 10000) in paragraph at lines 334--340
 
  []
 
-[21 <./images/hessian.png>] [22 <./images/ldso_loop.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
-
- []
-
-<images/svo.png, id=1188, 631.35875pt x 679.53876pt>
+[22 <./images/ldso_loop.png>]
+<images/svo.png, id=1195, 631.35875pt x 679.53876pt>
 File: images/svo.png Graphic file (type png)
 <use images/svo.png>
-Package pdftex.def Info: images/svo.png  used on input line 377.
+Package pdftex.def Info: images/svo.png  used on input line 363.
 (pdftex.def)             Requested size: 426.79134pt x 459.3636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--380
+Underfull \hbox (badness 10000) in paragraph at lines 359--366
 
  []
 
 [23]
-<images/sparse_img_1.png, id=1204, 536.0025pt x 341.275pt>
+<images/sparse_img_1.png, id=1211, 536.0025pt x 341.275pt>
 File: images/sparse_img_1.png Graphic file (type png)
 <use images/sparse_img_1.png>
-Package pdftex.def Info: images/sparse_img_1.png  used on input line 384.
+Package pdftex.def Info: images/sparse_img_1.png  used on input line 370.
 (pdftex.def)             Requested size: 426.79134pt x 271.73933pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/sparse_img_2.png, id=1209, 554.07pt x 269.005pt>
+<images/sparse_img_2.png, id=1216, 554.07pt x 269.005pt>
 File: images/sparse_img_2.png Graphic file (type png)
 <use images/sparse_img_2.png>
-Package pdftex.def Info: images/sparse_img_2.png  used on input line 392.
+Package pdftex.def Info: images/sparse_img_2.png  used on input line 378.
 (pdftex.def)             Requested size: 426.79134pt x 207.21246pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--395
+Underfull \hbox (badness 10000) in paragraph at lines 375--381
 
  []
 
 [24 <./images/svo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 [25 <./images/sparse_img_1.png> <./images/sparse_img_2.png>]
-<images/depth_filter.png, id=1228, 698.61pt x 431.6125pt>
+<images/depth_filter.png, id=1236, 698.61pt x 431.6125pt>
 File: images/depth_filter.png Graphic file (type png)
 <use images/depth_filter.png>
-Package pdftex.def Info: images/depth_filter.png  used on input line 402.
+Package pdftex.def Info: images/depth_filter.png  used on input line 388.
 (pdftex.def)             Requested size: 426.79134pt x 263.67839pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--405
+Underfull \hbox (badness 10000) in paragraph at lines 385--391
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--410
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--410
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--410
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
 
  []
 
 [26 <./images/depth_filter.png>]) [27]
 chapter 3.
 (./chapters/chapter03.tex
-<images/cameras.png, id=1251, 521.95pt x 543.02875pt>
+<images/cameras.png, id=1261, 521.95pt x 543.02875pt>
 File: images/cameras.png Graphic file (type png)
 <use images/cameras.png>
 Package pdftex.def Info: images/cameras.png  used on input line 21.
@@ -1610,12 +1615,12 @@ Overfull \hbox (3.44937pt too wide) in paragraph at lines 37--69
  [][] 
  []
 
-<images/picocam.png, id=1290, 898.35625pt x 607.26875pt>
+<images/picocam.png, id=1300, 898.35625pt x 607.26875pt>
 File: images/picocam.png Graphic file (type png)
 <use images/picocam.png>
 Package pdftex.def Info: images/picocam.png  used on input line 78.
 (pdftex.def)             Requested size: 213.39566pt x 144.24635pt.
-<images/genius.png, id=1293, 347.2975pt x 214.8025pt>
+<images/genius.png, id=1303, 347.2975pt x 214.8025pt>
 File: images/genius.png Graphic file (type png)
 <use images/genius.png>
 Package pdftex.def Info: images/genius.png  used on input line 84.
@@ -1650,7 +1655,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
  []
 
 [30] [31 <./images/picocam.png> <./images/genius.png>]
-<images/pinhole.png, id=1342, 610.28pt x 304.13625pt>
+<images/pinhole.png, id=1353, 610.28pt x 304.13625pt>
 File: images/pinhole.png Graphic file (type png)
 <use images/pinhole.png>
 Package pdftex.def Info: images/pinhole.png  used on input line 147.
@@ -1661,7 +1666,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--158
  []
 
 [32 <./images/pinhole.png>]
-<images/distortion.png, id=1357, 721.69624pt x 234.8775pt>
+<images/distortion.png, id=1367, 721.69624pt x 234.8775pt>
 File: images/distortion.png Graphic file (type png)
 <use images/distortion.png>
 Package pdftex.def Info: images/distortion.png  used on input line 166.
@@ -1677,7 +1682,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--175
  []
 
 [33 <./images/distortion.png>]
-<images/pattern.png, id=1372, 450.9347pt x 322.20375pt>
+<images/pattern.png, id=1381, 450.9347pt x 322.20375pt>
 File: images/pattern.png Graphic file (type png)
 <use images/pattern.png>
 Package pdftex.def Info: images/pattern.png  used on input line 186.
@@ -1688,32 +1693,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--194
  []
 
 [34 <./images/pattern.png>]
-<images/circular_grid.png, id=1392, 529.98pt x 919.435pt>
+<images/circular_grid.png, id=1401, 529.98pt x 919.435pt>
 File: images/circular_grid.png Graphic file (type png)
 <use images/circular_grid.png>
-Package pdftex.def Info: images/circular_grid.png  used on input line 209.
+Package pdftex.def Info: images/circular_grid.png  used on input line 210.
 (pdftex.def)             Requested size: 341.43436pt x 592.33658pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--212
+Underfull \hbox (badness 10000) in paragraph at lines 207--213
 
  []
 
-<images/chessboard.png, id=1393, 2886.785pt x 2989.569pt>
+<images/chessboard.png, id=1402, 2886.785pt x 2989.569pt>
 File: images/chessboard.png Graphic file (type png)
 <use images/chessboard.png>
-Package pdftex.def Info: images/chessboard.png  used on input line 215.
+Package pdftex.def Info: images/chessboard.png  used on input line 216.
 (pdftex.def)             Requested size: 213.39566pt x 220.9692pt.
 [35]
-<images/pattern_view.png, id=1405, 563.10374pt x 577.15625pt>
+<images/pattern_view.png, id=1415, 563.10374pt x 577.15625pt>
 File: images/pattern_view.png Graphic file (type png)
 <use images/pattern_view.png>
-Package pdftex.def Info: images/pattern_view.png  used on input line 221.
+Package pdftex.def Info: images/pattern_view.png  used on input line 222.
 (pdftex.def)             Requested size: 384.10959pt x 393.69398pt.
  [36 <./images/circular_grid.png>]
-<images/reproj_error.png, id=1410, 1252.68pt x 735.74875pt>
+<images/reproj_error.png, id=1420, 1252.68pt x 735.74875pt>
 File: images/reproj_error.png Graphic file (type png)
 <use images/reproj_error.png>
-Package pdftex.def Info: images/reproj_error.png  used on input line 227.
+Package pdftex.def Info: images/reproj_error.png  used on input line 228.
 (pdftex.def)             Requested size: 640.187pt x 376.01276pt.
 
 
@@ -1726,12 +1731,12 @@ LaTeX Warning: Text page 38 contains only floats.
 [38 <./images/reproj_error.png>]
 chapter 4.
 (./chapters/chapter04.tex
-<images/turtlebot.png, id=1425, 608.2725pt x 689.57625pt>
+<images/turtlebot.png, id=1435, 608.2725pt x 689.57625pt>
 File: images/turtlebot.png Graphic file (type png)
 <use images/turtlebot.png>
 Package pdftex.def Info: images/turtlebot.png  used on input line 7.
 (pdftex.def)             Requested size: 320.09349pt x 362.88524pt.
-<images/frame_transformation.png, id=1437, 1015.795pt x 608.2725pt>
+<images/frame_transformation.png, id=1447, 1015.795pt x 608.2725pt>
 File: images/frame_transformation.png Graphic file (type png)
 <use images/frame_transformation.png>
 Package pdftex.def Info: images/frame_transformation.png  used on input line 15
@@ -1749,99 +1754,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-<images/smet.png, id=1447, 696.6025pt x 521.95pt>
+<images/smet.png, id=1457, 696.6025pt x 521.95pt>
 File: images/smet.png Graphic file (type png)
 <use images/smet.png>
 Package pdftex.def Info: images/smet.png  used on input line 27.
 (pdftex.def)             Requested size: 426.79134pt x 319.78278pt.
-<images/TIM571.png, id=1450, 755.82375pt x 368.37625pt>
+<images/TIM571.png, id=1460, 755.82375pt x 368.37625pt>
 File: images/TIM571.png Graphic file (type png)
 <use images/TIM571.png>
 Package pdftex.def Info: images/TIM571.png  used on input line 33.
 (pdftex.def)             Requested size: 426.79134pt x 208.0093pt.
 [40 <./images/frame_transformation.png>]
-<images/implementation.png, id=1467, 934.49126pt x 463.7325pt>
+<images/implementation.png, id=1478, 914.41624pt x 442.65375pt>
 File: images/implementation.png Graphic file (type png)
 <use images/implementation.png>
-Package pdftex.def Info: images/implementation.png  used on input line 43.
-(pdftex.def)             Requested size: 426.79134pt x 211.79112pt.
+Package pdftex.def Info: images/implementation.png  used on input line 42.
+(pdftex.def)             Requested size: 426.79134pt x 206.60185pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--46
+Underfull \hbox (badness 10000) in paragraph at lines 39--45
 
  []
 
 [41 <./images/smet.png> <./images/TIM571.png>]
-<images/warehouse.png, id=1480, 1598.97375pt x 1009.7725pt>
+<images/warehouse.png, id=1490, 1598.97375pt x 1009.7725pt>
 File: images/warehouse.png Graphic file (type png)
 <use images/warehouse.png>
-Package pdftex.def Info: images/warehouse.png  used on input line 52.
+Package pdftex.def Info: images/warehouse.png  used on input line 51.
 (pdftex.def)             Requested size: 426.79134pt x 269.51442pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--55
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
 
  []
 
 [42 <./images/implementation.png>] [43 <./images/warehouse.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 82.
+(hyperref)                removing `\acrshort' on input line 81.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 82.
+(hyperref)                removing `\acrshort' on input line 81.
 
-<images/orb_lidar.png, id=1510, 462.528pt x 346.896pt>
+<images/orb_lidar.png, id=1520, 462.528pt x 346.896pt>
 File: images/orb_lidar.png Graphic file (type png)
 <use images/orb_lidar.png>
-Package pdftex.def Info: images/orb_lidar.png  used on input line 99.
+Package pdftex.def Info: images/orb_lidar.png  used on input line 98.
 (pdftex.def)             Requested size: 426.79134pt x 320.11154pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--102
+Underfull \hbox (badness 10000) in paragraph at lines 94--101
 
  []
 
-<images/ground_points.png, id=1519, 673.51625pt x 639.38875pt>
+<images/ground_points.png, id=1529, 673.51625pt x 639.38875pt>
 File: images/ground_points.png Graphic file (type png)
 <use images/ground_points.png>
-Package pdftex.def Info: images/ground_points.png  used on input line 105.
+Package pdftex.def Info: images/ground_points.png  used on input line 104.
 (pdftex.def)             Requested size: 298.75262pt x 283.61488pt.
 [44]
-<images/ground_plane.png, id=1526, 365.365pt x 297.11pt>
+<images/ground_plane.png, id=1536, 365.365pt x 297.11pt>
 File: images/ground_plane.png Graphic file (type png)
 <use images/ground_plane.png>
-Package pdftex.def Info: images/ground_plane.png  used on input line 111.
+Package pdftex.def Info: images/ground_plane.png  used on input line 110.
 (pdftex.def)             Requested size: 384.10959pt x 312.36911pt.
  [45 <./images/orb_lidar.png> <./images/ground_points.png>]
-<images/scale_process.png, id=1536, 649.42625pt x 209.78375pt>
+<images/scale_process.png, id=1546, 649.42625pt x 209.78375pt>
 File: images/scale_process.png Graphic file (type png)
 <use images/scale_process.png>
-Package pdftex.def Info: images/scale_process.png  used on input line 118.
+Package pdftex.def Info: images/scale_process.png  used on input line 117.
 (pdftex.def)             Requested size: 426.79134pt x 137.8687pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--121
+Underfull \hbox (badness 10000) in paragraph at lines 114--120
 
  []
 
-<images/orb_lidar2.png, id=1543, 1089.06876pt x 680.5425pt>
+<images/orb_lidar2.png, id=1553, 1089.06876pt x 680.5425pt>
 File: images/orb_lidar2.png Graphic file (type png)
 <use images/orb_lidar2.png>
-Package pdftex.def Info: images/orb_lidar2.png  used on input line 125.
+Package pdftex.def Info: images/orb_lidar2.png  used on input line 124.
 (pdftex.def)             Requested size: 426.79134pt x 266.68776pt.
 [46 <./images/ground_plane.png> <./images/scale_process.png>]
-<images/orb_lidar3.png, id=1556, 1171.37625pt x 725.71124pt>
+<images/orb_lidar3.png, id=1566, 1171.37625pt x 725.71124pt>
 File: images/orb_lidar3.png Graphic file (type png)
 <use images/orb_lidar3.png>
-Package pdftex.def Info: images/orb_lidar3.png  used on input line 132.
+Package pdftex.def Info: images/orb_lidar3.png  used on input line 131.
 (pdftex.def)             Requested size: 426.79134pt x 264.41177pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 137.
+(hyperref)                removing `\acrshort' on input line 136.
 
 [47 <./images/orb_lidar2.png> <./images/orb_lidar3.png>]) [48]
 chapter 5.
 (./chapters/chapter05.tex
-<images/matrices.png, id=1594, 694.595pt x 457.71pt>
+<images/matrices.png, id=1605, 694.595pt x 457.71pt>
 File: images/matrices.png Graphic file (type png)
 <use images/matrices.png>
 Package pdftex.def Info: images/matrices.png  used on input line 7.
@@ -1853,34 +1858,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--30
 
  []
 
-<images/orb_pico1.png, id=1624, 221.82875pt x 577.15625pt>
+<images/orb_pico1.png, id=1634, 221.82875pt x 577.15625pt>
 File: images/orb_pico1.png Graphic file (type png)
 <use images/orb_pico1.png>
 Package pdftex.def Info: images/orb_pico1.png  used on input line 34.
 (pdftex.def)             Requested size: 106.69783pt x 277.60428pt.
-<images/ldso_pico1.png, id=1629, 342.27875pt x 741.77126pt>
+<images/ldso_pico1.png, id=1639, 342.27875pt x 741.77126pt>
 File: images/ldso_pico1.png Graphic file (type png)
 <use images/ldso_pico1.png>
 Package pdftex.def Info: images/ldso_pico1.png  used on input line 40.
 (pdftex.def)             Requested size: 106.69783pt x 231.22571pt.
-<images/orb_web1.png, id=1632, 264.99pt x 728.7225pt>
+<images/orb_web1.png, id=1642, 264.99pt x 728.7225pt>
 File: images/orb_web1.png Graphic file (type png)
 <use images/orb_web1.png>
 Package pdftex.def Info: images/orb_web1.png  used on input line 50.
 (pdftex.def)             Requested size: 106.69783pt x 293.41861pt.
-<images/ldso_web1.png, id=1637, 255.95625pt x 706.64pt>
+<images/ldso_web1.png, id=1647, 255.95625pt x 706.64pt>
 File: images/ldso_web1.png Graphic file (type png)
 <use images/ldso_web1.png>
 Package pdftex.def Info: images/ldso_web1.png  used on input line 56.
 (pdftex.def)             Requested size: 106.69783pt x 294.5656pt.
 [50] [51 <./images/orb_pico1.png> <./images/ldso_pico1.png> <./images/orb_web1.
 png> <./images/ldso_web1.png>]
-<images/orb_pico2.png, id=1661, 885.3075pt x 564.1075pt>
+<images/orb_pico2.png, id=1671, 885.3075pt x 564.1075pt>
 File: images/orb_pico2.png Graphic file (type png)
 <use images/orb_pico2.png>
 Package pdftex.def Info: images/orb_pico2.png  used on input line 83.
 (pdftex.def)             Requested size: 256.0774pt x 163.17381pt.
-<images/ldso_pico2.png, id=1666, 263.98625pt x 534.99875pt>
+<images/ldso_pico2.png, id=1676, 263.98625pt x 534.99875pt>
 File: images/ldso_pico2.png Graphic file (type png)
 <use images/ldso_pico2.png>
 Package pdftex.def Info: images/ldso_pico2.png  used on input line 89.
@@ -1890,12 +1895,12 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 81--93
 []$[]$ $[]$ 
  []
 
-<images/orb_web2.png, id=1669, 872.25874pt x 554.07pt>
+<images/orb_web2.png, id=1679, 872.25874pt x 554.07pt>
 File: images/orb_web2.png Graphic file (type png)
 <use images/orb_web2.png>
 Package pdftex.def Info: images/orb_web2.png  used on input line 99.
 (pdftex.def)             Requested size: 256.0774pt x 162.66296pt.
-<images/ldso_web2.png, id=1674, 266.9975pt x 354.32375pt>
+<images/ldso_web2.png, id=1684, 266.9975pt x 354.32375pt>
 File: images/ldso_web2.png Graphic file (type png)
 <use images/ldso_web2.png>
 Package pdftex.def Info: images/ldso_web2.png  used on input line 105.
@@ -1905,12 +1910,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--128
 
  []
 
-<images/orb_pico3.png, id=1692, 513.92pt x 689.57625pt>
+<images/orb_pico3.png, id=1702, 513.92pt x 689.57625pt>
 File: images/orb_pico3.png Graphic file (type png)
 <use images/orb_pico3.png>
 Package pdftex.def Info: images/orb_pico3.png  used on input line 132.
 (pdftex.def)             Requested size: 213.39566pt x 286.33716pt.
-<images/ldso_pico3.png, id=1697, 566.115pt x 862.22125pt>
+<images/ldso_pico3.png, id=1707, 566.115pt x 862.22125pt>
 File: images/ldso_pico3.png Graphic file (type png)
 <use images/ldso_pico3.png>
 Package pdftex.def Info: images/ldso_pico3.png  used on input line 138.
@@ -1920,19 +1925,19 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 130--142
 []$[]$ $[]$ 
  []
 
-<images/orb_web3.png, id=1700, 923.45pt x 913.4125pt>
+<images/orb_web3.png, id=1710, 923.45pt x 913.4125pt>
 File: images/orb_web3.png Graphic file (type png)
 <use images/orb_web3.png>
 Package pdftex.def Info: images/orb_web3.png  used on input line 148.
 (pdftex.def)             Requested size: 213.39566pt x 211.07002pt.
-<images/ldso_web3.png, id=1705, 591.20876pt x 793.96625pt>
+<images/ldso_web3.png, id=1715, 591.20876pt x 793.96625pt>
 File: images/ldso_web3.png Graphic file (type png)
 <use images/ldso_web3.png>
 Package pdftex.def Info: images/ldso_web3.png  used on input line 154.
 (pdftex.def)             Requested size: 213.39566pt x 286.57875pt.
 [53 <./images/orb_web2.png> <./images/ldso_web2.png>] [54 <./images/orb_pico3.p
 ng> <./images/ldso_pico3.png> <./images/orb_web3.png> <./images/ldso_web3.png>]
-<images/orb_pico4.png, id=1729, 1295.84125pt x 850.17625pt>
+<images/orb_pico4.png, id=1740, 1295.84125pt x 850.17625pt>
 File: images/orb_pico4.png Graphic file (type png)
 <use images/orb_pico4.png>
 Package pdftex.def Info: images/orb_pico4.png  used on input line 181.
@@ -1943,12 +1948,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--201
  []
 
 [55 <./images/orb_pico4.png>]
-<images/orb_pico5.png, id=1754, 665.48625pt x 616.3025pt>
+<images/orb_pico5.png, id=1765, 665.48625pt x 616.3025pt>
 File: images/orb_pico5.png Graphic file (type png)
 <use images/orb_pico5.png>
 Package pdftex.def Info: images/orb_pico5.png  used on input line 206.
 (pdftex.def)             Requested size: 213.39566pt x 197.6158pt.
-<images/ldso_pico5.png, id=1759, 1091.07625pt x 812.03375pt>
+<images/ldso_pico5.png, id=1770, 1091.07625pt x 812.03375pt>
 File: images/ldso_pico5.png Graphic file (type png)
 <use images/ldso_pico5.png>
 Package pdftex.def Info: images/ldso_pico5.png  used on input line 212.
@@ -1958,23 +1963,23 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 204--216
 []$[]$ $[]$ 
  []
 
-<images/orb_web5.png, id=1762, 689.57625pt x 1017.8025pt>
+<images/orb_web5.png, id=1773, 689.57625pt x 1017.8025pt>
 File: images/orb_web5.png Graphic file (type png)
 <use images/orb_web5.png>
 Package pdftex.def Info: images/orb_web5.png  used on input line 222.
 (pdftex.def)             Requested size: 213.39566pt x 314.97195pt.
-<images/ldso_web5.png, id=1767, 890.32625pt x 515.9275pt>
+<images/ldso_web5.png, id=1778, 890.32625pt x 515.9275pt>
 File: images/ldso_web5.png Graphic file (type png)
 <use images/ldso_web5.png>
 Package pdftex.def Info: images/ldso_web5.png  used on input line 228.
 (pdftex.def)             Requested size: 213.39566pt x 123.6598pt.
 [56 <./images/orb_pico5.png> <./images/ldso_pico5.png>]
-<images/straight1.png, id=1794, 462.528pt x 346.896pt>
+<images/straight1.png, id=1805, 462.528pt x 346.896pt>
 File: images/straight1.png Graphic file (type png)
 <use images/straight1.png>
 Package pdftex.def Info: images/straight1.png  used on input line 241.
 (pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
-<images/straight2.png, id=1795, 462.528pt x 346.896pt>
+<images/straight2.png, id=1806, 462.528pt x 346.896pt>
 File: images/straight2.png Graphic file (type png)
 <use images/straight2.png>
 Package pdftex.def Info: images/straight2.png  used on input line 247.
@@ -1985,12 +1990,12 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 239--251
  []
 
 [57 <./images/orb_web5.png> <./images/ldso_web5.png>]
-<images/rectangle1.png, id=1803, 462.528pt x 346.896pt>
+<images/rectangle1.png, id=1814, 462.528pt x 346.896pt>
 File: images/rectangle1.png Graphic file (type png)
 <use images/rectangle1.png>
 Package pdftex.def Info: images/rectangle1.png  used on input line 258.
 (pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
-<images/rectangle2.png, id=1804, 462.528pt x 346.896pt>
+<images/rectangle2.png, id=1815, 462.528pt x 346.896pt>
 File: images/rectangle2.png Graphic file (type png)
 <use images/rectangle2.png>
 Package pdftex.def Info: images/rectangle2.png  used on input line 264.
@@ -2002,10 +2007,10 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 256--268
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 274.
+(hyperref)                removing `\acrshort' on input line 275.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 276--278
 
  []
 
@@ -2013,48 +2018,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--277
  <./images/rectangle2.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 278.
+(hyperref)                removing `\acrshort' on input line 279.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--282
+Underfull \hbox (badness 10000) in paragraph at lines 280--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--282
+Underfull \hbox (badness 10000) in paragraph at lines 280--283
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 283.
+(hyperref)                removing `\acrshort' on input line 284.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 283.
+(hyperref)                removing `\acrshort' on input line 284.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--287
+Underfull \hbox (badness 10000) in paragraph at lines 285--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--287
+Underfull \hbox (badness 10000) in paragraph at lines 285--288
 
  []
 
 [59])
-Underfull \hbox (badness 10000) in paragraph at lines 289--165
+Underfull \hbox (badness 10000) in paragraph at lines 290--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--165
+Underfull \hbox (badness 10000) in paragraph at lines 290--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--165
+Underfull \hbox (badness 10000) in paragraph at lines 290--165
 
  []
 
@@ -2079,13 +2084,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--168
 
 ]
 chapter without number
-
-Overfull \hbox (6.02243pt too wide) in paragraph at lines 172--172
-[]\OT1/cmr/m/it/12 bublcam\OT1/cmr/m/n/12 . \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12
- : []$\OT1/cmtt/m/n/12 https : / / phys . org / news / 2013 -[] 11 -[] bublcam 
--[] life -[] spherical -[]
- []
-
 
 Overfull \hbox (12.67276pt too wide) in paragraph at lines 172--172
 \OT1/cmr/m/n/12 sual, Visual-Inertial and Multi-Map SLAM". In: \OT1/cmr/m/it/12
@@ -2123,12 +2121,33 @@ Package biblatex Warning: No driver for entry type 'journal'.
 (biblatex)                Using fallback driver on input line 172.
 
 [65]
+Overfull \hbox (4.85002pt too wide) in paragraph at lines 172--172
+[]\OT1/cmr/m/it/12 OpenCV Doc-u-men-ta-tion of FAST Al-go-rithm for Cor-ner De-
+tec-tion\OT1/cmr/m/n/12 . \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : []$\OT1/cmtt/m/
+n/12 https :
+ []
+
+
+Overfull \hbox (33.31027pt too wide) in paragraph at lines 172--172
+[]\OT1/cmr/m/it/12 OpenMVG -Multiple View Ge-om-e-try Li-brary\OT1/cmr/m/n/12 .
+ \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : []$\OT1/cmtt/m/n/12 https : / / openmvg 
+. readthedocs .
+ []
+
+
 Overfull \hbox (4.61133pt too wide) in paragraph at lines 172--172
 \OT1/cmtt/m/n/12 homes . di . unimi . it / borghese / Teaching / IntelligentSys
 tems / Documents /
  []
 
-[66] [67] [68]
+[66]
+Overfull \hbox (4.00941pt too wide) in paragraph at lines 172--172
+[]\OT1/cmr/m/it/12 Turtlebot2- of-fi-cial Web-site\OT1/cmr/m/n/12 . \OT1/cmr/m/
+sc/12 url\OT1/cmr/m/n/12 : []$\OT1/cmtt/m/n/12 https : / / www . turtlebot . co
+m / turtlebot2/$[]\OT1/cmr/m/n/12 . 
+ []
+
+[67] [68]
 chapter A.
 (./endmatter/appendix.tex
 
@@ -2140,63 +2159,58 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\acrshort' on input line 1.
 
 
-Overfull \hbox (147.17667pt too wide) in alignment at lines 4--26
+Overfull \hbox (108.98169pt too wide) in alignment at lines 4--26
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (147.17667pt too wide) in alignment at lines 26--46
+Overfull \hbox (108.98169pt too wide) in alignment at lines 26--46
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (147.17667pt too wide) in alignment at lines 46--66
+Overfull \hbox (108.98169pt too wide) in alignment at lines 46--66
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (147.17667pt too wide) in alignment at lines 66--86
+Overfull \hbox (108.98169pt too wide) in alignment at lines 66--86
  [] [] [] [] [] 
  []
 
 [69
 
 ]
-Overfull \hbox (147.17667pt too wide) in alignment at lines 86--106
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (147.17667pt too wide) in alignment at lines 106--107
+Overfull \hbox (108.98169pt too wide) in alignment at lines 86--105
  [] [] [] [] [] 
  []
 
 [70]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
 
-Overfull \hbox (15.91754pt too wide) in paragraph at lines 126--130
+Overfull \hbox (15.91754pt too wide) in paragraph at lines 124--128
 []\OT1/cmr/m/n/10 Distortion co-ef-fi-cients : $[]$ 
  []
 
 
-Overfull \hbox (15.91754pt too wide) in paragraph at lines 146--150
+Overfull \hbox (15.91754pt too wide) in paragraph at lines 144--148
 []\OT1/cmr/m/n/10 Distortion co-ef-fi-cients : $[]$ 
  []
 
 [71]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 158.
+(hyperref)                removing `\acrshort' on input line 156.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 169.
+(hyperref)                removing `\acrshort' on input line 167.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
@@ -2206,7 +2220,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CBF4281046DEFDA04D68CEE9A0F7C425;3819.
+(rerunfilecheck)             Checksum: 1F13E83BDF5897D65049CFB9892F7540;3783.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -2217,10 +2231,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
 ### simple group (level 1) entered at line 3 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27343 strings out of 492982
- 474266 string characters out of 6134897
+ 27350 strings out of 492982
+ 474489 string characters out of 6134897
  1094062 words of memory out of 5000000
- 30010 multiletter control sequences out of 15000+600000
+ 30015 multiletter control sequences out of 15000+600000
  16097 words of font info for 61 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  56i,13n,87p,8815b,2902s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2245,10 +2259,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (82 pages, 15248822 bytes).
+Output written on main.pdf (82 pages, 15149753 bytes).
 PDF statistics:
- 2387 PDF objects out of 2487 (max. 8388607)
- 2057 compressed objects within 21 object streams
- 414 named destinations out of 1000 (max. 500000)
- 801 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2409 PDF objects out of 2487 (max. 8388607)
+ 2078 compressed objects within 21 object streams
+ 416 named destinations out of 1000 (max. 500000)
+ 793 words of extra memory for PDF output out of 10000 (max. 10000000)
 
